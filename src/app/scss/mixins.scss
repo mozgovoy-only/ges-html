@@ -53,10 +53,10 @@
 
 //TODO: Формулу расчета шрифтов надо перепроверить
 @mixin rem-fluid($property, $min-size, $tablet-size, $smallDesk-size, $max-size) {
-    $min-size-rem: rem($min-size);
-    $tablet-size-rem: rem($tablet-size);
-    $smalDesk-size-rem: rem($smallDesk-size);
-    $max-size-rem: rem($max-size);
+    $min-size-rem: remify($min-size);
+    $tablet-size-rem: remify($tablet-size);
+    $smalDesk-size-rem: remify($smallDesk-size);
+    $max-size-rem: remify($max-size);
 
     //mobile
     #{$property}: $min-size-rem;
@@ -64,7 +64,7 @@
 
     @media (min-width: 370px) {
         #{$property}: calc(#{$min-size-rem} + (#{strip-unit($tablet-size-rem)} - #{strip-unit($min-size-rem)}) *
-                        ((100vw - #{rem(370)}) / (767 - 370)));
+                        ((100vw - #{remify(370)}) / (767 - 370)));
         @media (max-height: 500px) {
             #{$property}: $min-size-rem;
         }
@@ -73,23 +73,23 @@
     // tablet
     @media (min-width: 767px) {
         #{$property}: calc(#{$tablet-size-rem} + (#{strip-unit($smalDesk-size-rem)} - #{strip-unit($tablet-size-rem)}) *
-                        ((100vw - #{rem(767)}) / (1280 - 767)));
+                        ((100vw - #{remify(767)}) / (1280 - 767)));
 
         @media (max-height: 500px) {
             #{$property}: calc(#{$min-size-rem} + ((#{strip-unit($max-size-rem)} * 0.7) - #{strip-unit($min-size-rem)}) *
-            ((100vw - #{rem(767)}) / (1280 - 767)));
+            ((100vw - #{remify(767)}) / (1280 - 767)));
         }
     }
 
     //min desk
     @media (min-width: 1280px) {
         #{$property}: calc(#{$smalDesk-size-rem} + (#{strip-unit($max-size-rem)} - #{strip-unit($smalDesk-size-rem)}) *
-                        ((100vw - #{rem(1280)}) / (1920 - 1280)));
+                        ((100vw - #{remify(1280)}) / (1920 - 1280)));
 
 
         @media (max-height: 500px) {
             #{$property}: calc(#{$min-size-rem} + ((#{strip-unit($max-size-rem)} * 0.7) - #{strip-unit($min-size-rem)}) *
-            ((100vw - #{rem(767)}) / (1920 - 767)));
+            ((100vw - #{remify(767)}) / (1920 - 767)));
         }
 
     }

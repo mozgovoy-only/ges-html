@@ -35,6 +35,6 @@
     @return ($size / $root-font-size);
 }
 
-@function rem($size, $root-font-size: 16) {
+@function remify($size, $root-font-size: 16) {
     @return  unit($size, $root-font-size) * 1rem;
 }
