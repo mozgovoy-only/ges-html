@@ -1,0 +1,11 @@
+extends ../../app/pug/layout
+
+block title
+    | Главная
+
+block content
+    main(data-barba="container" data-barba-namespace="common" data-page-namespace="index")
+        div.h-1!= dataJson.index.title
+        +example()(data-clickable)
+        +example()(data-clickable)
+        +example()(data-clickable data-text='Custom alert text')

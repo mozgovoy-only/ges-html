@@ -1,0 +1,155 @@
+@mixin media-breakpoint-up($name) {
+    @media (min-width: #{map-get($breakpoints, $name)}px) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-down($name) {
+    @media (max-width: #{map-get($breakpoints, $name) - 1}px) {
+        @content;
+    }
+}
+
+@mixin with-option ($modifierName, $modifierValue: null) {
+    @if($modifierValue) {
+        &[data-#{$modifierName}=#{$modifierValue}] {
+            @content
+        }
+    } @else {
+        &[data-#{$modifierName}] {
+            @content
+        }
+    }
+}
+
+@mixin hover() {
+    @media (hover: hover) {
+        &:hover {
+            @content
+        }
+    }
+}
+
+//TODO: Формулу расчета шрифтов надо перепроверить
+@mixin font($desktop-1920, $desktop-1440, $desktop-1280, $tablet-768, $mobile) {
+    font-size: #{$mobile}px;
+
+    @include media-breakpoint-up(md) {
+        font-size: calc(#{smooth-value($tablet-768, $desktop-1280, map-get($breakpoints, md), map-get($breakpoints, xl), 'w')});
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: calc(#{smooth-value($desktop-1280, $desktop-1440, map-get($breakpoints, xl), map-get($breakpoints, xxl), 'w')});
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: calc(#{smooth-value($desktop-1440, $desktop-1920, map-get($breakpoints, xxl), map-get($breakpoints, fhd), 'w')});
+    }
+
+    //@include media-breakpoint-up(2k) {
+    //    font-size: calc(#{$desktop-fhd / 1920 * 100 / 2}vw + #{$desktop-fhd / 1080 * 100 / 2}vh);
+    //}
+}
+
+//TODO: Формулу расчета шрифтов надо перепроверить
+@mixin rem-fluid($property, $min-size, $tablet-size, $smallDesk-size, $max-size) {
+    $min-size-rem: rem($min-size);
+    $tablet-size-rem: rem($tablet-size);
+    $smalDesk-size-rem: rem($smallDesk-size);
+    $max-size-rem: rem($max-size);
+
+    //mobile
+    #{$property}: $min-size-rem;
+
+
+    @media (min-width: 370px) {
+        #{$property}: calc(#{$min-size-rem} + (#{strip-unit($tablet-size-rem)} - #{strip-unit($min-size-rem)}) *
+                        ((100vw - #{rem(370)}) / (767 - 370)));
+        @media (max-height: 500px) {
+            #{$property}: $min-size-rem;
+        }
+    }
+
+    // tablet
+    @media (min-width: 767px) {
+        #{$property}: calc(#{$tablet-size-rem} + (#{strip-unit($smalDesk-size-rem)} - #{strip-unit($tablet-size-rem)}) *
+                        ((100vw - #{rem(767)}) / (1280 - 767)));
+
+        @media (max-height: 500px) {
+            #{$property}: calc(#{$min-size-rem} + ((#{strip-unit($max-size-rem)} * 0.7) - #{strip-unit($min-size-rem)}) *
+            ((100vw - #{rem(767)}) / (1280 - 767)));
+        }
+    }
+
+    //min desk
+    @media (min-width: 1280px) {
+        #{$property}: calc(#{$smalDesk-size-rem} + (#{strip-unit($max-size-rem)} - #{strip-unit($smalDesk-size-rem)}) *
+                        ((100vw - #{rem(1280)}) / (1920 - 1280)));
+
+
+        @media (max-height: 500px) {
+            #{$property}: calc(#{$min-size-rem} + ((#{strip-unit($max-size-rem)} * 0.7) - #{strip-unit($min-size-rem)}) *
+            ((100vw - #{rem(767)}) / (1920 - 767)));
+        }
+
+    }
+
+    // больше 1920
+    @media (min-width: 1920px) {
+        #{$property}: $max-size-rem;
+    }
+
+}
+
+@mixin rem-adaptive-font($min-size, $tablet-size, $smallDesk-size, $max-size) {
+    @include rem-fluid(font-size,  $min-size, $tablet-size, $smallDesk-size, $max-size);
+}
+
+@mixin upper-fhd-size($base-size, $property: width, $coeff: 1) {
+    #{$property}: calc((#{$base-size / 1920 * 100 / 2}vw + #{$base-size / 1080 * 100 / 2}vh) * #{$coeff});
+}
+
+@mixin offset-sides($property: 'padding') {
+    #{$property}-left: #{map-get($offset-sides, mobile)};
+    #{$property}-right: #{map-get($offset-sides, mobile)};
+
+    @include media-breakpoint-up(md) {
+        #{$property}-left: #{map-get($offset-sides, tablet)};
+        #{$property}-right: #{map-get($offset-sides, tablet)};
+    }
+
+    @include media-breakpoint-up(lg) {
+        #{$property}-left: #{map-get($offset-sides, desktop)};
+        #{$property}-right: #{map-get($offset-sides, desktop)};
+    }
+}
+
+@mixin safari {
+    // Safari 11+
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+            @content;
+        }
+    }
+}
+
+@mixin smooth-offset ($property, $mobile, $tablet-768, $desktop-1280, $desktop-1440, $desktop-1920) {
+    #{$property}: vw($mobile, $sm);
+
+    @include media-breakpoint-up(md) {
+        #{$property}: vw($tablet-768, $md);
+    }
+
+    @include media-breakpoint-up(xl) {
+        #{$property}: vw($desktop-1280, $xl);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        #{$property}: vw($desktop-1440, $xxl);
+    }
+
+    @include media-breakpoint-up(fhd) {
+        #{$property}: vw($desktop-1920);
+    }
+}
+
