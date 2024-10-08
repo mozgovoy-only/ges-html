@@ -17,3 +17,17 @@ $breakpoints: (
     xxxl: 1600,
     fhd: 1920,
 );
+
+// start ease
+
+$ease-default: cubic-bezier(0.33, 1, 0.68, 1);
+
+// end ease
+
+// start durations
+
+$duration-short: 0.25s;
+$duration-fast: 0.4s;
+$duration-normal: 0.8s;
+
+// end durations
