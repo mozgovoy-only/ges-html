@@ -1,16 +1,22 @@
-$font-roboto-name: 'Roboto';
-$font-roboto: $font-roboto-name, Arial, sans-serif;
+$font-manrope-name: 'Manrope';
+$font-manrope: $font-manrope-name, Arial, sans-serif;
 
-$fonts-roboto: (
-    'Roboto-Regular': normal,
-    'Roboto-Bold': bold
+$fonts-manrope: (
+    'Manrope-ExtraLight': 200,
+    'Manrope-Light': 300,
+    'Manrope-Regular': normal,
+    'Manrope-Medium': 500,
+    'Manrope-SemiBold': 600,
+    'Manrope-Bold': 700,
+    'Manrope-ExtraBold': 800
 );
 
-@each $font, $weight in $fonts-roboto {
+@each $font, $weight in $fonts-manrope {
     @font-face {
-        font-family: $font-roboto-name;
+        font-family: $font-manrope-name;
         src: url('../../assets/fonts/#{$font}.ttf') format('truetype'),
-            url('../../assets/fonts/#{$font}.woff') format('woff');
+            url('../../assets/fonts/#{$font}.woff') format('woff'),
+            url('../../assets/fonts/#{$font}.woff2') format('woff2');
         font-weight: $weight;
         font-style: normal;
         font-display: swap;
