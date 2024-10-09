@@ -1,11 +1,19 @@
 .header-menu {
-    $root: &;
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
 
-    display: flex;
     &__item {
         margin-right: remify(16);
+    }
+
+    &__item-link {
+        color: $white;
+        transition: color $duration-short $ease-default;
+
+        &:hover, &:active {
+            color: $brand;
+        }
     }
 }
