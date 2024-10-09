@@ -84,6 +84,9 @@ button {
     &-cover {
         object-fit: cover;
     }
+    &-contain {
+        object-fit: contain;
+    }
 }
 
 .barba-leave-active,
@@ -103,4 +106,8 @@ button {
 
 [data-modal] {
     cursor: pointer;
+}
+
+.visually-hidden {
+    @include visually-hidden();
 }
