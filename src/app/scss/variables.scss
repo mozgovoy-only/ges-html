@@ -31,3 +31,14 @@ $duration-fast: 0.4s;
 $duration-normal: 0.8s;
 
 // end durations
+
+// start z-index
+
+$zindex-absolute: 1000;
+$zindex-sticky: 1001;
+$zindex-fixed: 1002;
+$zindex-modal: 1003;
+$zindex-dropdown: 1004;
+$zindex-toast: 1005;
+
+// end z-index
