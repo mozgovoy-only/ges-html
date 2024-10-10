@@ -16,12 +16,17 @@
         width: remify(104);
         height: remify(27);
         margin-right: remify(16);
+
+    }
+
+    &__logo-inner {
+        color: $white;
         > svg {
-            color: $white;
             width: 100%;
             height: 100%;
         }
     }
+
     &__menu {
         margin: 0 auto;
     }
