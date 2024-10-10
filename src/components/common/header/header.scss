@@ -1,8 +1,16 @@
 .header {
     $root: &;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
+    position: absolute;
+    top: var(--offset-padding);
+    height: var(--header-height);
+    left: 0;
+    right: 0;
+    z-index: $zindex-absolute;
+
     &__logo {
         text-decoration: none;
         width: remify(104);
