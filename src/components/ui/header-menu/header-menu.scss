@@ -10,10 +10,10 @@
 
     &__item-link {
         color: $white;
-        transition: color $duration-short $ease-default;
+        transition: opacity $duration-short $ease-default;
 
         &:hover, &:active {
-            color: $brand;
+            opacity: 0.6;
         }
     }
 }

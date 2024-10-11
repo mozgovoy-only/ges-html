@@ -1,17 +1,25 @@
 .header {
     $root: &;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    align-items: center;
-    position: absolute;
-    top: var(--offset-padding);
+    position: fixed;
+    top: 0;
     height: var(--header-height);
     left: 0;
     right: 0;
-    z-index: $zindex-absolute;
+    z-index: $zindex-fixed;
+    padding-top: var(--offset-padding);
 
-    &__logo {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        max-width: remify(1440);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    &__content-logo {
         text-decoration: none;
         width: remify(104);
         height: remify(27);
@@ -19,7 +27,7 @@
 
     }
 
-    &__logo-inner {
+    &__content-logo-inner {
         color: $white;
         > svg {
             width: 100%;
@@ -27,7 +35,7 @@
         }
     }
 
-    &__menu {
+    &__content-menu {
         margin: 0 auto;
     }
 }
