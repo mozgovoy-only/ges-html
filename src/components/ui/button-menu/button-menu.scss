@@ -1,0 +1,35 @@
+.button-menu {
+    $root: &;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background $duration-short $ease-default;
+    background: $brand;
+    border: 0;
+    color: $white;
+    border-radius: 50%;
+    padding: 0;
+    width: remify(50);
+    height: remify(50);
+    flex-direction: column;
+
+    &__stroke {
+        height: 2px;
+        width: 40%;
+        background: $white;
+        transition: color $duration-short $ease-default;
+        margin-top: remify(6);
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        #{$root}:hover & {
+            background: $brand;
+        }
+    }
+
+    &:hover {
+        background: $white;
+    }
+}
