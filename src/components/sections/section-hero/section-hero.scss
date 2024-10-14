@@ -2,12 +2,14 @@
     $root: &;
     display: flex;
     width: 100%;
-    overflow-x: hidden;
     padding: var(--offset-padding) var(--offset-padding) 0;
     margin-bottom:  remify(60);
+
     &__container {
+        overflow-x: hidden;
         width: 100%;
         background: $main-blue;
         min-height: var(--header-height);
+        border-radius: $border-radius-sm;
     }
 }

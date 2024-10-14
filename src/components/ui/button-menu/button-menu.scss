@@ -23,13 +23,9 @@
         &:first-child {
             margin-top: 0;
         }
-
-        #{$root}:hover & {
-            background: $main-blue;
-        }
     }
 
     &:hover {
-        background: $white;
+        background: $blue-hover-only;
     }
 }
