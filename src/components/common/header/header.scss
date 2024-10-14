@@ -19,23 +19,29 @@
         height: 100%;
         align-items: center;
     }
+
     &__content-logo {
         text-decoration: none;
-        width: remify(104);
-        height: remify(27);
+
         margin-right: remify(16);
+        padding:  remify(16) remify(20)  remify(14);
+        background: $white;
+        border-radius: remify(56);
+        display: flex;
+        align-items: center;
 
     }
 
     &__content-logo-inner {
-        color: $white;
+        color: $brand   ;
         > svg {
-            width: 100%;
-            height: 100%;
+            width: remify(77);
+            height: remify(20);
         }
     }
 
     &__content-menu {
+        display: none;
         margin: 0 auto;
     }
 }

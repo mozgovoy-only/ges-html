@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    --header-height: #{remify(56)};
+    --header-height: #{remify(70)};
     --offset-padding: #{remify(6)};
     position: relative;
     //height: 100%;
@@ -28,7 +28,7 @@ body {
     }
 
     @include media-breakpoint-up(md) {
-        --header-height: #{remify(77)};
+        --header-height: #{remify(83)};
         --offset-padding: #{remify(11)};
     }
 
