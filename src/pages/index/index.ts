@@ -1,8 +1,12 @@
 import { ITransitionData } from '@barba/core/dist/core/src/defs';
 import Component from '@/base/component';
+import SectionHero from '@/components/sections/section-hero/section-hero';
+import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
+    'section-hero': SectionHero,
+    'block-hero-slider': BlockHeroSlider
 };
 
 export default {

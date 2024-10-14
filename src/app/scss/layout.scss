@@ -96,6 +96,17 @@ button {
     position: relative;
 }
 
+.layout-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+    &__content {
+        flex-grow: 1;
+    }
+}
+
 .object-fit {
     &-cover {
         object-fit: cover;

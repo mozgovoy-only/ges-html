@@ -10,6 +10,8 @@ html(lang="ru")
             block title
 
     body(data-barba="wrapper")
-        +header
-        block content
-        +footer({ data: dataJson.footer })
+        .layout-main
+            +header
+            .layout-main__content
+                block content
+            +footer({ data: dataJson.footer })
