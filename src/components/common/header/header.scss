@@ -22,9 +22,9 @@
 
     &__content-logo {
         text-decoration: none;
-
+        line-height: 0;
         margin-right: remify(16);
-        padding:  remify(16) remify(20)  remify(14);
+        padding: remify(16) remify(20) remify(14);
         background: $white;
         border-radius: remify(56);
         display: flex;
@@ -33,7 +33,7 @@
     }
 
     &__content-logo-inner {
-        color: $brand   ;
+        color: $main-blue;
         > svg {
             width: remify(77);
             height: remify(20);
