@@ -2,11 +2,17 @@ import { ITransitionData } from '@barba/core/dist/core/src/defs';
 import Component from '@/base/component';
 import SectionHero from '@/components/sections/section-hero/section-hero';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
+import SectionMain from '@/components/sections/section-main/section-main';
+import BlockHeading from '@/components/blocks/block-heading/block-heading';
+import TitleMain from '@/components/ui/title-main/title-main';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-hero': SectionHero,
-    'block-hero-slider': BlockHeroSlider
+    'block-hero-slider': BlockHeroSlider,
+    'section-main': SectionMain,
+    'block-heading': BlockHeading,
+    'title-main': TitleMain
 };
 
 export default {

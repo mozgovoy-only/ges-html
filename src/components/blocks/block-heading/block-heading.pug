@@ -1,0 +1,9 @@
+mixin block-heading(props)
+    .block-heading&attributes(attributes)(data-component='block-heading')
+        if props.textIndent
+            span.block-heading__indent=props.textIndent
+        .block-heading__content
+            if props.title
+                +title-main(props.title)
+            if props.text
+                .block-heading__content-text=props.text
