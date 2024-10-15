@@ -1,3 +1,68 @@
 .block-heading {
     $root: &;
+    display: flex;
+    flex-direction: column;
+    padding: 0 remify(20);
+    position: relative;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        padding: 0;
+    }
+
+    &__indent {
+        width: 100%;
+        display: flex;
+        @include rem-adaptive-font(14, 14, 16, 16);
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: remify(25);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(30);
+            max-width: 62.75%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+            z-index: 1;
+            position: absolute;
+            left: remify(40);
+            top: 0;
+            max-width: none;
+            width: auto;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            left: remify(50);
+        }
+
+        &::before {
+            content: "";
+            width: remify(8);
+            height: remify(8);
+            margin-top: remify(2.5);
+            margin-right: remify(5);
+            background: $main-blue;
+            border-radius: 50%;
+        }
+    }
+    &__content {
+        width: 100%;
+        margin-bottom: remify(40);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(50);
+            max-width: 62.75%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(55);
+            max-width: 46.56%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+        }
+    }
 }
