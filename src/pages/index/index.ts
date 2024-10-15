@@ -5,6 +5,7 @@ import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-sl
 import SectionMain from '@/components/sections/section-main/section-main';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import TitleMain from '@/components/ui/title-main/title-main';
+import ButtonMain from '@/components/ui/button-main/button-main';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -12,7 +13,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-hero-slider': BlockHeroSlider,
     'section-main': SectionMain,
     'block-heading': BlockHeading,
-    'title-main': TitleMain
+    'title-main': TitleMain,
+    'button-main': ButtonMain
 };
 
 export default {

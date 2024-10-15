@@ -1,9 +1,9 @@
 mixin button-main(props)
-    if props.link
+    if props.href
         a.button-main&attributes(attributes)(
             data-component='button-main',
-            href=props.link,
-        )=props.text
+            href=props.href,
+        )!=props.text
     else
         button.button-main&attributes(attributes)(
             data-component='button-main',

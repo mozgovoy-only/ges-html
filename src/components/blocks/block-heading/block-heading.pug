@@ -7,3 +7,6 @@ mixin block-heading(props)
                 +title-main(props.title)
             if props.text
                 .block-heading__content-text=props.text
+            if props.linkText && props.href
+                .block-heading__content-link
+                    +button-main({ text: props.linkText, href: props.href })
