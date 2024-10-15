@@ -1,3 +1,56 @@
 .button-main {
     $root: &;
+    --button-main-color: #{$white};
+    --button-main-color-hover: #{$main-blue};
+    --button-main-color-active: #{$main-blue};
+    --button-main-bg: #{$main-blue};
+    --button-main-bg-hover: #{$white};
+    --button-main-bg-active: #{$white};
+    --button-main-border-width: 0;
+    --button-main-border-color: transparent;
+    --button-main-border-color-hover: transparent;
+    --button-main-border-color-active: transparent;
+    --button-main-border-disabled-opacity: 0.4;
+    --button-main-padding-x: #{remify(24)};
+    --button-main-padding-y: #{remify(16)};
+    text-transform: uppercase;
+
+    color: var(--button-main-color);
+    border: var(--button-main-border-width) solid
+        var(--button-main-border-color);
+    font-family: $font-tt-firs-neue;
+    line-height: $letter-height-second;
+    padding: var(--button-main-padding-y) var(--button-main-padding-x);
+    border-radius: remify(100);
+    background-color: var(--button-main-bg);
+    transition: color $duration-fast $ease-default,
+        border-color $duration-fast $ease-default,
+        background-color $duration-fast $ease-default;
+    display: inline-block;
+
+    @include rem-adaptive-font(14, 14, 16, 16);
+
+    @include media-breakpoint-up(xl) {
+        --button-main-padding-x: #{remify(26)};
+        --button-main-padding-y: #{remify(18)};
+    }
+
+    &:hover {
+        color: var(--button-main-color-hover);
+        background-color: var(--button-main-bg-hover);
+        border-color: var(--button-main-border-color-hover);
+    }
+
+    &:active,
+    &.is-active {
+        color: var(--button-main-color-active);
+        background-color: var(--button-main-bg-active);
+        border-color: var(--button-main-border-color-active);
+    }
+
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+        opacity: var(--button-main-border-disabled-opacity);
+    }
 }
