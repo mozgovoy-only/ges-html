@@ -35,6 +35,37 @@
         --button-main-padding-y: #{remify(18)};
     }
 
+    &--sm {
+        --button-main-padding-x: #{remify(16)};
+        --button-main-padding-y: #{remify(12)};
+        @include rem-adaptive-font(12, 12, 14, 14);
+
+        @include media-breakpoint-up(xl) {
+            --button-main-padding-x: #{remify(18)};
+            --button-main-padding-y: #{remify(14)};
+        }
+    }
+
+    &--lg {
+        --button-main-padding-x: #{remify(30)};
+        --button-main-padding-y: #{remify(18)};
+        @include rem-adaptive-font(16, 16, 18, 18);
+
+        @include media-breakpoint-up(xl) {
+            --button-main-padding-x: #{remify(32)};
+            --button-main-padding-y: #{remify(20)};
+        }
+    }
+
+    &--white {
+        --button-main-color: #{$main-blue};
+        --button-main-color-hover: #{$white};
+        --button-main-color-active: #{$white};
+        --button-main-bg: #{$white};
+        --button-main-bg-hover: #{$main-blue};
+        --button-main-bg-active: #{$main-blue};
+    }
+
     &:hover {
         color: var(--button-main-color-hover);
         background-color: var(--button-main-bg-hover);
