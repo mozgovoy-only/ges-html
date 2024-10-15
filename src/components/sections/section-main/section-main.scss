@@ -1,0 +1,5 @@
+.section-main {
+    $root: &;
+    display: flex;
+    flex-direction: column;
+}
