@@ -17,6 +17,9 @@ html {
 body {
     --header-height: #{remify(70)};
     --offset-padding: #{remify(6)};
+    line-height: $line-height-base;
+    color: $color-base;
+    font-size: $font-size-base;
     position: relative;
     //height: 100%;
     padding: 0;
