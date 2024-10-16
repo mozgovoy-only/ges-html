@@ -1,0 +1,5 @@
+mixin section-project-list(props)
+    .section-project-list&attributes(attributes)(data-component='section-project-list')
+        .section-project-list__grid
+            each card in props.cards
+                +card-project(card)
