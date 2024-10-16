@@ -5,12 +5,14 @@ block title
 
 block content
     main(data-barba="container" data-barba-namespace="common" data-page-namespace="index")
-        +section-hero()
-            +block-hero-slider()
-        +section-main()
-            +block-heading({
-                textIndent: 'о компании',
-                title: 'GES Construction – <span class="title-main__inner">высококвалифицированные профессионалы</span>, стремящиеся к достижению превосходства',
-                linkText: 'о компании',
-                href: '/company'
-            })
+        +section-hero
+            +block-hero-slider
+        +section-main
+            .section-main__heading
+                +block-heading(dataJson.blockHeading.index.company)
+            .section-main__content
+        +section-main
+            .section-main__heading
+                +block-heading(dataJson.blockHeading.index.project)
+            .section-main__content
+                +block-project(dataJson.blockProject.index)
