@@ -138,3 +138,11 @@ button {
 .visually-hidden {
     @include visually-hidden();
 }
+
+.picture {
+    display: inline-block;
+    > img {
+        height: auto;
+        max-width: 100%;
+    }
+}
