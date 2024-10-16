@@ -4,4 +4,46 @@
     flex-direction: column;
     margin: 0 auto;
     max-width: remify(1920);
+    padding: 0 remify(20);
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 remify(40);
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 remify(50);
+    }
+
+    &__heading {
+        padding-top: remify(60);
+        margin-bottom: remify(40);
+
+        @include media-breakpoint-up(md) {
+            padding-top: remify(80);
+            margin-bottom: remify(50);
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: remify(100);
+            margin-bottom: remify(55);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-top: remify(120);
+            margin-bottom: remify(70);
+            max-width: remify(1440);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__content {
+        @include media-breakpoint-up(lg) {
+            max-width: remify(998);
+            margin: 0 auto;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: remify(1116);
+        }
+    }
 }
