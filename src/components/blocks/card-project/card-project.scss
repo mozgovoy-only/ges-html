@@ -1,0 +1,27 @@
+.card-project {
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    &__top, &__bottom, &__image {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-title {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1;
+        @include rem-adaptive-font(28, 32, 36, 40);
+        color: $main-blue;
+        transition: color $duration-fast $ease-default;
+        margin-bottom: remify(15 );
+
+        #{$root}:hover & {
+            color: $blue-hover-only;
+        }
+    }
+}
