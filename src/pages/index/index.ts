@@ -11,6 +11,7 @@ import CardProject from '@/components/blocks/card-project/card-project';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
 import TextIndent from '@/components/ui/text-indent/text-indent';
+import TextLabel from '@/components/ui/text-label/text-label';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -25,6 +26,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'title-main': TitleMain,
     'button-main': ButtonMain,
     'text-indent': TextIndent,
+    'text-label': TextLabel
 };
 
 export default {

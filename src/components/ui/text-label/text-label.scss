@@ -1,0 +1,17 @@
+.text-label {
+    $root: &;
+    border: 1px solid $white-50;
+    border-radius: remify(80);
+    text-transform: uppercase;
+    font-size: rem(14);
+    color: $white;
+
+    &--white {
+        border-color: $white;
+    }
+
+    &--dark {
+        color: $black-60;
+        border-color: $black-60;
+    }
+}

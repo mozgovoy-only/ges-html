@@ -162,11 +162,21 @@
         position: absolute;
         top: remify(15);
         left: remify(15);
-        border: 1px solid $white-50;
-        border-radius: remify(80);
-        text-transform: uppercase;
-        font-size: rem(14);
-        color: $white;
+
+        @include media-breakpoint-up(md) {
+            top: remify(20);
+            left: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: remify(30);
+            left: remify(30);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            top: remify(35);
+            left: remify(35);
+        }
     }
 
     &__image-icon {
