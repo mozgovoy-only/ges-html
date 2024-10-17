@@ -1,0 +1,14 @@
+.section-about {
+    $root: &;
+    max-width: remify(1920);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 remify(6);
+    &__content {
+        position: relative;
+        border-radius: $border-radius;
+        @include media-breakpoint-up(md) {
+            border-radius: $border-radius-lg;
+        }
+    }
+}

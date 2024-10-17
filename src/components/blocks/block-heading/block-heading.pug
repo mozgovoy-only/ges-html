@@ -1,7 +1,8 @@
 mixin block-heading(props)
     .block-heading&attributes(attributes)(data-component='block-heading')
         if props.textIndent
-            span.block-heading__indent=props.textIndent
+            .block-heading__indent
+                +text-indent({ text: props.textIndent })
         .block-heading__content
             if props.title
                 +title-main(props.title)

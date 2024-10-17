@@ -39,11 +39,19 @@
     }
     &__content {
         width: 100%;
+        margin-bottom: remify(60);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(80);
+        }
         @include media-breakpoint-up(lg) {
             max-width: remify(998);
             margin: 0 auto;
         }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(100);
+        }
         @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(120);
             max-width: remify(1116);
         }
     }

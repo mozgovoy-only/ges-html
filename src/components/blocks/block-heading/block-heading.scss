@@ -9,9 +9,7 @@
     &__indent {
         width: 100%;
         display: flex;
-        @include rem-adaptive-font(14, 14, 16, 16);
-        line-height: 1;
-        text-transform: uppercase;
+
         margin-bottom: remify(25);
 
         @include media-breakpoint-up(md) {
@@ -27,16 +25,6 @@
             top: 0;
             max-width: none;
             width: auto;
-        }
-
-        &::before {
-            content: "";
-            width: remify(8);
-            height: remify(8);
-            margin-top: remify(2.5);
-            margin-right: remify(5);
-            background: $main-blue;
-            border-radius: 50%;
         }
     }
 

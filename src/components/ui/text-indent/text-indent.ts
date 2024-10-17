@@ -1,10 +1,10 @@
 import Component, { ComponentProps } from '@/base/component';
 
-type SectionWideOptions = {
+type TextIndentOptions = {
 
 }
 
-export default class SectionWide extends Component<HTMLElement, SectionWideOptions> {
+export default class TextIndent extends Component<HTMLElement, TextIndentOptions> {
     constructor(element: ComponentProps<HTMLElement>) {
         super(element);
     }

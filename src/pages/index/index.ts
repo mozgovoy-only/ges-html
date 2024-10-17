@@ -1,26 +1,28 @@
 import { ITransitionData } from '@barba/core/dist/core/src/defs';
 import Component from '@/base/component';
 import SectionHero from '@/components/sections/section-hero/section-hero';
-import SectionWide from '@/components/sections/section-wide/section-wide';
 import SectionMain from '@/components/sections/section-main/section-main';
+import SectionAbout from '@/components/sections/section-about/section-about';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProject from '@/components/blocks/block-project/block-project';
 import CardProject from '@/components/blocks/card-project/card-project';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
+import TextIndent from '@/components/ui/text-indent/text-indent';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-hero': SectionHero,
     'section-main': SectionMain,
-    'section-wide': SectionWide,
+    'section-about': SectionAbout,
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
     'block-project': BlockProject,
     'card-project': CardProject,
     'title-main': TitleMain,
     'button-main': ButtonMain,
+    'text-indent': TextIndent,
 };
 
 export default {

@@ -1,0 +1,23 @@
+.text-indent {
+    $root: &;
+    @include rem-adaptive-font(14, 14, 16, 16);
+    text-transform: uppercase;
+    font-family: $font-tt-firs-neue;
+    line-height: $letter-height-second;
+    display: flex;
+    &::before {
+        content: "";
+        width: remify(8);
+        height: remify(8);
+        margin-top: remify(2);
+        margin-right: remify(6);
+        background: $main-blue;
+        border-radius: 50%;
+    }
+    &--white {
+        color: $white;
+        &::before {
+            background: $white;
+        }
+    }
+}
