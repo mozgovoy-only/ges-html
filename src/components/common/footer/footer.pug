@@ -5,4 +5,8 @@ mixin footer(props)
             .footer__left-button
                 +button-main({ text: 'связаться с нами' })(class="button-main--white")
         .footer__right
+            .footer__right-logo
+                +svg('logo')
+            .footer__right-menu
+                +footer-menu
 
