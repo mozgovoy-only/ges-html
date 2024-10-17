@@ -10,7 +10,7 @@
         padding: 0 remify(40);
     }
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(xxl) {
         padding: 0 remify(50);
     }
 
@@ -38,6 +38,7 @@
         }
     }
     &__content {
+        width: 100%;
         @include media-breakpoint-up(lg) {
             max-width: remify(998);
             margin: 0 auto;

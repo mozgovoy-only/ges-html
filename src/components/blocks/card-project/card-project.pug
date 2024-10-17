@@ -10,10 +10,14 @@ mixin card-project(props)
                     src: props.src
                 }
             })
+            .card-project__image-icon
+                +svg('card-project-arrow')
+            if props.status
+                .card-project__image-status=props.status
         .card-project__bottom
             .card-project__bottom-col
                 .card-project__bottom-col-title Общая площадь
-                .card-project__bottom-col-area=props.area
+                .card-project__bottom-col-text=props.area
             .card-project__bottom-col
                 .card-project__bottom-col-title Период строительства
-                .card-project__bottom-col-date=props.date
+                .card-project__bottom-col-text=props.date
