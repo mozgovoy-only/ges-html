@@ -1,5 +1,77 @@
 .footer {
     $root: &;
-    background-color: #000;
-    color: white;
+    max-width: remify(1920);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--offset-padding) remify(29);
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: remify(12);
+    }
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-bottom: remify(14);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-bottom: remify(20);
+    }
+    &__left,
+    &__right {
+        width: 100%;
+    }
+    &__left {
+        margin-bottom: remify(8);
+        border-radius: $border-radius;
+        background-color: $main-blue;
+        padding: remify(30) remify(24);
+        background-image: url("../../assets/images/bg/footer.svg");
+        background-repeat: no-repeat;
+        background-position: remify(55) remify(37);
+        background-size: remify(750) remify(390);
+        @include media-breakpoint-up(md) {
+            background-position: remify(320) center;
+            background-size: remify(840) remify(450);
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: calc(25.5% - #{remify(8)});
+            flex-basis: calc(25.5% - #{remify(8)});
+            background-position: remify(35) remify(85);
+            background-size: remify(540) remify(300);
+            height: 100%;
+            padding: remify(35) remify(24);
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: remify(40) remify(24);
+        }
+    }
+    &__right {
+        padding: remify(30) remify(24);
+        border-radius: $border-radius;
+        background-color: $white;
+        @include media-breakpoint-up(lg) {
+            max-width: calc(74.5% - #{remify(8)});
+            flex-basis: calc(74.5% - #{remify(8)});
+        }
+    }
+    &__left-title {
+        margin-bottom: remify(20);
+        color: $white;
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1;
+        @include rem-adaptive-font(24, 24, 28, 32);
+    }
+
+    &__left-button {
+        display: flex;
+        flex-direction: column;
+    }
 }

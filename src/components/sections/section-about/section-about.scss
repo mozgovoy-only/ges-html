@@ -3,18 +3,7 @@
     max-width: remify(1920);
     width: 100%;
     margin: 0 auto;
-    padding: 0 remify(6);
-    @include media-breakpoint-up(md) {
-        padding: 0 remify(10);
-    }
-
-    @include media-breakpoint-up(xl) {
-        padding: 0 remify(16);
-    }
-
-    @include media-breakpoint-up(xxl) {
-        padding: 0 remify(18);
-    }
+    padding: 0 var(--offset-padding);
 
     &__content {
         position: relative;

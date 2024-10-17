@@ -1,4 +1,8 @@
 mixin footer(props)
     .footer&attributes(attributes)
-        p footer
+        .footer__left
+            .footer__left-title Ответим на ваши </br> вопросы
+            .footer__left-button
+                +button-main({ text: 'связаться с нами' })(class="button-main--white")
+        .footer__right
 
