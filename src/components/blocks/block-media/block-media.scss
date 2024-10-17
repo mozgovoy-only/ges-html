@@ -11,9 +11,18 @@
         flex: 0 0 auto;
         flex-basis: 100%;
         max-width: 100%;
+        min-height: remify(300);
         margin-top: var(--block-media-gap);
         padding-right: calc(0.5 * var(--block-media-gap));
         padding-left: calc(0.5 * var(--block-media-gap));
+
+        @include media-breakpoint-up(md) {
+            min-height: remify(400);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            min-height: remify(450);
+        }
     }
     &__left {
         @include media-breakpoint-up(md) {

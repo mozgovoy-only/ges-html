@@ -1,8 +1,8 @@
 mixin block-media(props)
     .block-media&attributes(attributes)(data-component='block-media')
         .block-media__left
-            +card-media({ labelClassList: 'text-label--white' })(class='card-media--white')
+            +card-media(props.cardLeft)(class='card-media--white')
         .block-media__right
-            +card-media({ labelClassList: 'text-label--dark' })
+            +card-media(props.cardRight)
 
 

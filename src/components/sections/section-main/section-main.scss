@@ -45,7 +45,8 @@
         }
         @include media-breakpoint-up(lg) {
             max-width: remify(998);
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         @include media-breakpoint-up(xl) {
             margin-bottom: remify(100);
