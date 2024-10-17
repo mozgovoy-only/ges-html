@@ -8,12 +8,34 @@
         grid-template-columns: 49% 51%;
         grid-template-rows: auto auto;
     }
-
-    @include media-breakpoint-up(xxl) {
-        grid-template-columns: 57.5% 42.5%;
+    @include media-breakpoint-up(xl) {
+        grid-template-columns: 59% 41%;
     }
-    &--revert {
+    @include media-breakpoint-up(xxl) {
+        grid-template-columns: 59.5% 40.5%;
+    }
 
+    &--revert {
+        @include media-breakpoint-up(md) {
+            grid-template-columns: 51% 49%;
+        }
+        @include media-breakpoint-up(xl) {
+            grid-template-columns:  41% 59%;
+        }
+        @include media-breakpoint-up(xxl) {
+            grid-template-columns: 40.5% 59.5%;
+        }
+    }
+    &--small {
+        @include media-breakpoint-up(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-up(xl) {
+            grid-template-columns:  1fr 1fr;
+        }
+        @include media-breakpoint-up(xxl) {
+            grid-template-columns:  1fr 1fr;
+        }
     }
     &__top,
     &__bottom,
@@ -25,7 +47,7 @@
         display: flex;
         flex-direction: column;
         @include media-breakpoint-up(md) {
-          padding-left: remify(30);
+            padding-left: remify(30);
         }
 
         @include media-breakpoint-up(xxl) {
@@ -80,7 +102,6 @@
         @include media-breakpoint-up(md) {
             grid-row: 1 / 3;
             margin-bottom: 0;
-
         }
         #{$root}--revert & {
             @include media-breakpoint-up(md) {
@@ -106,11 +127,25 @@
             border-radius: $border-radius;
         }
 
-
         @include media-breakpoint-up(xxl) {
             padding-top: calc(460 / 666 * 100%);
         }
-
+        #{$root}--large & {
+            @include media-breakpoint-up(md) {
+                padding-top: calc(468 / 360 * 100%);
+            }
+            @include media-breakpoint-up(xxl) {
+                padding-top: calc(801 / 666 * 100%);
+            }
+        }
+        #{$root}--small & {
+            @include media-breakpoint-up(xl) {
+                padding-top: calc(371 / 394 * 100%);
+            }
+            @include media-breakpoint-up(xxl) {
+                padding-top: calc(417 / 441 * 100%);
+            }
+        }
         > img {
             position: absolute;
             top: 0;
@@ -183,14 +218,26 @@
         #{$root}--revert & {
             @include media-breakpoint-up(md) {
                 grid-column: 1 / 2;
+                padding-left: 0;
+                padding-right: remify(30);
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding-left: 0;
+                padding-right: remify(40);
             }
         }
     }
     &__bottom-col {
-        flex-basis: 49%;
-        max-width: 49%;
+        flex-basis: 45%;
+        max-width: 45%;
         display: flex;
         flex-direction: column;
+
+        &:last-child {
+            flex-basis: 55%;
+            max-width: 55%;
+        }
     }
 
     &__bottom-col-title {

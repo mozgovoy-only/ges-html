@@ -17,5 +17,13 @@
     }
     &__item {
         margin-top: calc(1 * var(--block-project-gap-y));
+        &--offset-right {
+            @include media-breakpoint-up(xl) {
+                padding-right: remify(190);
+            }
+            @include media-breakpoint-up(xl) {
+                padding-right: remify(220);
+            }
+        }
     }
 }

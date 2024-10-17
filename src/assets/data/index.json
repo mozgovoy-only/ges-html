@@ -30,7 +30,8 @@
                 "src": "../../assets/images/section-project-list/2.jpg",
                 "area": "58 300 кв.м.",
                 "href": "/services/view",
-                "date": "2021 – 2023"
+                "date": "2021 – 2023",
+                "cardClassList": "card-project--revert card-project--large"
             },
             {
                 "title": "Южный речной вокзал",
@@ -38,7 +39,9 @@
                 "src": "../../assets/images/section-project-list/3.jpg",
                 "area": "5 637 кв.м.",
                 "href": "/services/view",
-                "date": "2021 – 2023"
+                "date": "2021 – 2023",
+                "itemClassList": "block-project__item--offset-right",
+                "cardClassList": "card-project--small"
             }
         ]
     }
