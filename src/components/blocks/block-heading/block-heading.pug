@@ -9,5 +9,5 @@ mixin block-heading(props)
             if props.text
                 .block-heading__content-text=props.text
             if props.linkText && props.href
-                .block-heading__content-link
+                .block-heading__content-button
                     +button-main({ text: props.linkText, href: props.href })

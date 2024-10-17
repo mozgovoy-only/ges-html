@@ -1,3 +1,17 @@
 mixin section-about(props)
     section.section-about&attributes(attributes)(data-component='section-about')
         .section-about__content
+            .section-about__content-description
+                .section-about__content-description-indent
+                    +text-indent({ text: 'карьера' })(class='text-indent--white')
+                .section-about__content-description-title Развивайтесь вместе с нами
+                .section-about__content-description-text Мы поддерживаем сотрудников в стремлении к профессиональному развитию. Ценим вклад каждого и предлагаем возможности для роста и обучения. Присоединяясь к нашей команде, вы становитесь частью коллектива, для которого честность и профессионализм —  неотъемлемые составляющие успеха
+                .section-about__content-description-button
+                    +button-main({ text: 'карьера', href: '/career' })(class='button-main--white')
+            .section-about__content-image
+                +picture({
+                    classList: 'section-about__content-image-picture',
+                    img: {
+                        src: '../../assets/images/section-about/1.jpg'
+                    }
+                })
