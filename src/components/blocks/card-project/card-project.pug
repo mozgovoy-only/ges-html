@@ -13,8 +13,8 @@ mixin card-project(props)
             .card-project__image-icon
                 +svg('card-project-arrow')
             if props.status
-                .card-project__image-status
-                    +text-label({ text: props.status })
+                .card-project__image-label
+                    +text-label({ text: props.textLabel })
         .card-project__bottom
             .card-project__bottom-col
                 .card-project__bottom-col-title Общая площадь

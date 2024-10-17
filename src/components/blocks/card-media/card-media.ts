@@ -1,10 +1,10 @@
 import Component, { ComponentProps } from '@/base/component';
 
-type BlockEventOptions = {
+type CardMediaOptions = {
 
 }
 
-export default class BlockEvent extends Component<HTMLElement, BlockEventOptions> {
+export default class CardMedia extends Component<HTMLElement, CardMediaOptions> {
     constructor(element: ComponentProps<HTMLElement>) {
         super(element);
     }

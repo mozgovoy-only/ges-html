@@ -8,27 +8,8 @@ html {
     //height: 100%;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
     --header-height: #{remify(70)};
     --offset-padding: #{remify(6)};
-    line-height: $line-height-base;
-    color: $color-base;
-    font-size: $font-size-base;
-    position: relative;
-    //height: 100%;
-    padding: 0;
-    margin: 0;
-    -webkit-tap-highlight-color: transparent;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
 
     @include media-breakpoint-up(md) {
         --header-height: #{remify(83)};
@@ -42,6 +23,26 @@ body {
     @include media-breakpoint-up(xxl) {
         --header-height: #{remify(98)};
         --offset-padding: #{remify(18)};
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    line-height: $line-height-base;
+    color: $color-base;
+    font-size: $font-size-base;
+    position: relative;
+    //height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 

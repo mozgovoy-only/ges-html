@@ -6,8 +6,9 @@ import SectionAbout from '@/components/sections/section-about/section-about';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProject from '@/components/blocks/block-project/block-project';
-import BlockEvent from '@/components/blocks/block-event/block-event';
+import BlockMedia from '@/components/blocks/block-media/block-media';
 import CardProject from '@/components/blocks/card-project/card-project';
+import CardMedia from '@/components/blocks/card-media/card-media';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
 import TextIndent from '@/components/ui/text-indent/text-indent';
@@ -21,8 +22,9 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
     'block-project': BlockProject,
-    'block-event': BlockEvent,
+    'block-media': BlockMedia,
     'card-project': CardProject,
+    'card-media': CardMedia,
     'title-main': TitleMain,
     'button-main': ButtonMain,
     'text-indent': TextIndent,

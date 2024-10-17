@@ -1,0 +1,7 @@
+mixin card-media(props)
+    .card-media&attributes(attributes)(data-component='card-media')
+        .card-media__heading
+            .card-media__heading-label
+                +text-label({ text: 'статья' })(class=props.labelClassList)
+            .card-media__heading-date 25.08.2024
+        .card-media__text Южный речной вокзал получил новую жизнь после реконструкции
