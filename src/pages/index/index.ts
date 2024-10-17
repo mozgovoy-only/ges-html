@@ -6,6 +6,7 @@ import SectionAbout from '@/components/sections/section-about/section-about';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProject from '@/components/blocks/block-project/block-project';
+import BlockEvent from '@/components/blocks/block-event/block-event';
 import CardProject from '@/components/blocks/card-project/card-project';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
@@ -19,6 +20,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
     'block-project': BlockProject,
+    'block-event': BlockEvent,
     'card-project': CardProject,
     'title-main': TitleMain,
     'button-main': ButtonMain,
