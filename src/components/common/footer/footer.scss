@@ -10,10 +10,12 @@
     @include media-breakpoint-up(md) {
         padding-bottom: remify(12);
     }
+
     @include media-breakpoint-up(lg) {
         flex-direction: row;
         justify-content: space-between;
     }
+
     @include media-breakpoint-up(xl) {
         padding-bottom: remify(14);
     }
@@ -21,12 +23,15 @@
     @include media-breakpoint-up(xxl) {
         padding-bottom: remify(20);
     }
+
     &__left,
     &__right {
         width: 100%;
         max-width: 100%;
     }
     &__left {
+        display: flex;
+        flex-direction: column;
         margin-bottom: remify(8);
         border-radius: $border-radius;
         background-color: $main-blue;
@@ -45,11 +50,11 @@
             flex-basis: calc(25.5% - #{remify(8)});
             background-position: remify(35) remify(85);
             background-size: remify(540) remify(300);
-            height: 100%;
             padding: remify(35) remify(24);
+            margin-bottom: 0;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xxl) {
             padding: remify(40) remify(24);
         }
     }
@@ -64,6 +69,7 @@
     }
 
     &__left-button {
+        margin-top: auto;
         display: flex;
         flex-direction: column;
     }
@@ -72,6 +78,8 @@
         padding: remify(30) remify(24);
         border-radius: $border-radius;
         background-color: $white;
+        display: flex;
+        flex-wrap: wrap;
         @include media-breakpoint-up(lg) {
             max-width: calc(74.5% - #{remify(8)});
             flex-basis: calc(74.5% - #{remify(8)});
@@ -96,5 +104,45 @@
     &__right-menu  {
         width: 100%;
         max-width: 100%;
+        margin-bottom: remify(50);
+    }
+
+    &__right-text {
+        padding-right: remify(14);
+        margin-bottom: remify(25);
+        max-height: remify(35);
+        overflow-y: auto;
+        color: $black-60;
+        line-height: 1.2;
+        font-size: remify(12);
+    }
+    &__right-info-copyright,  &__right-info-politic {
+        line-height: 1.2;
+        font-size: remify(12);
+    }
+
+    &__right-info-politic {
+        transition: color $duration-short $ease-default;
+        &:hover {
+            color: $black-60;
+        }
+    }
+
+    &__right-info-copyright {
+        margin-bottom: remify(12);
+        @include media-breakpoint-up(lg) {
+            margin-bottom: remify(15);
+        }
+    }
+    &__right-dev {
+        width: remify(96);
+        height: remify(14);
+        align-self: flex-end;
+        margin-left: auto;
+        margin-bottom: remify(3);
+        > svg {
+            width: 100%;
+            height: 100%;
+        }
     }
 }

@@ -35,4 +35,4 @@ mixin footer-menu(props)
     ul.footer-menu&attributes(attributes)(data-component='footer-menu')
         each item in menuList
             li.footer-menu__item
-                a.footer-menu__item(href=item.href)=item.title
+                a.footer-menu__item-link(href=item.href)=item.title
