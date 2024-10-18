@@ -3,8 +3,30 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
+    gap: remify(8);
+
+    @include media-breakpoint-up(md) {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-up(xl) {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     &__item {
         min-height: remify(300);
+        @include media-breakpoint-up(xl) {
+            min-height: remify(368);
+        }
+        &:nth-child(2) {
+            @include media-breakpoint-up(md) {
+                grid-row: 1 / 3;
+            }
+            @include media-breakpoint-up(xl) {
+                grid-row: auto;
+            }
+        }
     }
 }
