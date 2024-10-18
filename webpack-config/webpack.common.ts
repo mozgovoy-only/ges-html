@@ -92,6 +92,18 @@ const config: Configuration =  {
                 use: {
                     loader: 'file-loader',
                     options: {
+                        name: '[name].[ext]',
+                        outputPath: 'assets/img',
+                        publicPath: '../assets/img',
+                    },
+                },
+                include: [path.join(__dirname, '..', 'src', 'assets', 'img')],
+            },
+            {
+                test: /\.(png|jpe?g|avif|webp|gif|svg)$/i,
+                use: {
+                    loader: 'file-loader',
+                    options: {
                         name: 'assets/images/[name].[hash:8].[ext]',
                     },
                 },
