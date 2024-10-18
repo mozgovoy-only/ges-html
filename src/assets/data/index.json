@@ -20,6 +20,29 @@
             "href": "/news"
         }
     },
+    "blockStatistic": {
+        "cards": [
+            {
+                "number": ">20",
+                "topText": "лет",
+                "bottomText": "опыта работы руководящего состава компании на строительном рынке"
+            },
+            {
+                "number": "110",
+                "topText": "тыс. кв.м.",
+                "bottomText": "площадь построенных жилых комплексов бизнес и премиум класса",
+                "cardClassList": "card-statistic--white",
+                "src": "../../assets/images/card-statistic/1.jpg"
+            },
+            {
+                "number": ">5",
+                "topText": "млрд. USD ",
+                "bottomText": "общий управляемый бюджет руководящего состава компании в других организациях",
+                "cardClassList": "card-statistic--bg-secondary"
+            }
+        ]
+
+    },
     "blockProject": {
         "cards": [
             {

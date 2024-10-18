@@ -1,3 +1,10 @@
 .block-statistic {
     $root: &;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+
+    &__item {
+        min-height: remify(300);
+    }
 }
