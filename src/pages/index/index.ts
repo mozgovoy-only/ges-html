@@ -11,6 +11,7 @@ import BlockStatistic from '@/components/blocks/block-statistic/block-statistic'
 import CardProject from '@/components/blocks/card-project/card-project';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
+import SlideHero from '@/components/blocks/slide-hero/slide-hero';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
 import TextIndent from '@/components/ui/text-indent/text-indent';
@@ -29,6 +30,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'card-project': CardProject,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
+    'slide-hero': SlideHero,
     'title-main': TitleMain,
     'button-main': ButtonMain,
     'text-indent': TextIndent,
