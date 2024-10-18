@@ -55,7 +55,7 @@
         }
 
         @include media-breakpoint-up(xxl) {
-            padding: remify(40) remify(24);
+            padding: remify(40) remify(32) remify(32);
         }
     }
 
@@ -84,12 +84,33 @@
             max-width: calc(74.5% - #{remify(8)});
             flex-basis: calc(74.5% - #{remify(8)});
         }
+
+        @include media-breakpoint-up(xl) {
+            padding: remify(45) remify(24) remify(24);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: remify(50) remify(32) remify(32);
+        }
     }
 
     &__right-logo {
         width: 100%;
         max-width: 100%;
         margin-bottom: remify(45);
+        @include media-breakpoint-up(lg) {
+            max-width: 20%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: remify(220);
+            margin-right: remify(50);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-right: remify(100);
+        }
+
         > svg {
             height: remify(27);
             width: remify(104);
@@ -101,10 +122,22 @@
         }
     }
 
-    &__right-menu  {
+    &__right-menu {
         width: 100%;
         max-width: 100%;
         margin-bottom: remify(50);
+        @include media-breakpoint-up(lg) {
+            max-width: 60%;
+            margin-left: auto;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: 45%;
+        }
     }
 
     &__right-text {
@@ -115,8 +148,39 @@
         color: $black-60;
         line-height: 1.2;
         font-size: remify(12);
+        @include media-breakpoint-up(lg) {
+            max-width: 37.5%;
+            order: 1;
+            margin-bottom: 0;
+            align-self: flex-end;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: 45%;
+        }
     }
-    &__right-info-copyright,  &__right-info-politic {
+    &__right-info {
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            max-width: 30%;
+            margin-right: auto;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: remify(220);
+            margin-right: remify(50);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-right: remify(100);
+        }
+    }
+    &__right-info-copyright,
+    &__right-info-politic {
         line-height: 1.2;
         font-size: remify(12);
     }
@@ -140,6 +204,10 @@
         align-self: flex-end;
         margin-left: auto;
         margin-bottom: remify(3);
+        @include media-breakpoint-up(lg) {
+            order: 2;
+            margin-bottom: 0;
+        }
         > svg {
             width: 100%;
             height: 100%;
