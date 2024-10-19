@@ -1,9 +1,12 @@
 mixin block-hero(props)
     .block-hero&attributes(attributes)(data-component='block-hero')
-        if src
+        if props.src
             .block-hero__image
                 +picture({
                     classList: 'block-hero__image-picture',
+                    img: {
+                        src: props.src
+                    }
                 })
-        .block-hero__title Работа в GES Construction
+        .block-hero__title=props.title
 
