@@ -1,17 +1,22 @@
 .section-hero {
     $root: &;
-    display: flex;
     width: 100%;
     padding: var(--offset-padding) var(--offset-padding) 0;
     margin-left: auto;
     margin-right: auto;
     max-width: remify(1920);
+    &__content {
+        margin-bottom: remify(60);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(80);
+        }
 
-    &__container {
-        overflow-x: hidden;
-        width: 100%;
-        background: $main-blue;
-        min-height: var(--header-height);
-        border-radius: $border-radius-sm;
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(100);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(120);
+        }
     }
 }
