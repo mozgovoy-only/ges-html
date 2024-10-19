@@ -1,0 +1,9 @@
+mixin block-hero(props)
+    .block-hero&attributes(attributes)(data-component='block-hero')
+        if src
+            .block-hero__image
+                +picture({
+                    classList: 'block-hero__image-picture',
+                })
+        .block-hero__title Работа в GES Construction
+
