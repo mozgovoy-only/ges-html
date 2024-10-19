@@ -10,6 +10,9 @@ mixin card-statistic(props)
                 })
         .card-statistic__content
             .card-statistic__content-top
-                .card-statistic__content-top-number=props.number
-                .card-statistic__content-top-text=props.topText
-            .card-statistic__content-bottom-text=props.bottomText
+                if props.number
+                    .card-statistic__content-top-number=props.number
+                if props.topText
+                    .card-statistic__content-top-text=props.topText
+            if props.bottomText
+                .card-statistic__content-bottom-text=props.bottomText
