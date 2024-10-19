@@ -9,9 +9,11 @@ import BlockProject from '@/components/blocks/block-project/block-project';
 import BlockMedia from '@/components/blocks/block-media/block-media';
 import BlockStatistic from '@/components/blocks/block-statistic/block-statistic';
 import BlockHero from '@/components/blocks/block-hero/block-hero';
+import BlockSolution from '@/components/blocks/block-solution/block-solution';
 import CardProject from '@/components/blocks/card-project/card-project';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
+import RowSolution from '@/components/blocks/row-solution/row-solution';
 import SlideHero from '@/components/blocks/slide-hero/slide-hero';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
@@ -29,9 +31,11 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-media': BlockMedia,
     'block-statistic': BlockStatistic,
     'block-hero': BlockHero,
+    'block-solution': BlockSolution,
     'card-project': CardProject,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
+    'row-solution': RowSolution,
     'slide-hero': SlideHero,
     'title-main': TitleMain,
     'button-main': ButtonMain,
