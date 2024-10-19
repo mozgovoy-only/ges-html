@@ -7,11 +7,7 @@ block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="career")
         +section-hero
             +block-hero(dataJson.career.blockHero)
-        +section-main
-            .section-main__heading
-                +block-heading(dataJson.career.blockHeading.workWithUs)
-            .section-main__content
-                +block-statistic(dataJson.career.blockStatistic)
-        +section-main
-            .section-main__heading
-                +block-heading(dataJson.career.blockHeading.valuation)
+        +section-main({ heading: dataJson.career.blockHeading.workWithUs })
+            +block-statistic(dataJson.career.blockStatistic)
+        +section-main({ heading: dataJson.career.blockHeading.valuation })
+

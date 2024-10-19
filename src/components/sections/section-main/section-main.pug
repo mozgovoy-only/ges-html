@@ -1,4 +1,12 @@
 mixin section-main(props)
     section.section-main&attributes(attributes)(data-component='section-main')
+        if props.heading
+            .section-main__heading
+                +block-heading(props.heading)
         if block
-            block
+            if props.inner
+                .section-main__inner
+                    block
+            else
+                .section-main__content
+                    block

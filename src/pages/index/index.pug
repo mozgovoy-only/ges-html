@@ -7,19 +7,10 @@ block content
     main(data-barba="container" data-barba-namespace="common" data-page-namespace="index")
         +section-hero
             +block-hero-slider
-        +section-main
-            .section-main__heading
-                +block-heading(dataJson.index.blockHeading.company)
-            .section-main__content
-                +block-statistic(dataJson.index.blockStatistic)
-        +section-main
-            .section-main__heading
-                +block-heading(dataJson.index.blockHeading.project)
-            .section-main__content
-                +block-project(dataJson.index.blockProject)
+        +section-main({ heading: dataJson.index.blockHeading.company })
+            +block-statistic(dataJson.index.blockStatistic)
+        +section-main({ heading: dataJson.index.blockHeading.project })
+            +block-project(dataJson.index.blockProject)
         +section-about(dataJson.index.sectionAbout)
-        +section-main
-            .section-main__heading
-                +block-heading(dataJson.index.blockHeading.media)
-            .section-main__content
-                +block-media(dataJson.index.blockMedia)
+        +section-main({ heading: dataJson.index.blockHeading.media })
+            +block-media(dataJson.index.blockMedia)
