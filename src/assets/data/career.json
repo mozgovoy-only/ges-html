@@ -1,0 +1,33 @@
+{
+    "blockHero": {
+        "title": "Работа в GES Construction",
+        "src": "../../assets/images/career.jpg"
+    },
+    "blockHeading": {
+        "workWithUs": {
+            "textIndent": "работа у нас",
+            "title": "Развивайтесь <span class=\"title-main__inner\">вместе с нами</span>",
+            "text": "Высококвалифицированные специалисты – один из ключевых ресурсов GES. Мы объединяем активных и ответственных сотрудников, готовых работать в команде и реализовывать свои амбиции в успешных проектах"
+        }
+    },
+    "blockStatistic": {
+        "cards": [
+            {
+                "number": "75%",
+                "bottomText": "ежегодный прирост количества сотрудников"
+            },
+            {
+                "number": "15",
+                "topText": "лет",
+                "bottomText": "средний опыт сотрудников в строительстве",
+                "cardClassList": "card-statistic--white",
+                "src": "../../assets/images/card-statistic/2.jpg"
+            },
+            {
+                "number": "100%",
+                "bottomText": "стажеров продолжили работать с нами после стажировки",
+                "cardClassList": "card-statistic--bg-secondary"
+            }
+        ]
+    }
+}
