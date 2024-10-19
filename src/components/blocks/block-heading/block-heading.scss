@@ -14,7 +14,7 @@
 
         @include media-breakpoint-up(md) {
             margin-bottom: remify(30);
-            max-width: 62.75%;
+            max-width: remify(500);
         }
 
         @include media-breakpoint-up(xl) {
@@ -32,11 +32,11 @@
         width: 100%;
 
         @include media-breakpoint-up(md) {
-            max-width: 62.75%;
+            max-width: remify(500);
         }
 
         @include media-breakpoint-up(xl) {
-            max-width: 46.56%;
+            max-width: remify(600);
         }
 
         @include media-breakpoint-up(xxl) {

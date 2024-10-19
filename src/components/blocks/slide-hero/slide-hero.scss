@@ -22,7 +22,7 @@
         }
 
         &::before {
-            top: -100px;
+            opacity: 0.4;
             height: remify(300);
             background: linear-gradient(180deg, #000916 0%, rgba(0, 9, 22, 0) 100%);
 

@@ -1,6 +1,9 @@
 .block-hero-slider {
     $root: &;
     position: relative;
+    overflow: hidden;
+    border-radius: $border-radius-sm;
+
     &__slides {
         position: relative;
         z-index: 1;

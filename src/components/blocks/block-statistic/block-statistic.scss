@@ -17,8 +17,13 @@
 
     &__item {
         min-height: remify(300);
+
         @include media-breakpoint-up(xl) {
             min-height: remify(368);
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: remify(415);
         }
         &:nth-child(2) {
             @include media-breakpoint-up(md) {
