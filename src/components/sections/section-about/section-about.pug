@@ -1,14 +1,16 @@
 mixin section-about(props)
     section.section-about&attributes(attributes)(data-component='section-about')
         .section-about__content
-            .section-about__content-description
-                .section-about__content-description-indent
-                    +text-indent({ text: props.textIndent })(class='text-indent--white')
-                .section-about__content-description-title!=props.title
-                .section-about__content-description-text=props.text
-                .section-about__content-description-button
-                    +button-main({ text: props.linkText, href: props.href })(class='button-main--white')
-            .section-about__content-image
+            .section-about__description
+                if props.textIndent
+                    .section-about__description-indent
+                        +text-indent({ text: props.textIndent })(class='text-indent--white')
+                .section-about__description-title!=props.title
+                .section-about__description-text=props.text
+                if props.href
+                    .section-about__description-button
+                        +button-main({ text: props.linkText, href: props.href })(class='button-main--white')
+            .section-about__image
                 +picture({
                     classList: 'section-about__content-image-picture',
                     img: {

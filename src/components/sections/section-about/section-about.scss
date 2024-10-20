@@ -14,6 +14,19 @@
         justify-content: flex-end;
         padding: remify(20);
         overflow: hidden;
+        margin-bottom: remify(60);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(80);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(100);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(120);
+        }
 
         &::after {
             content: "";
@@ -62,7 +75,7 @@
         }
     }
 
-    &__content-image {
+    &__image {
         position: absolute;
         left: 0;
         top: 0;
@@ -80,7 +93,7 @@
         }
     }
 
-    &__content-description {
+    &__description {
         position: relative;
         z-index: 3;
         color: $white;
@@ -96,7 +109,7 @@
         }
     }
 
-    &__content-description-indent {
+    &__description-indent {
         margin-bottom: remify(25);
 
         @include media-breakpoint-up(md) {
@@ -111,7 +124,7 @@
         }
     }
 
-    &__content-description-title {
+    &__description-title {
         margin-bottom: remify(15);
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
@@ -129,11 +142,11 @@
         }
     }
 
-    &__content-description-text {
+    &__description-text {
         font-size: remify(16);
     }
 
-    &__content-description-button {
+    &__description-button {
         margin-top: remify(25);
 
         @include media-breakpoint-up(md) {
