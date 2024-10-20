@@ -1,0 +1,12 @@
+extends ../../app/pug/layout
+
+block title
+    | О компании
+
+block content
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="about").content-wrapper
+        +section-hero
+            +block-hero(dataJson.about.blockHero)
+        +section-main({ heading: dataJson.about.blockHeading.aboutUs })
+        +section-main({ heading: dataJson.about.blockHeading.clients })
+        +section-main({ heading: dataJson.about.blockHeading.tehnology })
