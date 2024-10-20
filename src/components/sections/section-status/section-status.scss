@@ -1,0 +1,24 @@
+.section-status {
+    $root: &;
+    width: 100%;
+    max-width: remify(1920);
+    margin: 0 auto;
+    padding: var(--offset-padding);
+    &__content {
+        min-height: 100vh;
+        border-radius: $border-radius;
+        background: $main-blue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $white;
+    }
+    &__title {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: $letter-height-second;
+        @include rem-adaptive-font(100, 100, 115, 125);
+    }
+}
