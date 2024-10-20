@@ -43,10 +43,8 @@
             max-width: remify(665);
         }
     }
-    &__content-text {
+    &__title + &__text {
         margin-top: remify(15);
-        font-size: remify(16);
-
         @include media-breakpoint-up(md) {
             margin-top: remify(20);
         }
@@ -58,9 +56,13 @@
         @include media-breakpoint-up(xl) {
             margin-top: remify(30);
         }
-
     }
-    &__content-button {
+
+    &__text {
+        font-size: remify(16);
+    }
+
+    &__button {
         margin-top: remify(25);
         @include media-breakpoint-up(md) {
             margin-top: remify(30);
