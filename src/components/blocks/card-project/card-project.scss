@@ -157,7 +157,7 @@
         }
     }
 
-    &__image-label {
+    &__label {
         z-index: 2;
         position: absolute;
         top: remify(15);
@@ -179,7 +179,7 @@
         }
     }
 
-    &__image-icon {
+    &__icon {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -250,13 +250,13 @@
         }
     }
 
-    &__bottom-col-title {
+    &__bottom-title {
         text-transform: uppercase;
         color: $black-60;
         margin-bottom: remify(6);
         font-size: remify(14);
     }
-    &__bottom-col-text {
+    &__bottom-text {
         @include rem-adaptive-font(22, 24, 26, 28);
         line-height: 1.2;
     }

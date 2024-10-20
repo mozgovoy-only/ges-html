@@ -180,20 +180,20 @@
             margin-right: remify(100);
         }
     }
-    &__right-info-copyright,
-    &__right-info-politic {
+    &__right-copyright,
+    &__right-politic {
         line-height: 1.2;
         font-size: remify(12);
     }
 
-    &__right-info-politic {
+    &__right-politic {
         transition: color $duration-short $ease-default;
         &:hover {
             color: $black-60;
         }
     }
 
-    &__right-info-copyright {
+    &__right-copyright {
         margin-bottom: remify(12);
         @include media-breakpoint-up(lg) {
             margin-bottom: remify(15);

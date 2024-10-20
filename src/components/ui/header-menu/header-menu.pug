@@ -1,31 +1,31 @@
 -
     var menuList = [
         {
-            title: 'О компании',
-            href: '/company'
+            linkText: 'О компании',
+            href: '/about'
         },
         {
-            title: 'Услуги',
+            linkText: 'Услуги',
             href: '/services'
         },
         {
-            title: 'Проекты',
+            linkText: 'Проекты',
             href: '/projects'
         },
         {
-            title: 'Карьера',
+            linkText: 'Карьера',
             href: '/career'
         },
         {
-            title: 'Пресс-центр',
+            linkText: 'Пресс-центр',
             href: '/press-center'
         },
         {
-            title: 'Документы',
+            linkText: 'Документы',
             href: '/documents'
         },
         {
-            title: 'Контакты',
+            linkText: 'Контакты',
             href: '/contacts'
         }
     ]
@@ -34,4 +34,4 @@ mixin header-menu(props)
     ul.header-menu&attributes(attributes)(data-component='header-menu')
         each item in menuList
             li.header-menu__item
-                a.header-menu__item-link(href=item.href)= item.title
+                a.header-menu__link(href=item.href)=item.linkText

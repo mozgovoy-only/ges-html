@@ -31,7 +31,7 @@
         }
     }
 
-    &__content-logo {
+    &__logo {
         text-decoration: none;
         line-height: 0;
         margin-right: remify(16);
@@ -61,7 +61,7 @@
         }
     }
 
-    &__content-logo-inner {
+    &__logo-inner {
         color: $main-blue;
         transition: color $duration-short $ease-default;
 
@@ -88,7 +88,7 @@
         }
     }
 
-    &__content-menu {
+    &__menu {
         display: none;
         margin: 0 auto;
 
@@ -96,7 +96,7 @@
             display: flex;
         }
     }
-    &__content-button-menu {
+    &__button-menu {
         @include media-breakpoint-up(xl) {
             display: none;
         }

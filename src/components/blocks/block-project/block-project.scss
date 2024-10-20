@@ -15,6 +15,7 @@
     @include media-breakpoint-up(xxl) {
         --block-project-gap-y: #{remify(120)};
     }
+
     &__item {
         margin-top: calc(1 * var(--block-project-gap-y));
         &--offset-right {

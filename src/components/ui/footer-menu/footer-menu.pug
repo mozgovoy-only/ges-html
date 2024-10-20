@@ -1,31 +1,31 @@
 -
     var menuList = [
         {
-            title: 'О компании',
-            href: '/company'
+            linkText: 'О компании',
+            href: '/about'
         },
         {
-            title: 'Карьера',
+            linkText: 'Карьера',
             href: '/career'
         },
         {
-            title: 'Документы',
+            linkText: 'Документы',
             href: '/documents'
         },
         {
-            title: 'Услуги',
+            linkText: 'Услуги',
             href: '/services'
         },
         {
-            title: 'Контакты',
+            linkText: 'Контакты',
             href: '/contacts'
         },
         {
-            title: 'Пресс-центр',
+            linkText: 'Пресс-центр',
             href: '/press-center'
         },
         {
-            title: 'Проекты',
+            linkText: 'Проекты',
             href: '/projects'
         }
     ]
@@ -35,4 +35,4 @@ mixin footer-menu(props)
     ul.footer-menu&attributes(attributes)(data-component='footer-menu')
         each item in menuList
             li.footer-menu__item
-                a.footer-menu__item-link(href=item.href)=item.title
+                a.footer-menu__link(href=item.href)=item.linkText
