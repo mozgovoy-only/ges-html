@@ -9,5 +9,6 @@ block content
             +block-hero(dataJson.career.blockHero)
         +section-main({ heading: dataJson.career.blockHeading.workWithUs })
             +block-statistic(dataJson.career.blockStatistic)
-        +section-main({ heading: dataJson.career.blockHeading.valuation })
+        +section-main({ heading: dataJson.career.blockHeading.valuation, inner: true })
+            +block-solution(dataJson.career.blockSolution)
 
