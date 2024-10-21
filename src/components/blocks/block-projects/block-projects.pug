@@ -1,0 +1,5 @@
+mixin block-projects(props)
+    .block-projects&attributes(attributes)(data-component='block-projects')
+        each card in props.cards
+            .block-projects__item(class=card.itemClassList)
+                +card-projects(card)

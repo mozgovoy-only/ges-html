@@ -6,12 +6,12 @@ import SectionAbout from '@/components/sections/section-about/section-about';
 import SectionStatus from '@/components/sections/section-status/section-status';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
-import BlockProject from '@/components/blocks/block-project/block-project';
+import BlockProjects from '@/components/blocks/block-projects/block-projects';
 import BlockMedia from '@/components/blocks/block-media/block-media';
 import BlockStatistic from '@/components/blocks/block-statistic/block-statistic';
 import BlockHero from '@/components/blocks/block-hero/block-hero';
 import BlockSolution from '@/components/blocks/block-solution/block-solution';
-import CardProject from '@/components/blocks/card-project/card-project';
+import CardProjects from '@/components/blocks/card-projects/card-projects';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
@@ -29,12 +29,12 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-status': SectionStatus,
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
-    'block-project': BlockProject,
+    'block-projects': BlockProjects,
     'block-media': BlockMedia,
     'block-statistic': BlockStatistic,
     'block-hero': BlockHero,
     'block-solution': BlockSolution,
-    'card-project': CardProject,
+    'card-projects': CardProjects,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
     'row-solution': RowSolution,

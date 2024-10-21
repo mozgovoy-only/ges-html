@@ -1,23 +1,23 @@
-.block-project {
-    --block-project-gap-y: #{remify(50)};
+.block-projects {
+    --block-projects-gap-y: #{remify(50)};
     $root: &;
     display: flex;
     flex-direction: column;
-    margin-top: calc(-1 * var(--block-project-gap-y));
+    margin-top: calc(-1 * var(--block-projects-gap-y));
     @include media-breakpoint-up(md) {
-        --block-project-gap-y: #{remify(80)};
+        --block-projects-gap-y: #{remify(80)};
     }
 
     @include media-breakpoint-up(xl) {
-        --block-project-gap-y: #{remify(101)};
+        --block-projects-gap-y: #{remify(101)};
     }
 
     @include media-breakpoint-up(xxl) {
-        --block-project-gap-y: #{remify(120)};
+        --block-projects-gap-y: #{remify(120)};
     }
 
     &__item {
-        margin-top: calc(1 * var(--block-project-gap-y));
+        margin-top: calc(1 * var(--block-projects-gap-y));
         &--offset-right {
             @include media-breakpoint-up(xl) {
                 padding-right: remify(190);
