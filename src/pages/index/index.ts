@@ -15,6 +15,7 @@ import BlockRelation from '@/components/blocks/block-relation/block-relation';
 import CardProjects from '@/components/blocks/card-projects/card-projects';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
+import CardDocuments from '@/components/blocks/card-documents/card-documents';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
 import SlideHero from '@/components/blocks/slide-hero/slide-hero';
 import TitleMain from '@/components/ui/title-main/title-main';
@@ -39,6 +40,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'card-projects': CardProjects,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
+    'card-documents': CardDocuments,
     'row-solution': RowSolution,
     'slide-hero': SlideHero,
     'title-main': TitleMain,

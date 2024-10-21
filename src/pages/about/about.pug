@@ -4,7 +4,7 @@ block title
     | О компании
 
 block content
-    div(data-barba="container" data-barba-namespace="common" data-page-namespace="about").content-wrapper
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="about")
         +section-hero
             +block-hero(dataJson.about.blockHero)
         +section-main({ heading: dataJson.about.blockHeading.aboutUs })
