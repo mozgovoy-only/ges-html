@@ -7,4 +7,6 @@ block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="projects").content-wrapper
         +section-hero
             +block-hero(dataJson.projects.blockHero)
+        +section-main({})
+            +block-projects(dataJson.projects.blockProjects)
 
