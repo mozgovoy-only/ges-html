@@ -12,7 +12,8 @@
         color: $white;
         transition: color $duration-short $ease-default;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             color: $white-70;
         }
     }

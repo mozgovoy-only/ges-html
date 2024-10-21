@@ -3,13 +3,14 @@
     overflow: hidden;
     border-radius: $border-radius-sm;
     min-height: remify(286);
-    padding: calc(var(--header-height) - var(--offset-padding)) remify(20) remify(20);
+    padding: calc(var(--header-height) - var(--offset-padding)) remify(20)
+        remify(20);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     background: url("../../assets/img/block-hero-bg-sm.svg"),
-                linear-gradient(359.07deg, #1A268A -16.32%, #2F41DD 99.2%);
+        linear-gradient(359.07deg, #1a268a -16.32%, #2f41dd 99.2%);
     background-repeat: no-repeat;
     background-size: 75% 70%, 100% 100%;
     background-position: 100% 100%;
@@ -17,19 +18,21 @@
     @include media-breakpoint-up(md) {
         min-height: remify(354);
         background: url("../../assets/img/block-hero-bg.svg"),
-        linear-gradient(359.07deg, #1A268A -16.32%, #2F41DD 99.2%);
+            linear-gradient(359.07deg, #1a268a -16.32%, #2f41dd 99.2%);
         background-repeat: no-repeat;
         background-size: 55% 70%, 100% 100%;
         background-position: 100% 100%;
     }
 
     @include media-breakpoint-up(xl) {
-        padding: calc(var(--header-height) - var(--offset-padding)) remify(25) remify(25);
+        padding: calc(var(--header-height) - var(--offset-padding)) remify(25)
+            remify(25);
         min-height: remify(400);
     }
 
     @include media-breakpoint-up(xxl) {
-        padding: calc(var(--header-height) - var(--offset-padding)) remify(30) remify(30);
+        padding: calc(var(--header-height) - var(--offset-padding)) remify(30)
+            remify(30);
         min-height: remify(432);
     }
 
@@ -56,7 +59,8 @@
         height: 100%;
         z-index: 1;
         overflow: hidden;
-        &::before, &::after {
+        &::before,
+        &::after {
             content: "";
             display: block;
             position: absolute;
@@ -69,7 +73,11 @@
 
         &::before {
             top: 0;
-            background: linear-gradient(180deg, #000916 0%, rgba(0, 9, 22, 0) 100%);
+            background: linear-gradient(
+                180deg,
+                #000916 0%,
+                rgba(0, 9, 22, 0) 100%
+            );
         }
 
         &::after {

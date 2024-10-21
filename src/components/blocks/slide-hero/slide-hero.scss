@@ -13,7 +13,8 @@
         position: absolute;
         overflow: hidden;
 
-        &::after, &::before {
+        &::after,
+        &::before {
             content: "";
             display: block;
             position: absolute;
@@ -24,14 +25,21 @@
         &::before {
             opacity: 0.4;
             height: remify(300);
-            background: linear-gradient(180deg, #000916 0%, rgba(0, 9, 22, 0) 100%);
-
+            background: linear-gradient(
+                180deg,
+                #000916 0%,
+                rgba(0, 9, 22, 0) 100%
+            );
         }
 
         &::after {
             bottom: -50px;
             height: remify(300);
-            background: linear-gradient(180deg, rgba(27, 29, 30, 0) 0%, #1B1D1E 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(27, 29, 30, 0) 0%,
+                #1b1d1e 100%
+            );
         }
     }
 
