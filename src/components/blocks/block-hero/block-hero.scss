@@ -43,7 +43,7 @@
         text-transform: uppercase;
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
-        line-height: $letter-height-second;
+        line-height: $line-height-second;
         @include rem-adaptive-font(40, 48, 54, 63);
 
         @include media-breakpoint-up(xl) {

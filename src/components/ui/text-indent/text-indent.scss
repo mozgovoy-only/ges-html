@@ -3,7 +3,7 @@
     @include rem-adaptive-font(14, 14, 16, 16);
     text-transform: uppercase;
     font-family: $font-tt-firs-neue;
-    line-height: $letter-height-second;
+    line-height: $line-height-second;
     display: flex;
     &::before {
         content: "";

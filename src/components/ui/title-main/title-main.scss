@@ -2,7 +2,7 @@
     $root: &;
     font-family: $font-tt-firs-neue;
     letter-spacing: $letter-spacing-second;
-    line-height: $letter-height-second;
+    line-height: $line-height-second;
     @include rem-adaptive-font(28, 32, 36, 40);
 
     &__inner {

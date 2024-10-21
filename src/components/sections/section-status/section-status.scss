@@ -47,7 +47,7 @@
     &__title {
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
-        line-height: $letter-height-second;
+        line-height: $line-height-second;
         @include rem-adaptive-font(100, 100, 115, 125);
         margin-bottom: remify(15);
         @include media-breakpoint-up(md) {
