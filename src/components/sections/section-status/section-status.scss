@@ -32,14 +32,15 @@
         flex-grow: 1;
         padding: var(--header-height) remify(50);
         text-align: center;
-        background: top right 0/50% no-repeat url("../../assets/img/section-status-bg-top.svg"),
-                    bottom left 0/50% no-repeat url("../../assets/img/section-status-bg-bottom.svg"),
-                    $main-blue;
+        background: url("../../assets/img/section-status-bg-top.svg"),
+                    url("../../assets/img/section-status-bg-bottom.svg"),
+                    linear-gradient(0.31deg, #1A268A -16.38%, #2F41DD 99.6%);
 
+        background-repeat: no-repeat;
+        background-position: top right, bottom left;
+        background-size: 50% 30%, 50% 30%,100% 100%;
         @include media-breakpoint-up(md) {
-            background: top right 0/35% no-repeat url("../../assets/img/section-status-bg-top.svg"),
-                        bottom left 0/35% no-repeat url("../../assets/img/section-status-bg-bottom.svg"),
-                        linear-gradient(0.31deg, #1A268A -16.38%, #2F41DD 99.6%);
+                  background-size: 40% 55%, 40% 55%,100% 100%;
         }
     }
 
@@ -48,7 +49,7 @@
         letter-spacing: $letter-spacing-second;
         line-height: $letter-height-second;
         @include rem-adaptive-font(100, 100, 115, 125);
-        margin-bottom: reimify(15);
+        margin-bottom: remify(15);
         @include media-breakpoint-up(md) {
             margin-bottom: remify(20);
         }
@@ -64,7 +65,7 @@
     &__text {
         max-width: remify(400);
         font-size: remify(16);
-        margin-bottom: reimify(15);
+        margin-bottom: remify(15);
         @include media-breakpoint-up(md) {
             margin-bottom: remify(20);
         }
