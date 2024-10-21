@@ -6,7 +6,7 @@
     background-color: $white;
     height: 100%;
     width: 100%;
-    background-image: url("../../assets/img/card-statistic.svg");
+    background-image: url("../../assets/img/card-statistic-bg.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 90%;
@@ -17,7 +17,7 @@
     }
 
     &--bg-secondary {
-        background-image: url("../../assets/img/card-statistic-secondary.svg");
+        background-image: url("../../assets/img/card-statistic-secondary-bg.svg");
         background-repeat: no-repeat;
         background-position: center 60%;
         background-size: contain;
