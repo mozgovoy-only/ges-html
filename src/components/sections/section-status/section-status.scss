@@ -4,8 +4,11 @@
     max-width: remify(1920);
     margin: 0 auto;
     padding: var(--offset-padding);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     &__content {
-        min-height: 100vh;
         border-radius: $border-radius;
         background: $main-blue;
         width: 100%;
@@ -14,7 +17,11 @@
         align-items: center;
         flex-direction: column;
         color: $white;
+        flex-grow: 1;
+        padding: var(--header-height) remify(50);
+        text-align: center;
     }
+
     &__title {
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
