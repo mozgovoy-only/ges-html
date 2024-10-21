@@ -49,7 +49,7 @@
                 "text": "Многофункциональный жилой комплекс «JOIS» — 1 этап строительства. Две башни  высотой 200м и 170м.",
                 "src": "../../assets/images/card-projects/1.jpg",
                 "area": "131 900 кв.м.",
-                "href": "/services/view",
+                "href": "/projects-view",
                 "date": "2024 - 2026"
             },
             {
@@ -57,7 +57,7 @@
                 "text": "Многофункциональный жилой комплекс",
                 "src": "../../assets/images/card-projects/2.jpg",
                 "area": "58 300 кв.м.",
-                "href": "/services/view",
+                "href": "/projects-view",
                 "date": "2021 – 2023",
                 "cardClassList": "card-projects--revert card-projects--large"
             },
@@ -66,7 +66,7 @@
                 "text": "Реконструкция транспортного комплекса “Южный речной вокзал” на реке Москва в Нагатинской пойме",
                 "src": "../../assets/images/card-projects/3.jpg",
                 "area": "5 637 кв.м.",
-                "href": "/services/view",
+                "href": "/projects-view",
                 "date": "2021 – 2023",
                 "itemClassList": "block-projects__item--offset-right",
                 "cardClassList": "card-projects--small"
