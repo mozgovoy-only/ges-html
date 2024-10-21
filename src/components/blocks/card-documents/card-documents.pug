@@ -1,0 +1,8 @@
+mixin card-documents(props)
+    .card-documents&attributes(attributes)(data-component='card-documents')
+        .card-documents__content
+            .card-documents__label
+                +text-label({ text: props.textLabel })(class="text-label--black")
+            .card-documents__text=props.text
+        .card-documents__download Скачать pdf
+            +svg('download').card-documents__download-icon

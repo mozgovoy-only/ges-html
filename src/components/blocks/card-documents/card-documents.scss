@@ -1,0 +1,63 @@
+.card-documents {
+    $root: &;
+    margin-bottom: remify(20);
+    border: $border-radius;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: remify(20);
+
+    @include media-breakpoint-up(xl) {
+        padding: remify(30);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: remify(35);
+        border: $border-radius-lg;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: remify(30);
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        margin-bottom: remify(15);
+        @include media-breakpoint-up(md) {
+            padding: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: remify(30);
+        }
+    }
+
+    &__download {
+        display: flex;
+        color: $black-60;
+        align-items: center;
+        transition: color $duration-short $ease-default;
+        font-family: $font-tt-firs-neue;
+        line-height: $line-height-second;
+        font-size: remify(14);
+        &:hover {
+            color: $main-black;
+        }
+    }
+    &__download-icon {
+        margin-left: remify(8);
+        width: remify(20);
+        height: remify(20);
+        color: $main-blue;
+    }
+}
