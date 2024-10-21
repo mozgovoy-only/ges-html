@@ -11,6 +11,7 @@ import BlockMedia from '@/components/blocks/block-media/block-media';
 import BlockStatistic from '@/components/blocks/block-statistic/block-statistic';
 import BlockHero from '@/components/blocks/block-hero/block-hero';
 import BlockSolution from '@/components/blocks/block-solution/block-solution';
+import BlockRelation from '@/components/blocks/block-relation/block-relation';
 import CardProjects from '@/components/blocks/card-projects/card-projects';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
@@ -34,6 +35,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-statistic': BlockStatistic,
     'block-hero': BlockHero,
     'block-solution': BlockSolution,
+    'block-relation': BlockRelation,
     'card-projects': CardProjects,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
