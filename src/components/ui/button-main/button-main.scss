@@ -80,7 +80,7 @@
     }
 
     &:disabled,
-    &.disabled {
+    &.is-disabled {
         pointer-events: none;
         opacity: var(--button-main-border-disabled-opacity);
     }
