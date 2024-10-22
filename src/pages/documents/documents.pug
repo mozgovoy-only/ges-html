@@ -4,9 +4,8 @@ block title
     | Документы
 
 block content
-    div(data-barba="container" data-barba-namespace="common" data-page-namespace="documents").content-wrapper
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="documents")
         +section-hero
             +block-hero(dataJson.documents.blockHero)
-        +section-main({})
-            +card-documents(dataJson.documents.blockDocuments.cards[0])
+        +section-documents(dataJson.documents.sectionDocuments)
 
