@@ -4,6 +4,7 @@ import SectionHero from '@/components/sections/section-hero/section-hero';
 import SectionMain from '@/components/sections/section-main/section-main';
 import SectionAbout from '@/components/sections/section-about/section-about';
 import SectionStatus from '@/components/sections/section-status/section-status';
+import SectionDocuments from '@/components/sections/section-documents/section-documents';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProjects from '@/components/blocks/block-projects/block-projects';
@@ -12,10 +13,12 @@ import BlockStatistic from '@/components/blocks/block-statistic/block-statistic'
 import BlockHero from '@/components/blocks/block-hero/block-hero';
 import BlockSolution from '@/components/blocks/block-solution/block-solution';
 import BlockRelation from '@/components/blocks/block-relation/block-relation';
+import BlockTeam from '@/components/blocks/block-team/block-team';
 import CardProjects from '@/components/blocks/card-projects/card-projects';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
 import CardDocuments from '@/components/blocks/card-documents/card-documents';
+import CardTeam from '@/components/blocks/card-team/card-team';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
 import SlideHero from '@/components/blocks/slide-hero/slide-hero';
 import TitleMain from '@/components/ui/title-main/title-main';
@@ -29,6 +32,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-main': SectionMain,
     'section-about': SectionAbout,
     'section-status': SectionStatus,
+    'section-documents': SectionDocuments,
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
     'block-projects': BlockProjects,
@@ -37,10 +41,12 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-hero': BlockHero,
     'block-solution': BlockSolution,
     'block-relation': BlockRelation,
+    'block-team': BlockTeam,
     'card-projects': CardProjects,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
     'card-documents': CardDocuments,
+    'card-team': CardTeam,
     'row-solution': RowSolution,
     'slide-hero': SlideHero,
     'title-main': TitleMain,
