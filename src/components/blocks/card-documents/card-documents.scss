@@ -1,12 +1,16 @@
 .card-documents {
     $root: &;
-    margin-bottom: remify(20);
     border: $border-radius;
     background-color: $white;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     padding: remify(20);
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     @include media-breakpoint-up(xl) {
         padding: remify(30);
@@ -24,7 +28,44 @@
         margin-bottom: remify(30);
         @include media-breakpoint-up(md) {
             margin-bottom: 0;
+            flex-basis: 76.3%;
         }
+
+        @include media-breakpoint-up(xxl) {
+            flex-basis: 82.25%;
+        }
+    }
+
+    &__description {
+        display: flex;
+    }
+
+    &__description-item {
+        display: flex;
+        align-items: center;
+        color: $black-60;
+        font-size: remify(16);
+        opacity: 0.8;
+        &:nth-child(n + 2) {
+            &::before {
+                content: "";
+                border-radius: 50%;
+                width: remify(8);
+                height: remify(8);
+                margin: 0 remify(8);
+                background-color: $black-60;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1.1;
+        margin-bottom: remify(8);
+        color: $medium-black;
+        @include rem-adaptive-font(20, 20, 22, 24);
     }
 
     &__label {
@@ -50,8 +91,14 @@
         font-family: $font-tt-firs-neue;
         line-height: $line-height-second;
         font-size: remify(14);
+        white-space: nowrap;
+        text-transform: uppercase;
         &:hover {
             color: $main-black;
+        }
+        &.is-disabled {
+            pointer-events: none;
+            opacity: 0.5;
         }
     }
     &__download-icon {
