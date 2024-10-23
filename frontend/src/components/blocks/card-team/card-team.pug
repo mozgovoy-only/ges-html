@@ -8,5 +8,9 @@ mixin card-team(props)
                         src: '../../assets/images/team-person.jpg'
                     }
                 })
-            .card-team__bottom Сонмез Хакан
+            .card-team__name=props.name
+            .card-team__job=props.job
+            .card-team__detail
+                span.card-team__detail-text Подробнее
+                +svg('plus')(class="card-team__detail-icon")
         .card-team__hovered

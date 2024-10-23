@@ -10,6 +10,15 @@
     height: 100%;
     min-height: remify(430);
 
+    @include media-breakpoint-up(xl) {
+        padding: remify(25);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: remify(25);
+        min-height: remify(474);
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -19,6 +28,7 @@
     }
 
     &__hovered {
+        pointer-events: none;
         position: absolute;
         z-index: 2;
         top: 0;
@@ -35,8 +45,11 @@
 
     &__image {
         display: flex;
-        width: 100%;
-        margin-bottom: auto;
+        margin-bottom: remify(20);
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(25);
+        }
     }
 
     &__picture {
@@ -45,6 +58,7 @@
         width: 100%;
         overflow: hidden;
         border-radius: $border-radius-sm;
+
         > img {
             left: 0;
             top: 0;
@@ -55,18 +69,45 @@
         }
     }
 
-    @include media-breakpoint-up(xl) {
-        padding: remify(25);
+    &__name {
+        font-family: $font-tt-firs-neue;
+        line-height: 1.1;
+        margin-bottom: remify(12);
+        @include rem-adaptive-font(20, 20, 22, 24);
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(15);
+        }
     }
 
-    @include media-breakpoint-up(xl) {
-        padding: remify(25);
-        min-height: remify(474);
+    &__job {
+        opacity: 0.6;
+        font-size: remify(16);
+        margin-bottom: auto;
     }
 
-    &__bottom {
-        margin-top: auto;
+    &__detail {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        margin-top: remify(12);
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(15);
+        }
+
+        @media (pointer: fine) {
+            display: none;
+        }
+    }
+
+    &__detail-text {
+        font-size: remify(16);
+        margin-right: remify(8);
+    }
+
+    &__detail-icon {
+        color: $main-blue;
+        width: remify(16);
+        height: remify(16);
     }
 }
