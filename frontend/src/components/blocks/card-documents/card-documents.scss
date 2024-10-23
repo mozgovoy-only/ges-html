@@ -1,6 +1,6 @@
 .card-documents {
     $root: &;
-    border: $border-radius;
+    border: $border-radius-md;
     background-color: $white;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
 
     @include media-breakpoint-up(xxl) {
         padding: remify(35);
-        border: $border-radius-lg;
+        border: $border-radius-xl;
     }
 
     &__content {

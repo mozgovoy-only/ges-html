@@ -33,7 +33,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: remify(8);
-        border-radius: $border-radius;
+        border-radius: $border-radius-md;
         background-color: $main-blue;
         padding: remify(30) remify(24);
         background-image: url("../../assets/img/footer-bg.svg");
@@ -76,7 +76,7 @@
 
     &__right {
         padding: remify(30) remify(24);
-        border-radius: $border-radius;
+        border-radius: $border-radius-md;
         background-color: $white;
         display: flex;
         flex-wrap: wrap;

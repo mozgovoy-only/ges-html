@@ -54,8 +54,9 @@ $zindex-toast: 1005;
 
 // start border-radius
 
-$border-radius-sm: #{remify(15)};
-$border-radius: #{remify(20)};
-$border-radius-lg: #{remify(30)};
+$border-radius: #{remify(15)};
+$border-radius-md: #{remify(20)};
+$border-radius-xl: #{remify(30)};
+$border-radius-xxl: #{remify(40)};
 
 // end border-radius

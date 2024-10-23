@@ -8,11 +8,11 @@
     background-position: center right;
     background-size: auto 70%;
     overflow: hidden;
-    border-radius: $border-radius-sm;
+    border-radius: $border-radius;
     position: relative;
 
     @include media-breakpoint-up(md) {
-        border-radius: $border-radius-lg;
+        border-radius: $border-radius-xl;
     }
 
     &__content {

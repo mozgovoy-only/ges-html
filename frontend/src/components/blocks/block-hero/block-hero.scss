@@ -1,7 +1,7 @@
 .block-hero {
     $root: &;
     overflow: hidden;
-    border-radius: $border-radius-sm;
+    border-radius: $border-radius;
     min-height: remify(286);
     padding: calc(var(--header-height) - var(--offset-padding)) remify(20)
         remify(20);

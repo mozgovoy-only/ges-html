@@ -7,7 +7,6 @@
 
     &__content {
         position: relative;
-        border-radius: $border-radius;
         min-height: remify(700);
         display: flex;
         flex-direction: column;
@@ -15,17 +14,20 @@
         padding: remify(20);
         overflow: hidden;
         margin-bottom: remify(60);
-
+        border-radius: $border-radius;
         @include media-breakpoint-up(md) {
             margin-bottom: remify(80);
+            border-radius: $border-radius-md;
         }
 
         @include media-breakpoint-up(xl) {
             margin-bottom: remify(100);
+            border-radius: $border-radius-xl;
         }
 
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(120);
+            border-radius: $border-radius-xxl;
         }
 
         &::after {
@@ -45,7 +47,7 @@
         }
 
         @include media-breakpoint-up(md) {
-            border-radius: $border-radius-lg;
+            border-radius: $border-radius-xl;
             min-height: remify(823);
             padding: remify(50);
 

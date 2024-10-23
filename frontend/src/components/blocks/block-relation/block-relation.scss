@@ -5,7 +5,7 @@
     }
 
     &__inner {
-        border-radius: $border-radius-sm;
+        border-radius: $border-radius;
         background: url("../../assets/img/block-relation-bg.svg"),
             linear-gradient(180deg, #3d4eea 0%, #2a3ac6 100%);
         background-repeat: no-repeat;
@@ -14,16 +14,16 @@
         padding: remify(20);
 
         @include media-breakpoint-up(md) {
-            border-radius: $border-radius;
+            border-radius: $border-radius-md;
         }
 
         @include media-breakpoint-up(xl) {
-            border-radius: $border-radius-lg;
+            border-radius: $border-radius-xl;
             padding: remify(30);
         }
 
         @include media-breakpoint-up(xxl) {
-            border-radius: $border-radius-lg;
+            border-radius: $border-radius-xl;
         }
     }
 
