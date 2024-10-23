@@ -5,8 +5,7 @@ block title
 
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="career")
-        +section-hero
-            +block-hero(dataJson.career.blockHero)
+        +section-hero(dataJson.career.sectionHero)
         +section-main({ heading: dataJson.career.blockHeading.workWithUs })
             +block-statistic(dataJson.career.blockStatistic)
         +section-main({ heading: dataJson.career.blockHeading.valuation, inner: true })

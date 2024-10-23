@@ -12,7 +12,6 @@ import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProjects from '@/components/blocks/block-projects/block-projects';
 import BlockMedia from '@/components/blocks/block-media/block-media';
 import BlockStatistic from '@/components/blocks/block-statistic/block-statistic';
-import BlockHero from '@/components/blocks/block-hero/block-hero';
 import BlockSolution from '@/components/blocks/block-solution/block-solution';
 import BlockRelation from '@/components/blocks/block-relation/block-relation';
 import BlockTeam from '@/components/blocks/block-team/block-team';
@@ -41,7 +40,6 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-projects': BlockProjects,
     'block-media': BlockMedia,
     'block-statistic': BlockStatistic,
-    'block-hero': BlockHero,
     'block-solution': BlockSolution,
     'block-relation': BlockRelation,
     'block-team': BlockTeam,

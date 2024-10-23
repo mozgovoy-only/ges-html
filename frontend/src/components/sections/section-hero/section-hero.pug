@@ -1,5 +1,13 @@
 mixin section-hero(props)
     section.section-hero&attributes(attributes)(data-component='section-hero')
         .section-hero__content
-            if block
-                block
+            if props.src
+                .section-hero__image
+                    +picture({
+                        classList: 'section-hero__picture',
+                        img: {
+                            src: props.src
+                        }
+                    })
+            .section-hero__title=props.title
+
