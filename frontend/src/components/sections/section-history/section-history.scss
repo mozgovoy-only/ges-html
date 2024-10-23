@@ -1,0 +1,31 @@
+.section-history {
+    $root: &;
+    max-width: remify(1920);
+    padding: 0 var(--offset-padding);
+    &__content {
+        border-radius: $border-radius;
+        width: 100%;
+        min-height: remify(400);
+        background: url("../../assets/img/section-history-bg.svg"),
+            linear-gradient(0.31deg, #1a268a -16.38%, #2f41dd 99.6%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        margin-bottom: remify(60);
+
+        @include media-breakpoint-up(md) {
+            border-radius: $border-radius-md;
+            margin-bottom: remify(80);
+        }
+
+        @include media-breakpoint-up(xl) {
+            border-radius: $border-radius-xl;
+            margin-bottom: remify(100);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            border-radius: $border-radius-xxl;
+            margin-bottom: remify(120);
+        }
+    }
+}

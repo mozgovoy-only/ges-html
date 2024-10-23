@@ -6,7 +6,8 @@ import SectionAbout from '@/components/sections/section-about/section-about';
 import SectionStatus from '@/components/sections/section-status/section-status';
 import SectionDocuments from '@/components/sections/section-documents/section-documents';
 import SectionProjects from '@/components/sections/section-projects/section-projects';
-import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
+import SectionHistory from '@/components/sections/section-history/section-history';
+import SectionHeroSlider from '@/components/sections/section-hero-slider/section-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProjects from '@/components/blocks/block-projects/block-projects';
 import BlockMedia from '@/components/blocks/block-media/block-media';
@@ -21,7 +22,6 @@ import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
 import CardDocuments from '@/components/blocks/card-documents/card-documents';
 import CardTeam from '@/components/blocks/card-team/card-team';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
-import SlideHero from '@/components/blocks/slide-hero/slide-hero';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
 import TextIndent from '@/components/ui/text-indent/text-indent';
@@ -35,7 +35,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-status': SectionStatus,
     'section-documents': SectionDocuments,
     'section-projects': SectionProjects,
-    'block-hero-slider': BlockHeroSlider,
+    'section-history': SectionHistory,
+    'section-hero-slider': SectionHeroSlider,
     'block-heading': BlockHeading,
     'block-projects': BlockProjects,
     'block-media': BlockMedia,
@@ -50,7 +51,6 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'card-documents': CardDocuments,
     'card-team': CardTeam,
     'row-solution': RowSolution,
-    'slide-hero': SlideHero,
     'title-main': TitleMain,
     'button-main': ButtonMain,
     'text-indent': TextIndent,
