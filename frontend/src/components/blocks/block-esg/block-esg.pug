@@ -1,0 +1,19 @@
+mixin block-esg(props)
+    .block-esg&attributes(attributes)(data-component='block-esg')
+        each card in props.cards
+            .block-esg__item
+                .block-esg__card(class=card.cardClassList)
+                    if card.src
+                        .block-esg__card-image
+                            +picture({
+                                classList: 'block-esg__card-picture',
+                                img: {
+                                    src: card.src
+                                }
+                            })
+                    .block-esg__card-content
+                        .block-esg__card-title=card.title
+                        if card.list
+                            ul.block-esg__card-list
+                                each li in card.list
+                                    li.block-esg__card-list-item=li

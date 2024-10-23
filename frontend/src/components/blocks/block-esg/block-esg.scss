@@ -1,0 +1,130 @@
+.block-esg {
+    --block-esg-gap: #{remify(8)};
+    $root: &;
+    margin-top: calc(-1 * var(--block-esg-gap));
+    margin-left: calc(-0.5 * var(--block-esg-gap));
+    margin-right: calc(-0.5 * var(--block-esg-gap));
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        flex-basis: 100%;
+        padding-left: calc(0.5 * var(--block-esg-gap));
+        padding-right: calc(0.5 * var(--block-esg-gap));
+        margin-top: calc(1 * var(--block-esg-gap));
+
+        @include media-breakpoint-up(xl) {
+            flex-basis: calc(100% / 3);
+        }
+    }
+
+    &__card {
+        position: relative;
+        overflow: hidden;
+
+        background-color: $white;
+        padding: remify(20);
+        border-radius: $border-radius;
+        height: 100%;
+
+        @include media-breakpoint-up(xl) {
+            padding: remify(30);
+            border-radius: $border-radius-md;
+        }
+
+        &--secondary {
+            background: linear-gradient(
+                0.31deg,
+                #1a268a -16.38%,
+                #2f41dd 99.6%
+            );
+            color: $white;
+        }
+
+        &--white {
+            background: $main-blue;
+            color: $white;
+        }
+    }
+
+    &__card-title {
+        flex-basis: 100%;
+        margin-bottom: remify(40);
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1;
+        @include rem-adaptive-font(24, 26, 28, 32);
+        @include media-breakpoint-up(md) {
+            flex-basis: 41%;
+        }
+        @include media-breakpoint-up(xl) {
+            flex-basis: 100%;
+            margin-bottom: remify(60);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+        }
+    }
+
+    &__card-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__card-picture {
+        width: 100%;
+        height: 100%;
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card-list {
+        flex-basis: 100%;
+
+        @include media-breakpoint-up(md) {
+            flex-basis: 59%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            flex-basis: 100%;
+        }
+
+        #{$root}__card--secondary & {
+            opacity: 0.7;
+        }
+    }
+
+    &__card-list-item {
+        position: relative;
+        padding-left: remify(20);
+        font-size: remify(16);
+        &::before {
+            content: "";
+            position: absolute;
+            left: remify(8);
+            top: remify(9);
+            width: remify(4);
+            height: remify(4);
+            border-radius: 50%;
+            background-color: $body-color;
+        }
+        #{$root}__card--secondary &,
+        #{$root}__card--white & {
+            &::before {
+                background-color: $white;
+            }
+        }
+    }
+}
