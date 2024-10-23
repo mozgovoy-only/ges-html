@@ -3,7 +3,7 @@ mixin footer(props)
         .footer__left
             .footer__left-title Ответим на ваши </br> вопросы
             .footer__left-button
-                +button-main({ text: 'связаться с нами' })(class="button-main--white")
+                +button-main({ text: 'связаться с нами' })(class='button-main--white')
         .footer__right
             .footer__right-logo
                 +svg('logo')
@@ -13,6 +13,6 @@ mixin footer(props)
                 | The user is notified that any materials posted on the website are the intellectual property of HPP Construction LLC (the right holder). The User has no right to perform any actions with the intellectual property objects without prior written permission of the right holder, otherwise, the right holder reserves the right to levy fines, stipulated by Russian legislation, as well as to apply to competent authorities for protection of their rights and legitimate interests.
             .footer__right-info
                 .footer__right-copyright GES Construction © 2024
-                a.footer__right-politic(href="/politic") Политика конфиденциальности
+                a.footer__right-politic(href='/politic') Политика конфиденциальности
             .footer__right-dev
                 +svg('dev-only')

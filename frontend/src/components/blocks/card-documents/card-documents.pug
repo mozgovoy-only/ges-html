@@ -2,7 +2,7 @@ mixin card-documents(props)
     .card-documents&attributes(attributes)(data-component='card-documents')
         .card-documents__content
             .card-documents__label
-                +text-label({ text: props.textLabel })(class="text-label--black")
+                +text-label({ text: props.textLabel })(class='text-label--black')
             .card-documents__title=props.title
             .card-documents__description
                 if props.date
