@@ -1,0 +1,15 @@
+mixin section-projects(props)
+    section.section-projects&attributes(attributes)(data-component='section-projects')
+        .section-projects__heading
+            .section-projects__filters
+            .section-projects__tabs
+                .section-projects__tabs-button
+                    +button-main({ text: 'text' })
+                .section-projects__tabs-button
+                    +button-main({ text: 'text' })
+        .section-projects__tabs-content
+            .section-projects__tabs-pills
+                .section-projects__content
+                    +block-projects(props)
+                .section-projects__more
+                    +button-main({ text: 'загрузить еще' })

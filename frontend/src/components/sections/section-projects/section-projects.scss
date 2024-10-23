@@ -1,0 +1,20 @@
+.section-projects {
+    $root: &;
+    max-width: remify(1920);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 remify(20);
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 remify(40);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 0 remify(50);
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+    }
+}
