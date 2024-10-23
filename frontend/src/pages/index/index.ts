@@ -5,6 +5,7 @@ import SectionMain from '@/components/sections/section-main/section-main';
 import SectionAbout from '@/components/sections/section-about/section-about';
 import SectionStatus from '@/components/sections/section-status/section-status';
 import SectionDocuments from '@/components/sections/section-documents/section-documents';
+import SectionProjects from '@/components/sections/section-projects/section-projects';
 import BlockHeroSlider from '@/components/blocks/block-hero-slider/block-hero-slider';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProjects from '@/components/blocks/block-projects/block-projects';
@@ -33,6 +34,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-about': SectionAbout,
     'section-status': SectionStatus,
     'section-documents': SectionDocuments,
+    'section-projects': SectionProjects,
     'block-hero-slider': BlockHeroSlider,
     'block-heading': BlockHeading,
     'block-projects': BlockProjects,
