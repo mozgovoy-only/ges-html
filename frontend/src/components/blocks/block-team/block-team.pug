@@ -1,8 +1,5 @@
 mixin block-team(props)
     .block-team&attributes(attributes)(data-component='block-team')
-        .block-team__item
-            +card-team()
-        .block-team__item
-            +card-team()
-        .block-team__item
-            +card-team()
+        each card in props.cards
+            .block-team__item
+                +card-team(card)
