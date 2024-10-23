@@ -1,0 +1,25 @@
+.block-team {
+    --block-team-gap-x: #{remify(8)};
+    --block-team-gap-y: #{remify(8)};
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--block-team-gap-y));
+    margin-left: calc(-0.5 * var(--block-team-gap-x));
+    margin-right: calc(-0.5 * var(--block-team-gap-x));
+
+    &__item {
+        flex-basis: 100%;
+        padding-left: calc(0.5 * var(--block-team-gap-x));
+        padding-right: calc(0.5 * var(--block-team-gap-x));
+        margin-top: calc(1 * var(--block-team-gap-y));
+
+        @include media-breakpoint-up(md) {
+            flex-basis: 50%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            flex-basis: calc(100% / 3);
+        }
+    }
+}

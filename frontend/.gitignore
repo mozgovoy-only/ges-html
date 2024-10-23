@@ -1,0 +1,14 @@
+/node_modules
+
+# Build
+/build
+/dist
+
+# Files
+.idea
+.DS_Store
+
+# dev environment
+/dev
+env.config.js
+/scripts/**/*.txt

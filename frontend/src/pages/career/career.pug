@@ -1,0 +1,16 @@
+extends ../../app/pug/layout
+
+block title
+    | Карьера
+
+block content
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="career")
+        +section-hero
+            +block-hero(dataJson.career.blockHero)
+        +section-main({ heading: dataJson.career.blockHeading.workWithUs })
+            +block-statistic(dataJson.career.blockStatistic)
+        +section-main({ heading: dataJson.career.blockHeading.valuation, inner: true })
+            +block-solution(dataJson.career.blockSolution)
+        +section-about(dataJson.career.sectionAbout)
+        +section-main({ heading: dataJson.career.blockHeading.hr })
+            +block-relation()

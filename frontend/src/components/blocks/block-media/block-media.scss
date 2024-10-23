@@ -1,0 +1,60 @@
+.block-media {
+    --block-media-gap: #{remify(8)};
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--block-media-gap));
+    margin-left: calc(-0.5 * var(--block-media-gap));
+    margin-right: calc(-0.5 * var(--block-media-gap));
+
+    &__left,
+    &__right {
+        flex: 0 0 auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        min-height: remify(300);
+        margin-top: var(--block-media-gap);
+        padding-right: calc(0.5 * var(--block-media-gap));
+        padding-left: calc(0.5 * var(--block-media-gap));
+
+        @include media-breakpoint-up(md) {
+            min-height: remify(400);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            min-height: remify(450);
+        }
+    }
+    &__left {
+        @include media-breakpoint-up(md) {
+            flex-basis: 58.8%;
+            max-width: 58.8%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            flex-basis: 70%;
+            max-width: 70%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            flex-basis: 66%;
+            max-width: 66%;
+        }
+    }
+    &__right {
+        @include media-breakpoint-up(md) {
+            flex-basis: 41.2%;
+            max-width: 41.2%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            flex-basis: 30%;
+            max-width: 30%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            flex-basis: 34%;
+            max-width: 34%;
+        }
+    }
+}

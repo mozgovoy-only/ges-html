@@ -1,0 +1,38 @@
+-
+    var menuList = [
+        {
+            linkText: 'О компании',
+            href: '/about'
+        },
+        {
+            linkText: 'Карьера',
+            href: '/career'
+        },
+        {
+            linkText: 'Документы',
+            href: '/documents'
+        },
+        {
+            linkText: 'Услуги',
+            href: '/services'
+        },
+        {
+            linkText: 'Контакты',
+            href: '/contacts'
+        },
+        {
+            linkText: 'Пресс-центр',
+            href: '/press-center'
+        },
+        {
+            linkText: 'Проекты',
+            href: '/projects'
+        }
+    ]
+
+
+mixin footer-menu(props)
+    ul.footer-menu&attributes(attributes)(data-component='footer-menu')
+        each item in menuList
+            li.footer-menu__item
+                a.footer-menu__link(href=item.href)=item.linkText

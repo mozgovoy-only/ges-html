@@ -1,0 +1,263 @@
+.card-projects {
+    $root: &;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+        display: grid;
+        grid-template-columns: 49% 51%;
+        grid-template-rows: auto auto;
+    }
+    @include media-breakpoint-up(xl) {
+        grid-template-columns: 59% 41%;
+    }
+    @include media-breakpoint-up(xxl) {
+        grid-template-columns: 59.5% 40.5%;
+    }
+
+    &--revert {
+        @include media-breakpoint-up(md) {
+            grid-template-columns: 51% 49%;
+        }
+        @include media-breakpoint-up(xl) {
+            grid-template-columns: 41% 59%;
+        }
+        @include media-breakpoint-up(xxl) {
+            grid-template-columns: 40.5% 59.5%;
+        }
+    }
+    &--small {
+        @include media-breakpoint-up(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-up(xl) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-up(xxl) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__top,
+    &__bottom,
+    &__image {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-up(md) {
+            padding-left: remify(30);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-left: remify(40);
+        }
+        #{$root}--revert & {
+            @include media-breakpoint-up(md) {
+                grid-column: 1 / 2;
+                padding-left: 0;
+                padding-right: remify(30);
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding-left: 0;
+                padding-right: remify(40);
+            }
+        }
+    }
+
+    &__top-title {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1;
+        @include rem-adaptive-font(28, 32, 36, 40);
+        color: $main-blue;
+        transition: color $duration-fast $ease-default;
+        margin-bottom: remify(15);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(30);
+        }
+
+        #{$root}:hover & {
+            color: $blue-hover-only;
+        }
+    }
+
+    &__top-text {
+        font-size: remify(16);
+        margin-bottom: remify(20);
+    }
+    &__image {
+        position: relative;
+        margin-bottom: remify(20);
+        @include media-breakpoint-up(md) {
+            grid-row: 1 / 3;
+            margin-bottom: 0;
+        }
+        #{$root}--revert & {
+            @include media-breakpoint-up(md) {
+                grid-column: 2 / 3;
+            }
+        }
+    }
+
+    &__image-picture {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        overflow: hidden;
+        border-radius: $border-radius-sm;
+        padding-top: calc(400 / 335 * 100%);
+        display: flex;
+
+        @media (min-width: 575px) {
+            padding-top: calc(320 / 360 * 100%);
+        }
+
+        @include media-breakpoint-up(md) {
+            border-radius: $border-radius;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-top: calc(460 / 666 * 100%);
+        }
+        #{$root}--large & {
+            @include media-breakpoint-up(md) {
+                padding-top: calc(468 / 360 * 100%);
+            }
+            @include media-breakpoint-up(xxl) {
+                padding-top: calc(801 / 666 * 100%);
+            }
+        }
+        #{$root}--small & {
+            @include media-breakpoint-up(xl) {
+                padding-top: calc(371 / 394 * 100%);
+            }
+            @include media-breakpoint-up(xxl) {
+                padding-top: calc(417 / 441 * 100%);
+            }
+        }
+        > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+
+    &__label {
+        z-index: 2;
+        position: absolute;
+        top: remify(15);
+        left: remify(15);
+
+        @include media-breakpoint-up(md) {
+            top: remify(20);
+            left: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: remify(30);
+            left: remify(30);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            top: remify(35);
+            left: remify(35);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $main-blue;
+        border-radius: 50%;
+        width: remify(60);
+        height: remify(60);
+        opacity: 0;
+        transition: opacity $duration-fast $ease-default;
+        @include media-breakpoint-up(md) {
+            width: remify(100);
+            height: remify(100);
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: remify(120);
+            height: remify(120);
+        }
+
+        > svg {
+            color: $white;
+            width: 20%;
+            height: 20%;
+        }
+
+        #{$root}:hover & {
+            opacity: 1;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-up(md) {
+            align-self: end;
+            padding-left: remify(30);
+        }
+        @include media-breakpoint-up(xxl) {
+            padding-left: remify(40);
+        }
+
+        #{$root}--revert & {
+            @include media-breakpoint-up(md) {
+                grid-column: 1 / 2;
+                padding-left: 0;
+                padding-right: remify(30);
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding-left: 0;
+                padding-right: remify(40);
+            }
+        }
+    }
+    &__bottom-col {
+        flex-basis: 45%;
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            flex-basis: 55%;
+            max-width: 55%;
+        }
+    }
+
+    &__bottom-title {
+        text-transform: uppercase;
+        color: $black-60;
+        margin-bottom: remify(6);
+        font-size: remify(14);
+    }
+    &__bottom-text {
+        @include rem-adaptive-font(22, 24, 26, 28);
+        line-height: 1.2;
+    }
+}

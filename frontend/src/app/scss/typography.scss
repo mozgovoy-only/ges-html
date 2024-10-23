@@ -1,0 +1,23 @@
+
+@mixin h1 {
+    line-height: 1;
+    font-weight: normal;
+    @include rem-adaptive-font(30, 60, 60, 80);
+}
+
+@mixin body1 {
+    @include rem-adaptive-font(14, 14, 16, 16);
+    line-height: 1.5;
+}
+
+
+// Заголовки
+.h-1 {
+    @include h1;
+}
+
+// Обычный текст
+
+.body-1 {
+    @include body1;
+}

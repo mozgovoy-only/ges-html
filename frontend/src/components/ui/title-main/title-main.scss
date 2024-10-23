@@ -1,0 +1,19 @@
+.title-main {
+    $root: &;
+    font-family: $font-tt-firs-neue;
+    letter-spacing: $letter-spacing-second;
+    line-height: $line-height-second;
+    @include rem-adaptive-font(28, 32, 36, 40);
+
+    &__inner {
+        color: $main-blue;
+
+        #{$root}:not(#{$root}--not-hover) & {
+            transition: color $duration-fast $ease-default;
+        }
+
+        #{$root}:not(#{$root}--not-hover):hover & {
+            color: $blue-hover-only;
+        }
+    }
+}

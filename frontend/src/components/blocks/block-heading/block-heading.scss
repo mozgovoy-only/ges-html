@@ -1,0 +1,78 @@
+.block-heading {
+    $root: &;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    &__indent {
+        width: 100%;
+        display: flex;
+
+        margin-bottom: remify(25);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(30);
+            max-width: remify(500);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-width: none;
+            width: auto;
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            max-width: remify(500);
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: remify(595);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: remify(665);
+        }
+    }
+    &__title + &__text {
+        margin-top: remify(15);
+        @include media-breakpoint-up(md) {
+            margin-top: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(25);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(30);
+        }
+    }
+
+    &__text {
+        font-size: remify(16);
+    }
+
+    &__button {
+        margin-top: remify(25);
+        @include media-breakpoint-up(md) {
+            margin-top: remify(30);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(35);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: remify(40);
+        }
+    }
+}

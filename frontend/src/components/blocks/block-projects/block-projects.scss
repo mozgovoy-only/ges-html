@@ -1,0 +1,30 @@
+.block-projects {
+    --block-projects-gap-y: #{remify(50)};
+    $root: &;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(-1 * var(--block-projects-gap-y));
+    @include media-breakpoint-up(md) {
+        --block-projects-gap-y: #{remify(80)};
+    }
+
+    @include media-breakpoint-up(xl) {
+        --block-projects-gap-y: #{remify(101)};
+    }
+
+    @include media-breakpoint-up(xxl) {
+        --block-projects-gap-y: #{remify(120)};
+    }
+
+    &__item {
+        margin-top: calc(1 * var(--block-projects-gap-y));
+        &--offset-right {
+            @include media-breakpoint-up(xl) {
+                padding-right: remify(190);
+            }
+            @include media-breakpoint-up(xl) {
+                padding-right: remify(220);
+            }
+        }
+    }
+}

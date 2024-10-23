@@ -1,0 +1,6 @@
+mixin row-solution(props)
+    .row-solution&attributes(attributes)(data-component='row-solution')
+        +svg(props.icon).row-solution__icon
+        .row-solution__content
+            .row-solution__title=props.title
+            .row-solution__text=props.text

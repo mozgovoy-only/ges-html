@@ -1,0 +1,11 @@
+extends ../../app/pug/layout
+
+block title
+    | Документы
+
+block content
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="documents")
+        +section-hero
+            +block-hero(dataJson.documents.blockHero)
+        +section-documents(dataJson.documents.sectionDocuments)
+

@@ -1,0 +1,101 @@
+{
+    "blockHeading": {
+        "company": {
+            "textIndent": "о компании",
+            "title": "GES Construction – <span class=\"title-main__inner\">высоко квалифицированные профессионалы</span>, стремящиеся к достижению превосходства",
+            "linkText": "о компании",
+            "href": "/about"
+        },
+        "projects": {
+            "textIndent": "проекты",
+            "title": "Знаковые <span class=\"title-main__inner\">объекты</span>",
+            "linkText": "все проекты",
+            "href": "/projects",
+            "text": "Экспертиза GES Construction охватывает коммерческое, жилое, промышленное и инфраструктурное строительство. Мы создаем современные объекты недвижимости, соблюдая высочайшие стандарты качества и безопасности."
+        },
+        "media":{
+            "textIndent": "Медиа",
+            "title": "Медиа",
+            "linkText": "все новости",
+            "href": "/press-center"
+        }
+    },
+    "blockStatistic": {
+        "cards": [
+            {
+                "number": ">20",
+                "topText": "лет",
+                "bottomText": "опыта работы руководящего состава компании на строительном рынке"
+            },
+            {
+                "number": "110",
+                "topText": "тыс. кв.м.",
+                "bottomText": "площадь построенных жилых комплексов бизнес и премиум класса",
+                "cardClassList": "card-statistic--white",
+                "src": "../../assets/images/card-statistic/1.jpg"
+            },
+            {
+                "number": ">5",
+                "topText": "млрд. USD ",
+                "bottomText": "общий управляемый бюджет руководящего состава компании в других организациях",
+                "cardClassList": "card-statistic--bg-secondary"
+            }
+        ]
+    },
+    "blockProjects": {
+        "cards": [
+            {
+                "title": "ЖК «JOIS»",
+                "text": "Многофункциональный жилой комплекс «JOIS» — 1 этап строительства. Две башни  высотой 200м и 170м.",
+                "src": "../../assets/images/card-projects/1.jpg",
+                "area": "131 900 кв.м.",
+                "href": "/projects-view",
+                "date": "2024 - 2026"
+            },
+            {
+                "title": "ЖК «Dream Towers»",
+                "text": "Многофункциональный жилой комплекс",
+                "src": "../../assets/images/card-projects/2.jpg",
+                "area": "58 300 кв.м.",
+                "href": "/projects-view",
+                "date": "2021 – 2023",
+                "cardClassList": "card-projects--revert card-projects--large"
+            },
+            {
+                "title": "Южный речной вокзал",
+                "text": "Реконструкция транспортного комплекса “Южный речной вокзал” на реке Москва в Нагатинской пойме",
+                "src": "../../assets/images/card-projects/3.jpg",
+                "area": "5 637 кв.м.",
+                "href": "/projects-view",
+                "date": "2021 – 2023",
+                "itemClassList": "block-projects__item--offset-right",
+                "cardClassList": "card-projects--small"
+            }
+        ]
+    },
+    "sectionAbout": {
+        "textIndent": "карьера",
+        "title": "Развивайтесь</br> вместе с нами",
+        "text": "Мы поддерживаем сотрудников в стремлении к профессиональному развитию. Ценим вклад каждого и предлагаем возможности для роста и обучения. Присоединяясь к нашей команде, вы становитесь частью коллектива, для которого честность и профессионализм —  неотъемлемые составляющие успеха",
+        "linkText": "карьера",
+        "href": "/career",
+        "src": "../../assets/images/section-about/1.jpg"
+    },
+    "blockMedia": {
+        "cardLeft": {
+            "src": "../../assets/images/card-media/1.jpg",
+            "title": "Южный речной вокзал получил новую жизнь после реконструкции",
+            "href": "/press-center",
+            "date": "25.08.2024",
+            "labelText": "статья",
+            "labelClassList": "text-label--white"
+        },
+        "cardRight": {
+            "title": "Южный речной вокзал получил новую жизнь после реконструкции",
+            "href": "/press-center",
+            "date": "21.08.2024",
+            "labelText": "статья",
+            "labelClassList": "text-label--dark"
+        }
+    }
+}

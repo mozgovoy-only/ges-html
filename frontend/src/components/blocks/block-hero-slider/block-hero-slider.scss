@@ -1,0 +1,34 @@
+.block-hero-slider {
+    $root: &;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius-sm;
+
+    &__slides {
+        position: relative;
+        z-index: 1;
+    }
+    &__content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: remify(20);
+        @include media-breakpoint-up(xl) {
+            padding: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: remify(30);
+        }
+    }
+    &__content-title {
+        color: $color-bg;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        @include rem-adaptive-font(40, 48, 54, 62);
+        max-width: remify(450);
+    }
+}

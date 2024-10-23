@@ -1,0 +1,37 @@
+-
+    var menuList = [
+        {
+            linkText: 'О компании',
+            href: '/about'
+        },
+        {
+            linkText: 'Услуги',
+            href: '/services'
+        },
+        {
+            linkText: 'Проекты',
+            href: '/projects'
+        },
+        {
+            linkText: 'Карьера',
+            href: '/career'
+        },
+        {
+            linkText: 'Пресс-центр',
+            href: '/press-center'
+        },
+        {
+            linkText: 'Документы',
+            href: '/documents'
+        },
+        {
+            linkText: 'Контакты',
+            href: '/contacts'
+        }
+    ]
+
+mixin header-menu(props)
+    ul.header-menu&attributes(attributes)(data-component='header-menu')
+        each item in menuList
+            li.header-menu__item
+                a.header-menu__link(href=item.href)=item.linkText
