@@ -1,0 +1,103 @@
+.section-hero-slider {
+    $root: &;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+    margin-bottom: remify(60);
+    @include media-breakpoint-up(md) {
+        margin-bottom: remify(80);
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: remify(100);
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-bottom: remify(120);
+    }
+    &__slides {
+        position: relative;
+        z-index: 1;
+
+    }
+    &__content {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: remify(20);
+        @include media-breakpoint-up(xl) {
+            padding: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: remify(30);
+        }
+    }
+    &__content-title {
+        color: $color-bg;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        @include rem-adaptive-font(40, 48, 54, 62);
+        max-width: remify(450);
+    }
+
+    &__slide {
+        position: relative;
+
+        width: 100%;
+        display: flex;
+        height: calc(100vh - var(--header-height));
+        max-height: remify(704);
+        min-height: remify(576);
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+
+        &::before {
+            opacity: 0.4;
+            height: remify(300);
+            background: linear-gradient(
+                180deg,
+                #000916 0%,
+                rgba(0, 9, 22, 0) 100%
+            );
+        }
+
+        &::after {
+            bottom: -50px;
+            height: remify(300);
+            background: linear-gradient(
+                180deg,
+                rgba(27, 29, 30, 0) 0%,
+                #1b1d1e 100%
+            );
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 1;
+        > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
