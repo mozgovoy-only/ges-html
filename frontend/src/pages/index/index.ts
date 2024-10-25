@@ -21,6 +21,7 @@ import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
 import CardDocuments from '@/components/blocks/card-documents/card-documents';
 import CardTeam from '@/components/blocks/card-team/card-team';
+import CardPressCenter from '@/components/blocks/card-press-center/card-press-center';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
@@ -50,6 +51,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'card-statistic': CardStatistic,
     'card-documents': CardDocuments,
     'card-team': CardTeam,
+    'card-press-center': CardPressCenter,
     'row-solution': RowSolution,
     'title-main': TitleMain,
     'button-main': ButtonMain,
