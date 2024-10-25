@@ -47,6 +47,31 @@
         }
     }
 
+    p {
+        @extend .paragraph;
+    }
+
+    // ordered list
+    ol {
+        @extend .ol-list;
+    }
+
+    // unordered list
+    ul {
+        @extend .ul-list;
+    }
+
+    ol ol,
+    ul ul,
+    ol ul,
+    ul ol {
+
+        margin-bottom: 0;
+
+        &:not(.list-unstyled) {
+            margin-bottom: 0;
+        }
+    }
 
     img {
         margin-bottom: remify(16);

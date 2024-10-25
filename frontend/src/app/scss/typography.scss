@@ -45,11 +45,6 @@
     font-size: 0.875em;
 }
 
-@mixin body1 {
-    @include rem-adaptive-font(14, 14, 16, 16);
-    line-height: $line-height-base;
-}
-
 // Заголовки
 .h-1 {
     @include h1;
@@ -80,11 +75,79 @@
 }
 // Обычный текст
 
-.body-1 {
-    @include body1;
-}
-
 .paragraph {
     font-size: remify(16);
     margin-bottom: remify(16);
+}
+
+.ol-list {
+    &:not(.list-unstyled) {
+        margin-bottom: remify(16);
+        padding-left: remify(24);
+        @include rem-fluid(margin-bottom, 20, 20, 25, 30);
+
+        ol,
+        ul {
+            margin-bottom: 0;
+        }
+
+        > li {
+            margin-bottom: remify(14);
+            padding-left: remify(12);
+
+            > ol,
+            > ul {
+                &:first-of-type {
+                    margin-top: remify(14);
+                }
+            }
+        }
+    }
+    &.list-unstyled {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        > li {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.ul-list {
+    &:not(.list-unstyled) {
+        margin-bottom: remify(16);
+        padding-left: remify(12);
+        @include rem-fluid(margin-bottom, 20, 20, 25, 30);
+
+        ol,
+        ul {
+            margin-bottom: 0;
+        }
+
+        > li {
+            margin-bottom: remify(14);
+            padding-left: remify(12);
+            > ol,
+            > ul {
+                &:first-of-type {
+                    margin-top: remify(14);
+                }
+            }
+            &::marker {
+                content: "●";
+
+                color: $main-blue;
+            }
+        }
+    }
+
+    &.list-unstyled {
+        list-style: none;
+        margin: 0;
+        > li {
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
