@@ -1,0 +1,9 @@
+extends ../../app/pug/layout
+
+block title
+    | Южный речной вокзал получил новую жизнь после реконструкции
+
+block content
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="press-center-view")
+        +section-main({ heading: dataJson.pressCenterView.blockHeading.media })
+            +block-media(dataJson.pressCenterView.blockMedia)
