@@ -41,40 +41,42 @@
     @include rem-fluid(margin-bottom, 15, 15, 20, 20);
 }
 
+@mixin small {
+    font-size: 0.875em;
+}
+
 @mixin body1 {
     @include rem-adaptive-font(14, 14, 16, 16);
     line-height: $line-height-base;
 }
 
 // Заголовки
-.h-1,
-h1 {
+.h-1 {
     @include h1;
 }
 
-.h-2,
-h2 {
+.h-2 {
     @include h2;
 }
 
-.h-2,
-h3 {
+.h-3 {
     @include h3;
 }
 
-.h-4,
-h4 {
+.h-4 {
     @include h4;
 }
 
-.h-5,
-h5 {
+.h-5 {
     @include h5;
 }
 
-.h-6,
-h6 {
+.h-6 {
     @include h6;
+}
+
+.subheading {
+    @include small;
 }
 // Обычный текст
 
@@ -82,8 +84,7 @@ h6 {
     @include body1;
 }
 
-.paragraph,
-p {
+.paragraph {
     font-size: remify(16);
     margin-bottom: remify(16);
 }
