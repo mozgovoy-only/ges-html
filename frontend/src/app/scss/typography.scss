@@ -1,23 +1,89 @@
+@mixin heading {
+    font-weight: 400;
+    line-height: $line-height-second;
+    letter-spacing: $letter-spacing-second;
+    font-family: $font-tt-firs-neue;
+}
 
 @mixin h1 {
-    line-height: 1;
-    font-weight: normal;
-    @include rem-adaptive-font(30, 60, 60, 80);
+    @include heading;
+    @include rem-adaptive-font(40, 48, 64, 62);
+    @include rem-fluid(margin-bottom, 50, 55, 60, 70);
+}
+
+@mixin h2 {
+    @include heading;
+    @include rem-adaptive-font(28, 32, 36, 40);
+    @include rem-fluid(margin-bottom, 20, 20, 25, 30);
+}
+
+@mixin h3 {
+    @include heading;
+    @include rem-adaptive-font(32, 28, 26, 24);
+    @include rem-fluid(margin-bottom, 15, 15, 20, 20);
+}
+
+@mixin h4 {
+    @include heading;
+    @include rem-adaptive-font(28, 26, 24, 22);
+    @include rem-fluid(margin-bottom, 15, 15, 20, 20);
+}
+
+@mixin h5 {
+    @include heading;
+    @include rem-adaptive-font(24, 22, 20, 20);
+    @include rem-fluid(margin-bottom, 15, 15, 20, 20);
+}
+
+@mixin h6 {
+    @include heading;
+    @include rem-adaptive-font(18, 18, 16, 16);
+    @include rem-fluid(margin-bottom, 15, 15, 20, 20);
 }
 
 @mixin body1 {
     @include rem-adaptive-font(14, 14, 16, 16);
-    line-height: 1.5;
+    line-height: $line-height-base;
 }
 
-
 // Заголовки
-.h-1 {
+.h-1,
+h1 {
     @include h1;
 }
 
+.h-2,
+h2 {
+    @include h2;
+}
+
+.h-2,
+h3 {
+    @include h3;
+}
+
+.h-4,
+h4 {
+    @include h4;
+}
+
+.h-5,
+h5 {
+    @include h5;
+}
+
+.h-6,
+h6 {
+    @include h6;
+}
 // Обычный текст
 
 .body-1 {
     @include body1;
+}
+
+.paragraph,
+p {
+    font-size: remify(16);
+    margin-bottom: remify(16);
 }
