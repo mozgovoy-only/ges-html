@@ -46,4 +46,120 @@
             @extend .subheading;
         }
     }
+
+
+    img {
+        margin-bottom: remify(16);
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+
+            width: auto;
+            margin-right: auto;
+            margin-bottom: remify(12);
+            margin-left: auto;
+        }
+
+        &.img-rounded {
+            border-radius: $border-radius !important;
+        }
+
+        &.img-circle {
+            border-radius: 50% !important;
+        }
+
+        &.img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &[align="left"],
+        &.pull-left {
+            float: left;
+
+            margin-right: auto;
+            margin-bottom: remify(16);
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+                float: none;
+
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        &[align="right"],
+        &.pull-right {
+            float: right;
+
+            margin-bottom: remify(16);
+            margin-left: auto;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+                float: none;
+
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        &[align="center"],
+        .text-center &,
+        &.text-center {
+            display: block;
+            clear: both;
+
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    picture {
+        margin-bottom: remify(16);
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+
+            width: auto;
+            margin-right: auto;
+            margin-bottom: remify(12);
+            margin-left: auto;
+        }
+
+        &.pull-left {
+            float: left;
+
+            margin-right: auto;
+            margin-bottom: remify(16);
+
+            @include media-breakpoint-down(sm) {
+                float: none;
+
+                margin-right: 0;
+            }
+        }
+
+        &.pull-right {
+            float: right;
+
+            margin-bottom: remify(16);
+            margin-left: auto;
+
+            @include media-breakpoint-down(sm) {
+                float: none;
+
+                margin-left: 0;
+            }
+        }
+
+        &.text-center {
+            display: block;
+            clear: both;
+
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 }
