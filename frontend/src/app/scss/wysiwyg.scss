@@ -1,0 +1,49 @@
+.wysiwyg {
+    h1,
+    .h1 {
+        @extend .h-1;
+        small {
+            @extend .subheading;
+        }
+    }
+
+    h2,
+    .h2 {
+        @extend .h-2;
+        small {
+            @extend .subheading;
+        }
+    }
+
+    h3,
+    .h3 {
+        @extend .h-3;
+        small {
+            @extend .subheading;
+        }
+    }
+
+    h4,
+    .h4 {
+        @extend .h-4;
+        small {
+            @extend .subheading;
+        }
+    }
+
+    h5,
+    .h5 {
+        @extend .h-5;
+        small {
+            @extend .subheading;
+        }
+    }
+
+    h6,
+    .h6 {
+        @extend .h-6;
+        small {
+            @extend .subheading;
+        }
+    }
+}
