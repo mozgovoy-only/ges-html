@@ -1,2 +1,14 @@
 mixin card-press-center(props)
     .card-press-center&attributes(attributes)(data-component='card-press-center')
+        .card-press-center__image
+            +picture({
+                classList: 'card-press-center__picture',
+                img: {
+                    src: props.src
+                }
+            })
+        .card-press-center__content
+            .card-press-center__content-top
+                +text-label({ text: props.textLabel })
+                .card-press-center__date=props.date
+            .card-press-center__title=props.title
