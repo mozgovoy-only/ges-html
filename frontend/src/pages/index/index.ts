@@ -10,6 +10,7 @@ import SectionHistory from '@/components/sections/section-history/section-histor
 import SectionHeroSlider from '@/components/sections/section-hero-slider/section-hero-slider';
 import SectionPressCenter from '@/components/sections/section-press-center/section-press-center';
 import SectionContacts from '@/components/sections/section-contacts/section-contacts';
+import SectionProjectsHero from '@/components/sections/section-projects-hero/section-projects-hero';
 import BlockHeading from '@/components/blocks/block-heading/block-heading';
 import BlockProjects from '@/components/blocks/block-projects/block-projects';
 import BlockMedia from '@/components/blocks/block-media/block-media';
@@ -42,6 +43,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'section-hero-slider': SectionHeroSlider,
     'section-press-center': SectionPressCenter,
     'section-contacts': SectionContacts,
+    'section-projects-hero': SectionProjectsHero,
     'block-heading': BlockHeading,
     'block-projects': BlockProjects,
     'block-media': BlockMedia,
