@@ -6,9 +6,39 @@
         "cards": [
             {
                 "title": "Жилой комплекс Dream Towers – готов принять вас!",
-                "textLabel": "Реквизиты компании",
+                "href": "/press-center-view",
+                "textLabel": "статья",
                 "date": "25.08.2024",
-                "itemClassList": "section-press-center__content-item--large"
+                "src": "../../assets/images/card-press-center/1.jpg",
+                "itemClassList": "section-press-center__content-item--large",
+                "cardClassList": "card-press-center--row card-press-center--reverse"
+            },
+            {
+                "title": "Деловые кварталы: высокотехнологичная инфраструктура для безопасного бизнеса",
+                "href": "/press-center-view",
+                "textLabel": "статья",
+                "date": "25.08.2024",
+                "src": "../../assets/images/card-press-center/2.jpg"
+            },
+            {
+                "title": "10 самых ярких зданий, построенных в Москве в 2023-м",
+                "href": "/press-center-view",
+                "textLabel": "статья",
+                "date": "25.08.2024",
+                "src": "../../assets/images/card-press-center/3.jpg"
+            },
+            {
+                "title": "Деловые кварталы: высокотехнологичная инфраструктура для безопасного бизнеса",
+                "textLabel": "статья",
+                "date": "25.08.2024",
+                "src": "../../assets/images/card-press-center/4.jpg"
+            },
+            {
+                "title": "Кейс: Foriver Residence",
+                "href": "/press-center-view",
+                "textLabel": "статья",
+                "date": "25.08.2024",
+                "src": "../../assets/images/card-press-center/5.jpg"
             }
         ]
     }
