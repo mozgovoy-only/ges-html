@@ -1,5 +1,5 @@
 mixin card-press-center(props)
-    .card-press-center&attributes(attributes)(data-component='card-press-center')
+    a.card-press-center&attributes(attributes)(data-component='card-press-center', href=props.href)
         .card-press-center__image
             +picture({
                 classList: 'card-press-center__picture',
