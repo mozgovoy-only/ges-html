@@ -1,2 +1,9 @@
 mixin section-press-center(props)
     .section-press-center&attributes(attributes)(data-component='section-press-center')
+        .section-press-center__filter
+            .section-press-center__content
+            each card in props.cards
+                .section-press-center__content-item(class=card.itemClassList)
+                    +card-press-center(card)
+            .section-press-center__more
+                +button-main({ text: 'загрузить еще' })

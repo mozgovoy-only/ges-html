@@ -1,3 +1,51 @@
 .section-press-center {
     $root: &;
+    display: flex;
+    flex-direction: column;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: calc(-1 * remify(15));
+        margin-bottom: remify(40);
+        max-width: remify(998);
+        width: 100%;
+        margin: 0 calc(-0.5 * remify(8));
+        align-self: center;
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(50);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(60);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+            max-width: remify(1116);
+        }
+    }
+
+    &__content-item {
+        width: 100%;
+        margin-top: remify(15);
+        padding-left: calc(0.5 * remify(8));
+        padding-right: calc(0.5 * remify(8));
+    }
+
+    &__more {
+        margin-bottom: remify(60);
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(80);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(100);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(120);
+        }
+    }
 }
