@@ -16,14 +16,14 @@
     &__tabs {
         display: flex;
         flex-wrap: wrap;
-        margin-top: calc(-1 * remify(12));
+        margin-top: calc(-1 * #{remify(12)});
         margin-bottom: remify(25);
         @include media-breakpoint-up(md) {
             margin-bottom: remify(30);
         }
 
         @include media-breakpoint-up(xl) {
-            margin-top: calc(-1 * remify(15));
+            margin-top: calc(-1 * #{remify(15)});
             margin-bottom: remify(35);
         }
 
@@ -45,7 +45,7 @@
     &__content {
         display: flex;
         flex-direction: column;
-        margin-top: calc(-1 * remify(8));
+        margin-top: calc(-1 * #{remify(8)});
         margin-bottom: remify(40);
         max-width: remify(998);
         margin: 0 auto;
