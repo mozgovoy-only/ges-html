@@ -2,15 +2,19 @@
     $root: &;
     display: flex;
     flex-direction: column;
+    max-width: remify(1920);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 remify(20);
+
     &__content {
         display: flex;
-        flex-direction: column;
-        margin-top: calc(-1 * remify(15));
-        margin-bottom: remify(40);
+        flex-wrap: wrap;
         max-width: remify(998);
         width: 100%;
-        margin: 0 calc(-0.5 * remify(8));
+        margin: calc(-1 * #{remify(15)}) calc(-0.5 * #{remify(8)}) remify(40);
         align-self: center;
+
         @include media-breakpoint-up(md) {
             margin-bottom: remify(50);
         }
@@ -26,10 +30,19 @@
     }
 
     &__content-item {
-        width: 100%;
+        flex-basis: 100%;
         margin-top: remify(15);
-        padding-left: calc(0.5 * remify(8));
-        padding-right: calc(0.5 * remify(8));
+        padding-left: calc(0.5 * #{remify(8)});
+        padding-right: calc(0.5 * #{remify(8)});
+        @include media-breakpoint-up(md) {
+            flex-basis: 50%;
+        }
+
+        &--large {
+            @include media-breakpoint-up(md) {
+                flex-basis: 100%;
+            }
+        }
     }
 
     &__more {
