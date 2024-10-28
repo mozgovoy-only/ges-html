@@ -48,7 +48,39 @@
             margin-bottom: remify(120);
         }
     }
+    &__back {
+        display: flex;
+        align-items: center;
+        color: $white;
+        transition: color $duration-short $ease-default;
+        font-size: remify(16);
+        margin-top: remify(25);
+        margin-bottom: auto;
 
+        @include media-breakpoint-up(md) {
+            margin-top: remify(30);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(35);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: remify(40);
+        }
+
+        &:hover {
+            color: $white-50;
+        }
+    }
+    &__back-text {
+        margin-left: remify(8);
+    }
+
+    &__back-icon {
+        height: remify(16);
+        width: remify(16);
+    }
     &__content {
         display: flex;
         flex-direction: column;
@@ -64,6 +96,7 @@
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
         line-height: $line-height-second;
+        margin-top: remify(24);
         @include rem-adaptive-font(40, 48, 54, 63);
 
         @include media-breakpoint-up(xl) {
@@ -75,6 +108,7 @@
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
         line-height: 1.1;
+        margin-top: remify(24);
         @include rem-adaptive-font(28, 32, 36, 40);
         @include media-breakpoint-up(lg) {
             max-width: 80%;
