@@ -1,0 +1,32 @@
+{
+    "menuList": [
+        {
+            "linkText": "О компании",
+            "href": "/about"
+        },
+        {
+            "linkText": "Услуги",
+            "href": "/services"
+        },
+        {
+            "linkText": "Проекты",
+            "href": "/projects"
+        },
+        {
+            "linkText": "Карьера",
+            "href": "/career"
+        },
+        {
+            "linkText": "Пресс-центр",
+            "href": "/press-center"
+        },
+        {
+            "linkText": "Документы",
+            "href": "/documents"
+        },
+        {
+            "linkText": "Контакты",
+            "href": "/contacts"
+        }
+    ]
+}
