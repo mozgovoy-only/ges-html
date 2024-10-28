@@ -91,11 +91,27 @@
     &__menu {
         display: none;
         margin: 0 auto;
-
+        list-style: none;
+        padding: 0;
         @include media-breakpoint-up(xl) {
             display: flex;
         }
     }
+
+    &__menu-item {
+        margin-right: remify(16);
+    }
+
+    &__menu-link {
+        color: $white;
+        transition: color $duration-short $ease-default;
+
+        &:hover,
+        &:active {
+            color: $white-70;
+        }
+    }
+
     &__button-menu {
         @include media-breakpoint-up(xl) {
             display: none;
