@@ -27,6 +27,7 @@
         border-color $duration-fast $ease-default,
         background-color $duration-fast $ease-default;
     display: inline-block;
+    text-align: center;
 
     @include rem-adaptive-font(14, 14, 16, 16);
 
