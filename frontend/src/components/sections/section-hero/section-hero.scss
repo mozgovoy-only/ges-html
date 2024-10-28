@@ -6,16 +6,15 @@
     margin-right: auto;
     max-width: remify(1920);
 
-    &__content {
+    &__inner {
+        position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
         border-radius: $border-radius;
         min-height: remify(286);
         padding: calc(var(--header-height) - var(--offset-padding)) remify(20)
             remify(20);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        position: relative;
         background: url("../../assets/img/section-hero-bg-sm.svg"),
             linear-gradient(359.07deg, #1a268a -16.32%, #2f41dd 99.2%);
 
@@ -24,6 +23,7 @@
         background-position: 100% 100%;
 
         margin-bottom: remify(60);
+
         @include media-breakpoint-up(md) {
             min-height: remify(354);
             background: url("../../assets/img/section-hero-bg.svg"),
@@ -49,10 +49,17 @@
         }
     }
 
-    &__title {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-grow: 1;
+        color: $white;
         position: relative;
         z-index: 2;
-        color: $white;
+    }
+
+    &__title {
         text-transform: uppercase;
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
@@ -61,6 +68,39 @@
 
         @include media-breakpoint-up(xl) {
             max-width: 70%;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1.1;
+        @include rem-adaptive-font(28, 32, 36, 40);
+        @include media-breakpoint-up(lg) {
+            max-width: 80%;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 60%;
+        }
+        @include media-breakpoint-up(xxl) {
+            max-width: 50%;
+        }
+    }
+
+    &__date {
+        color: $white-50;
+        font-size: remify(16);
+        margin-top: remify(15);
+        @include media-breakpoint-up(md) {
+            margin-top: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: remify(30);
         }
     }
 

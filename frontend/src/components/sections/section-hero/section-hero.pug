@@ -1,6 +1,6 @@
 mixin section-hero(props)
     section.section-hero&attributes(attributes)(data-component='section-hero')
-        .section-hero__content
+        .section-hero__inner
             if props.src
                 .section-hero__image
                     +picture({
@@ -9,4 +9,11 @@ mixin section-hero(props)
                             src: props.src
                         }
                     })
-            .section-hero__title=props.title
+            .section-hero__content
+
+                if props.title
+                    .section-hero__title=props.title
+                if props.subtitle
+                    .section-hero__subtitle=props.subtitle
+                if props.date
+                    .section-hero__date=props.date
