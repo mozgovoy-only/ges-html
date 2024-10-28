@@ -11,15 +11,15 @@ mixin card-team(props)
             .card-team__name=props.name
             .card-team__job=props.job
             .card-team__detail
-                span.card-team__detail-text Подробнее
+                span.card-team__detail-text=props.detailText
                 +svg('plus')(class='card-team__detail-icon')
         .card-team__hovered
             .card-team__hovered-name=props.name
             .card-team__hovered-job=props.job
             .card-team__hovered-text!=props.text
             .card-team__hovered-bottom
-                span.card-team__hovered-suptitle в компании
+                span.card-team__hovered-suptitle=props.suptitle
                 span.card-team__hovered-year с 2017
             .card-team__hovered-detail
-                span.card-team__hovered-detail-text Подробнее
+                span.card-team__hovered-detail-text=props.detailText
                 +svg('minus')(class='card-team__hovered-detail-icon')

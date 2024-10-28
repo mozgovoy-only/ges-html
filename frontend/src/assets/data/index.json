@@ -50,7 +50,10 @@
                 "src": "../../assets/images/card-projects/1.jpg",
                 "area": "131 900 кв.м.",
                 "href": "/projects-view",
-                "date": "2024 - 2026"
+                "date": "2024 - 2026",
+                "titleArea": "Общая площадь",
+                "titlePriod": "Период строительства"
+
             },
             {
                 "title": "ЖК «Dream Towers»",
@@ -59,7 +62,10 @@
                 "area": "58 300 кв.м.",
                 "href": "/projects-view",
                 "date": "2021 – 2023",
-                "cardClassList": "card-projects--revert card-projects--large"
+                "cardClassList": "card-projects--revert card-projects--large",
+                "titleArea": "Общая площадь",
+                "titlePriod": "Период строительства"
+
             },
             {
                 "title": "Южный речной вокзал",
@@ -69,7 +75,10 @@
                 "href": "/projects-view",
                 "date": "2021 – 2023",
                 "itemClassList": "block-projects__item--offset-right",
-                "cardClassList": "card-projects--small"
+                "cardClassList": "card-projects--small",
+                "titleArea": "Общая площадь",
+                "titlePriod": "Период строительства"
+
             }
         ]
     },

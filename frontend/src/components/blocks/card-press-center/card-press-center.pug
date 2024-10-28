@@ -9,6 +9,6 @@ mixin card-press-center(props)
             })
         .card-press-center__content
             .card-press-center__content-top
-                +text-label({ text: props.textLabel })
+                +text-label({ text: props.textLabel })(class='text-label--dark')
                 .card-press-center__date=props.date
             .card-press-center__title=props.title

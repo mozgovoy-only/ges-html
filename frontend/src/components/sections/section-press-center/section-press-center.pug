@@ -6,4 +6,4 @@ mixin section-press-center(props)
                 .section-press-center__content-item(class=card.itemClassList)
                     +card-press-center(card)(class=card.cardClassList)
         .section-press-center__more
-            +button-main({ text: 'загрузить еще' })
+            +button-main({ text: props.textMore })

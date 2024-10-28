@@ -11,5 +11,5 @@ mixin card-documents(props)
                     span.card-documents__description-item=props.size
                 if props.status
                     span.card-documents__description-item=props.status
-        .card-documents__download(class=props.download ? '' : 'is-disabled') Скачать pdf
+        .card-documents__download(class=props.download ? '' : 'is-disabled')=props.downloadType
             +svg('download').card-documents__download-icon

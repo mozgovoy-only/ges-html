@@ -17,8 +17,8 @@ mixin card-projects(props)
                     +text-label({ text: props.textLabel })
         .card-projects__bottom
             .card-projects__bottom-col
-                .card-projects__bottom-title Общая площадь
+                .card-projects__bottom-title=props.titleArea
                 .card-projects__bottom-text!=props.area
             .card-projects__bottom-col
-                .card-projects__bottom-title Период строительства
+                .card-projects__bottom-title=titlePeriod
                 .card-projects__bottom-text=props.date
