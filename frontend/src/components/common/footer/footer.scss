@@ -122,10 +122,16 @@
         }
     }
 
-    &__right-menu {
+    &__menu {
         width: 100%;
         max-width: 100%;
         margin-bottom: remify(50);
+
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
         @include media-breakpoint-up(lg) {
             max-width: 60%;
             margin-left: auto;
@@ -138,6 +144,25 @@
         @include media-breakpoint-up(xxl) {
             max-width: 60%;
             padding-right: 15%;
+        }
+    }
+
+    &__menu-item {
+        max-width: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+        margin-bottom: remify(12);
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(15);
+        }
+    }
+
+    &__menu-link {
+        font-weight: 500;
+        transition: color $duration-short $ease-default;
+        font-size: remify(16);
+        &:hover {
+            color: $black-60;
         }
     }
 
