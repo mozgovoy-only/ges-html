@@ -4,7 +4,9 @@ mixin header(props)
             a(href='/').header__logo
                 span.header__logo-inner
                     +svg('logo')
-            .header__menu
-                +header-menu()
+            ul.header__menu
+                each item in props.menuList
+                    li.header__menu-item
+                        a.header__menu-link(href=item.href)=item.linkText
             .header__button-menu
                 +button-menu()
