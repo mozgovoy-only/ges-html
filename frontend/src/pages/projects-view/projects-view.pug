@@ -1,9 +1,9 @@
 extends ../../app/pug/layout
 
 block title
-    | ЖК «Преображенская площадь» 1 очередь 
+    | ЖК «Преображенская площадь» 1 очередь
 
 block content
-    div(data-barba="container" data-barba-namespace="common" data-page-namespace="projects-view").content-wrapper
-        h1 projects-view
+    div(data-barba="container" data-barba-namespace="common" data-page-namespace="projects-view")
+        +section-projects-hero(dataJson.servicesView.sectionProjectsHero)
 
