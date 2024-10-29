@@ -80,6 +80,15 @@
     margin-bottom: remify(16);
 }
 
+.link {
+    color: $main-blue;
+    text-decoration: underline;
+    &:hover,
+    &:active {
+        color: $blue-hover-only;
+    }
+}
+
 .ol-list {
     &:not(.list-unstyled) {
         margin-bottom: remify(16);

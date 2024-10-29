@@ -51,12 +51,14 @@
         @extend .paragraph;
     }
 
-    // ordered list
+    a {
+        @extend .link;
+    }
+
     ol {
         @extend .ol-list;
     }
 
-    // unordered list
     ul {
         @extend .ul-list;
     }
@@ -65,7 +67,6 @@
     ul ul,
     ol ul,
     ul ol {
-
         margin-bottom: 0;
 
         &:not(.list-unstyled) {
