@@ -1,0 +1,12 @@
+{
+    "sectionProjectsHero": {
+        "title": "ЖК «Преображенская площадь» 1 очередь",
+        "src": "../../assets/images/projects-view.jpg",
+        "sources": [
+            { "breakpoint": 375, "srcset": "../../assets/images/projects-view@375.jpg" },
+            { "breakpoint": 768, "srcset": "../../assets/images/projects-view@768.jpg" },
+            { "breakpoint": 1280, "srcset": "../../assets/images/projects-view@1280.jpg" },
+            { "breakpoint": 1440, "srcset": "../../assets/images/projects-view@1440.jpg" }
+        ]
+    }
+}
