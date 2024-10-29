@@ -1,2 +1,17 @@
 mixin section-projects-hero(props)
     .section-projects-hero&attributes(attributes)(data-component='section-projects-hero')
+        .section-projects-hero__inner
+            if props.src
+                .section-projects-hero__image
+                    +picture({
+                        img: {
+                            src: props.src
+                        },
+                        sources: props.sources
+                    })
+            .section-projects-hero__content
+                .section-projects-hero__content-description
+                    .section-projects-hero__title=props.title
+                    .section-projects-hero__subtitle=props.subtitle
+                .section-projects-hero__content-event
+                    +card-event(props.cardEvent)
