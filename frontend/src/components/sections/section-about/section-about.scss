@@ -17,17 +17,36 @@
         border-radius: $border-radius;
         @include media-breakpoint-up(md) {
             margin-bottom: remify(80);
-            border-radius: $border-radius-md;
+            border-radius: $border-radius-xl;
+            min-height: remify(823);
+            padding: remify(50);
+            &::after {
+                top: 0;
+                bottom: auto;
+                height: 38.5%;
+                background: linear-gradient(
+                    180deg,
+                    #000916 0%,
+                    rgba(0, 9, 22, 0) 100%
+                );
+            }
         }
 
         @include media-breakpoint-up(xl) {
             margin-bottom: remify(100);
             border-radius: $border-radius-xl;
+            min-height: remify(720);
+            padding: remify(60);
+            &::after {
+                height: 43.5%;
+            }
         }
 
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(120);
             border-radius: $border-radius-xxl;
+            min-height: remify(810);
+            padding: remify(70);
         }
 
         &::after {
@@ -44,36 +63,6 @@
                 rgba(0, 9, 22, 0) 99.95%
             );
             opacity: 0.8;
-        }
-
-        @include media-breakpoint-up(md) {
-            border-radius: $border-radius-xl;
-            min-height: remify(823);
-            padding: remify(50);
-
-            &::after {
-                top: 0;
-                bottom: auto;
-                height: 38.5%;
-                background: linear-gradient(
-                    180deg,
-                    #000916 0%,
-                    rgba(0, 9, 22, 0) 100%
-                );
-            }
-        }
-
-        @include media-breakpoint-up(xl) {
-            min-height: remify(720);
-            padding: remify(60);
-            &::after {
-                height: 43.5%;
-            }
-        }
-
-        @include media-breakpoint-up(xxl) {
-            min-height: remify(810);
-            padding: remify(70);
         }
     }
 
