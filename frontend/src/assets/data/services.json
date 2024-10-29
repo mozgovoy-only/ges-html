@@ -1,5 +1,13 @@
 {
      "sectionHero": {
         "title": "услуги"
+    },
+    "blockHeading": {
+        "generalContracting": {
+            "textIndent": "что мы делаем",
+            "title": "<span class=\"title-main__inner\">Генеральный</span> подряд",
+            "linkText": "о компании",
+            "href": "/about"
+        }
     }
 }
