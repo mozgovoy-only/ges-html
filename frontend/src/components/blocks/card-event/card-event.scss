@@ -1,0 +1,51 @@
+.card-event {
+    $root: &;
+    width: 100%;
+    display: flex;
+    position: relative;
+    &__image {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        background: $main-blue;
+        border-radius: $border-radius-md;
+        padding: remify(15);
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__content-top {
+        margin-bottom: remify(15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(20);
+        }
+    }
+
+    &__content-date {
+        font-size: remify(12);
+        color: $white-50;
+        margin-bottom: remify(8);
+    }
+
+    &__content-title {
+        font-size: remify(16);
+        color: $white;
+        font-weight: 500;
+    }
+
+    &__content-top-icon {
+        width: remify(16);
+        height: remify(16);
+        color: $white;
+    }
+}
