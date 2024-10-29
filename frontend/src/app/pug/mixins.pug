@@ -9,6 +9,6 @@ mixin picture(props)
     picture.picture(class= props.classList ? props.classList : '')&attributes(attributes)
         if (props.sources)
             each source in props.sources
-                source(srcset = source.srcset media=`(min-width: ${source.breakpoint}px)` || null)
+                source(srcset = source.srcset media=`(max-width: ${source.breakpoint}px)` || null)
         if (props.img)
             +img(props.img)
