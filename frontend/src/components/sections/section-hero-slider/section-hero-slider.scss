@@ -24,13 +24,13 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        padding: remify(20);
+        padding: var(--header-height) remify(20) remify(20);
         @include media-breakpoint-up(xl) {
-            padding: remify(25);
+            padding: var(--header-height) remify(25) remify(25);
         }
 
         @include media-breakpoint-up(xxl) {
-            padding: remify(30);
+            padding: var(--header-height) remify(30) remify(30);
         }
     }
     &__content-title {
