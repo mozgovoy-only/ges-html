@@ -3,6 +3,6 @@ mixin card-event(props)
         .card-event__content
             .card-event__content-top
                 +text-label({ text: props.textLabel })
-                +svg('event-next').card-event__content-top-icon
+                +svg('anchor-next').card-event__content-top-icon
             .card-event__content-date=props.date
             .card-event__content-title=props.title
