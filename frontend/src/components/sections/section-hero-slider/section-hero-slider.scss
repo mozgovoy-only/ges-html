@@ -1,29 +1,35 @@
 .section-hero-slider {
     $root: &;
-    position: relative;
-    overflow: hidden;
-    border-radius: $border-radius;
-    margin-bottom: remify(60);
+
+    max-width: remify(1920);
+    margin: 0 auto remify(60);
+    padding: var(--offset-padding) var(--offset-padding) 0;
     @include media-breakpoint-up(md) {
-        margin-bottom: remify(80);
+        margin: 0 auto remify(80);
     }
     @include media-breakpoint-up(xl) {
-        margin-bottom: remify(100);
+        margin: 0 auto remify(100);
     }
     @include media-breakpoint-up(xxl) {
-        margin-bottom: remify(120);
+        margin: 0 auto remify(120);
     }
+
     &__slides {
         position: relative;
         z-index: 1;
-
+    }
+    &__inner {
+        position: relative;
+        overflow: hidden;
+        border-radius: $border-radius;
+        width: 100%;
     }
     &__content {
         position: absolute;
         z-index: 2;
         left: 0;
         bottom: 0;
-        width: 100%;
+
         padding: var(--header-height) remify(20) remify(20);
         @include media-breakpoint-up(xl) {
             padding: var(--header-height) remify(25) remify(25);
@@ -33,7 +39,7 @@
             padding: var(--header-height) remify(30) remify(30);
         }
     }
-    &__content-title {
+    &__title {
         color: $color-bg;
         line-height: 1;
         text-transform: uppercase;

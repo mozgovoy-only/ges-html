@@ -1,13 +1,14 @@
 mixin section-hero-slider(props)
     .section-hero-slider&attributes(attributes)(data-component='section-hero-slider')
-        .section-hero-slider__slides
-            .section-hero-slider__slide
-                .section-hero-slider__image
-                    +picture({
-                        classList: 'section-hero-slider__picture',
-                        img: {
-                            src: '../../assets/images/slider-hero/1.jpg'
-                        }
-                    })
-        .section-hero-slider__content
-            .section-hero-slider__title Crafting excellence </br> with vision
+        .section-hero-slider__inner
+            .section-hero-slider__slides
+                .section-hero-slider__slide
+                    .section-hero-slider__image
+                        +picture({
+                            classList: 'section-hero-slider__picture',
+                            img: {
+                                src: '../../assets/images/slider-hero/1.jpg'
+                            }
+                        })
+            .section-hero-slider__content
+                .section-hero-slider__title Crafting excellence </br> with vision
