@@ -1,3 +1,38 @@
 .block-contacts-geo {
     $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    &__title {
+        flex-basis: 100%;
+        margin-bottom: remify(40);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(50);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(60);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content-refs {
+        border-radius: $border-radius-md;
+        background-color: $white;
+        margin-bottom: remify(8);
+        display: flex;
+        flex-direction: column;
+        padding: remify(20);
+
+        @include media-breakpoint-up(xl) {
+            padding: remify(25);
+        }
+    }
 }

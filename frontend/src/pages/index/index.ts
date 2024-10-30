@@ -20,6 +20,7 @@ import BlockSolution from '@/components/blocks/block-solution/block-solution';
 import BlockRelation from '@/components/blocks/block-relation/block-relation';
 import BlockTeam from '@/components/blocks/block-team/block-team';
 import BlockEsg from '@/components/blocks/block-esg/block-esg';
+import BlockContactsGeo from '@/components/blocks/block-contacts-geo/block-contacts-geo';
 import CardProjects from '@/components/blocks/card-projects/card-projects';
 import CardMedia from '@/components/blocks/card-media/card-media';
 import CardStatistic from '@/components/blocks/card-statistic/card-statistic';
@@ -56,6 +57,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'block-relation': BlockRelation,
     'block-team': BlockTeam,
     'block-esg': BlockEsg,
+    'block-contacts-geo': BlockContactsGeo,
     'card-projects': CardProjects,
     'card-media': CardMedia,
     'card-statistic': CardStatistic,
