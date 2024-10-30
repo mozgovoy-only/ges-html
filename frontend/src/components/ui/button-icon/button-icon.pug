@@ -1,0 +1,15 @@
+mixin button-icon(props)
+    if props.href
+        a.button-icon&attributes(attributes)(
+            data-component='button-icon',
+            href=props.href,
+            )
+            +svg(props.svg)
+            span.visually-hidden=props.text
+    else
+        button.button-icon&attributes(attributes)(
+            data-component='button-icon',
+            type="button",
+        )
+            +svg(props.svg)
+            span.visually-hidden=props.text

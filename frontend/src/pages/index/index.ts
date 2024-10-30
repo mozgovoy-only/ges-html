@@ -32,6 +32,7 @@ import CardStage from '@/components/blocks/card-stage/card-stage';
 import RowSolution from '@/components/blocks/row-solution/row-solution';
 import TitleMain from '@/components/ui/title-main/title-main';
 import ButtonMain from '@/components/ui/button-main/button-main';
+import ButtonIcon from '@/components/ui/button-icon/button-icon';
 import TextIndent from '@/components/ui/text-indent/text-indent';
 import TextLabel from '@/components/ui/text-label/text-label';
 
@@ -69,6 +70,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'row-solution': RowSolution,
     'title-main': TitleMain,
     'button-main': ButtonMain,
+    'button-icon': ButtonIcon,
     'text-indent': TextIndent,
     'text-label': TextLabel
 };

@@ -1,0 +1,73 @@
+.button-icon {
+    $root: &;
+    --button-icon-color: #{$white};
+    --button-icon-color-hover: #{$main-blue};
+    --button-icon-color-active: #{$main-blue};
+    --button-icon-bg: #{$main-blue};
+    --button-icon-bg-hover: #{$white};
+    --button-icon-bg-active: #{$white};
+    --button-icon-border-width: 0;
+    --button-icon-border-color: transparent;
+    --button-icon-border-color-hover: transparent;
+    --button-icon-border-color-active: transparent;
+    --button-icon-border-disabled-opacity: 0.4;
+    --button-icon-size: #{remify(50)};
+
+
+    color: var(--button-icon-color);
+    border: var(--button-icon-border-width) solid
+        var(--button-icon-border-color);
+    font-family: $font-tt-firs-neue;
+    line-height: $line-height-second;
+    border-radius: remify(100);
+    background-color: var(--button-icon-bg);
+    transition: color $duration-fast $ease-default,
+        border-color $duration-fast $ease-default,
+        background-color $duration-fast $ease-default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--button-icon-size);
+    height: var(--button-icon-size);
+    border-radius: 50%;
+    > svg {
+        width: 35%;
+        height: 35%;
+    }
+
+    &--sm {
+        --button-icon-size: #{remify(40)};
+    }
+
+    &--lg {
+        --button-icon-size: #{remify(60)};
+    }
+
+    &--white {
+        --button-icon-color: #{$main-blue};
+        --button-icon-color-hover: #{$white};
+        --button-icon-color-active: #{$white};
+        --button-icon-bg: #{$white};
+        --button-icon-bg-hover: #{$main-blue};
+        --button-icon-bg-active: #{$main-blue};
+    }
+
+    &:hover {
+        color: var(--button-icon-color-hover);
+        background-color: var(--button-icon-bg-hover);
+        border-color: var(--button-icon-border-color-hover);
+    }
+
+    &:active,
+    &.is-active {
+        color: var(--button-icon-color-active);
+        background-color: var(--button-icon-bg-active);
+        border-color: var(--button-icon-border-color-active);
+    }
+
+    &:disabled,
+    &.is-disabled {
+        pointer-events: none;
+        opacity: var(--button-icon-border-disabled-opacity);
+    }
+}
