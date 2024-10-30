@@ -3,8 +3,21 @@ mixin block-contacts-geo(props)
         .block-contacts-geo__title
             +title-main('<span class=\"title-main__inner\">Свяжитесь с нами</span> или обратитесь </br> в главный офис')
         .block-contacts-geo__content
-            .block-contacts-geo__refs
-                a.block-contacts-geo__refs-title(href='mailto:info@gescons.ru') info@gescons.ru
-                .block-contacts-geo__refs-block
-                    .block-contacts-geo__refs-suptitle Заказчикам
-                    a.block-contacts-geo__refs-contact(href='mailto:tender@gescons.ru') tender@gescons.ru
+            .block-contacts-geo__content-refs
+                a.block-contacts-geo__content-refs-title(href='mailto:info@gescons.ru') info@gescons.ru
+                .block-contacts-geo__content-refs-block
+                    .block-contacts-geo__content-refs-suptitle Заказчикам
+                    a.block-contacts-geo__content-refs-contact(href='mailto:tender@gescons.ru') tender@gescons.ru
+                .block-contacts-geo__content-refs-block
+                    .block-contacts-geo__content-refs-suptitle Партнерам
+                    a.block-contacts-geo__content-refs-contact(href='mailto:procurement@gescons.ru') procurement@gescons.ru
+                .block-contacts-geo__content-refs-block
+                    .block-contacts-geo__content-refs-suptitle Соискателям
+                    a.block-contacts-geo__content-refs-contact(href='mailto:hr@gescons.ru') hr@gescons.ru
+            .block-contacts-geo__content-map
+                +picture({
+                    classList: '.block-contacts-geo__content-map',
+                    img: {
+                        src: '../../assets/images/block-contacts-geo.jpg'
+                    }
+                })
