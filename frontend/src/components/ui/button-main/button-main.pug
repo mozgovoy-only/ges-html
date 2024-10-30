@@ -4,12 +4,8 @@ mixin button-main(props)
             data-component='button-main',
             href=props.href,
         )!=props.text
-        if props.icon
-            +svg(props.icon)(class="button-main__icon")
     else
         button.button-main&attributes(attributes)(
             data-component='button-main',
             type="button",
         )!=props.text
-        if props.icon
-            +svg(props.icon)(class="button-main__icon")
