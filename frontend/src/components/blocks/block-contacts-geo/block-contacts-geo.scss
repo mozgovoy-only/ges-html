@@ -2,6 +2,7 @@
     $root: &;
     display: flex;
     flex-wrap: wrap;
+
     &__title {
         flex-basis: 100%;
         margin-bottom: remify(40);
@@ -21,12 +22,31 @@
     &__content {
         display: flex;
         flex-direction: column;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row-reverse;
+        }
     }
 
     &__content-map {
         border-radius: $border-radius-md;
         overflow: hidden;
+        min-height: remify(300);
+        @include media-breakpoint-up(md) {
+            flex-grow: 1;
+        }
+    }
+
+    &__content-map-picture {
+        width: 100%;
         height: 100%;
+        position: relative;
+        z-index: 1;
+        > img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__content-refs {
@@ -37,9 +57,20 @@
         flex-direction: column;
         align-items: baseline;
         padding: remify(20);
+        min-height: remify(310);
+
+        @include media-breakpoint-up(md) {
+            flex-basis: remify(300);
+            margin-bottom: 0;
+            margin-left: remify(8);
+        }
 
         @include media-breakpoint-up(xl) {
             padding: remify(25);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            flex-basis: remify(330);
         }
     }
 
