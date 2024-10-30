@@ -1,10 +1,12 @@
 .select-custom {
     $root: &;
     position: relative;
-
+    width: 100%;
     &__control {
+        width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         background-color: $white;
         border-radius: remify(12);
         line-height: $line-height-second;
@@ -19,6 +21,7 @@
         height: remify(20);
     }
     &__menu {
+        list-style: none;
         position: absolute;
         top: calc(#{remify(8)} + 100%);
         left: 0;
@@ -26,6 +29,24 @@
         border-radius: remify(12);
         width: 100%;
         z-index: 1;
+        display: none;
+        flex-direction: column;
+        padding: remify(25);
+        #{$root}.is-active & {
+            display: flex;
+        }
+    }
+    &__menu-item {
+        font-size: remify(14);
+        transition: color $duration-short $ease-default;
+        margin-bottom: remify(15);
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: $main-blue;
+        }
     }
 }

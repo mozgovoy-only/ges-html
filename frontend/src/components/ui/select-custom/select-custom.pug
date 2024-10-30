@@ -1,5 +1,5 @@
 mixin select-custom(props)
-    .select-custom&attributes(attributes)(data-component='select-custom')
+    .select-custom&attributes(attributes)(data-component='select-custom', class=props.active ? 'is-active': '')
         button.select-custom__control=props.controlText
             +svg('shewron-down').select-custom__control-icon
         if props.menuList
