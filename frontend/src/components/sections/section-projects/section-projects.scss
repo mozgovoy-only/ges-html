@@ -15,15 +15,55 @@
 
     &__heading {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        max-width: remify(1400);
+        margin: 0 auto remify(30);
+
+        @include media-breakpoint-up(xl) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 0 auto remify(40);
+        }
     }
 
     &__tabs {
         display: flex;
+        margin-bottom: remify(30);
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
     }
 
-    &__tabs-button {
+    &__tabs-item {
         margin-left: remify(15);
+    }
+
+    &__filters {
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 100%;
+            max-width: remify(600);
+        }
+    }
+
+    &__filters-item {
+        width: 100%;
+        margin-bottom: remify(15);
+
+        @include media-breakpoint-up(md) {
+            width: calc(50% - #{remify(10)});
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
     }
 
     &__content {
@@ -43,6 +83,24 @@
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(120);
             max-width: remify(1116);
+        }
+    }
+
+    &__more {
+        display: flex;
+        justify-content: center;
+        margin-top: remify(40);
+
+        @include media-breakpoint-up(md) {
+            margin-top: remify(50);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(60);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: remify(70);
         }
     }
 }

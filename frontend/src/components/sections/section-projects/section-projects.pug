@@ -1,6 +1,11 @@
 mixin section-projects(props)
     section.section-projects&attributes(attributes)(data-component='section-projects')
         .section-projects__heading
+            .section-projects__tabs
+                .section-projects__tabs-item
+                    +button-icon({ text: 'проекты', icon: 'squares' })(class='button-icon--white is-active')
+                .section-projects__tabs-item
+                    +button-icon({ text: 'карта', icon: 'map-balun' })(class='button-icon--white')
             .section-projects__filters
                 .section-projects__filters-item
                     +select-custom({ controlText: 'категория', menuList: [
@@ -10,11 +15,6 @@ mixin section-projects(props)
                     +select-custom({ controlText: 'этап строительства', menuList: [
                         'Все', 'Коммерческие объекты', 'Инфраструктурные проекты', 'Развлекательные объекты', 'Жилые проекты', 'Муниципальные проекты'
                     ] })
-            .section-projects__tabs
-                .section-projects__tabs-button
-                    +button-icon({ text: 'проекты', icon: 'squares' })
-                .section-projects__tabs-button
-                    +button-icon({ text: 'карта', icon: 'map-balun' })
         .section-projects__content
             +block-projects(props.blockProjects)
             .section-projects__more
