@@ -1,0 +1,31 @@
+.select-custom {
+    $root: &;
+    position: relative;
+
+    &__control {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        border-radius: remify(12);
+        line-height: $line-height-second;
+        padding: remify(20);
+        text-transform: uppercase;
+        font-size: remify(14);
+    }
+
+    &__control-icon {
+        margin-left: remify(8);
+        width: remify(20);
+        height: remify(20);
+    }
+    &__menu {
+        position: absolute;
+        top: calc(#{remify(8)} + 100%);
+        left: 0;
+        background-color: $white;
+        border-radius: remify(12);
+        width: 100%;
+        z-index: 1;
+
+    }
+}

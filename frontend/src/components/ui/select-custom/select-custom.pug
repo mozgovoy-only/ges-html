@@ -1,0 +1,8 @@
+mixin select-custom(props)
+    .select-custom&attributes(attributes)(data-component='select-custom')
+        button.select-custom__control=props.controlText
+            +svg('shewron-down').select-custom__control-icon
+        if props.menuList
+            ul.select-custom__menu
+                each item in props.menuList
+                    li.select-custom__menu-item=item
