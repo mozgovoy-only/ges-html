@@ -15,7 +15,15 @@
 
     &__heading {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__tabs-button {
+        margin-left: remify(15);
     }
 
     &__content {
