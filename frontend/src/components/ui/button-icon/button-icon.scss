@@ -13,7 +13,6 @@
     --button-icon-border-disabled-opacity: 0.4;
     --button-icon-size: #{remify(50)};
 
-
     color: var(--button-icon-color);
     border: var(--button-icon-border-width) solid
         var(--button-icon-border-color);
@@ -30,6 +29,11 @@
     width: var(--button-icon-size);
     height: var(--button-icon-size);
     border-radius: 50%;
+
+    @include media-breakpoint-up(xl) {
+        --button-icon-size: #{remify(60)};
+    }
+
     > svg {
         width: 35%;
         height: 35%;
@@ -37,10 +41,16 @@
 
     &--sm {
         --button-icon-size: #{remify(40)};
+        @include media-breakpoint-up(xl) {
+            --button-icon-size: #{remify(50)};
+        }
     }
 
     &--lg {
         --button-icon-size: #{remify(60)};
+        @include media-breakpoint-up(xl) {
+            --button-icon-size: #{remify(70)};
+        }
     }
 
     &--white {
