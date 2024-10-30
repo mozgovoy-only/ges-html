@@ -7,9 +7,7 @@ mixin section-projects(props)
                     +button-main({ text: 'text' })
                 .section-projects__tabs-button
                     +button-main({ text: 'text' })
-        .section-projects__tabs-content
-            .section-projects__tabs-pills
-                .section-projects__content
-                    +block-projects(props.blockProjects)
-                .section-projects__more
-                    +button-main({ text: props.textMore })
+        .section-projects__content
+            +block-projects(props.blockProjects)
+            .section-projects__more
+                +button-main({ text: props.textMore })
