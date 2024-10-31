@@ -5,6 +5,7 @@
     margin: 0 auto remify(60);
     max-width: remify(1540);
     padding: 0 remify(20);
+    align-items: baseline;
 
     @include media-breakpoint-up(md) {
         margin-bottom: remify(80);
@@ -57,6 +58,22 @@
 
         @include media-breakpoint-up(xl) {
             display: none;
+        }
+    }
+
+    &__select {
+        margin-bottom: remify(25);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(30);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(35);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(40);
         }
     }
 }
