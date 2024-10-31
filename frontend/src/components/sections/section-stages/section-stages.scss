@@ -25,7 +25,7 @@
         margin-bottom: remify(35);
         display: none;
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(lg) {
             display: flex;
         }
 
@@ -56,14 +56,15 @@
             margin-bottom: remify(50);
         }
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(lg) {
             display: none;
         }
     }
 
     &__select {
         margin-bottom: remify(25);
-
+        width: 100%;
+        max-width: remify(320);
         @include media-breakpoint-up(md) {
             margin-bottom: remify(30);
         }
@@ -74,6 +75,32 @@
 
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(40);
+        }
+    }
+
+    &__chips {
+        margin-top: calc(-1 * #{remify(8)});
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: remify(15);
+    }
+
+    &__chips-item {
+        margin-top: remify(8);
+        margin-right: remify(8);
+    }
+
+    &__slider {
+        display: flex;
+        margin-bottom: remify(60);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(80);
+        }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(100);
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(120);
         }
     }
 }

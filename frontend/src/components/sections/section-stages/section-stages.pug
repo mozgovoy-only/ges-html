@@ -2,5 +2,15 @@ mixin section-stages(props)
     .section-stages&attributes(attributes)(data-component='section-stages')
         .section-stages__indent
             +text-indent({ text: props.textIndent })
+        .section-stages__title
+            +title-main(props.title)
+        .section-stages__text=props.text
         .section-stages__select
-            +select-custom({ controlText: props.controlText, menuList: props.menuList })
+            +select-custom({ controlText: props.select.controlText, menuList: props.select.menuList })
+        if props.chips
+            .section-stages__chips
+                each chips in props.chips
+                    .section-stages__chips-item
+                        +chips({ text: chips })
+        .section-stages__slider
+            .section-stages__slider-slide
