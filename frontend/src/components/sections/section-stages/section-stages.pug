@@ -1,2 +1,4 @@
 mixin section-stages(props)
     .section-stages&attributes(attributes)(data-component='section-stages')
+        .section-stages__indent
+            +text-indent({ text: props.textIndent })

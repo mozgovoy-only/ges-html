@@ -27,6 +27,10 @@
     },
     "sectionStages": {
         "textIndent": "стадия",
-        "title": "<span class=\"title-main__inner\">Этапы</span> строительства"
+        "title": "<span class=\"title-main__inner\">Этапы</span> строительства",
+        "select": {
+            "control": "период",
+            "menuList": ["Все", "2021", "2022", "2023"]
+        }
     }
 }
