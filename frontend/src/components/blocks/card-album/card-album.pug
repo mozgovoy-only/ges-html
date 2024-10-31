@@ -1,0 +1,16 @@
+mixin card-album(props)
+    .card-album&attributes(attributes)(data-component='card-album')
+        if props.src
+            .card-album__image
+                +picture({
+                    classList: 'card-album__picture',
+                    img: {
+                        src: props.src
+                    }
+                })
+        .card-album__content
+            .card-album__label
+                +text-label({ text: props.textLabel })
+            .card-album__title=props.title
+            .card-album__date=props.date
+
