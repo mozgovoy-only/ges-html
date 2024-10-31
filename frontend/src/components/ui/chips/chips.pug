@@ -1,0 +1,4 @@
+mixin chips(props)
+    button.chips&attributes(attributes)(data-component='chips', type='button')
+        +svg('chips-close').chips__icon
+        =props.text

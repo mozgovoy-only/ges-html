@@ -38,6 +38,7 @@ import ButtonIcon from '@/components/ui/button-icon/button-icon';
 import TextIndent from '@/components/ui/text-indent/text-indent';
 import TextLabel from '@/components/ui/text-label/text-label';
 import SelectCustom from '@/components/ui/select-custom/select-custom';
+import Chips from '@/components/ui/chips/chips';
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -78,7 +79,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'button-icon': ButtonIcon,
     'text-indent': TextIndent,
     'text-label': TextLabel,
-    'select-custom': SelectCustom
+    'select-custom': SelectCustom,
+    'chips': Chips
 };
 
 export default {

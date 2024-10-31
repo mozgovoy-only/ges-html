@@ -1,0 +1,36 @@
+.chips {
+    $root: &;
+    padding: remify(6) remify(16);
+    text-transform: uppercase;
+    font-size: remify(14);
+    display: flex;
+    align-items: center;
+    color: $main-black;
+    border: 1px solid $grey;
+    border-radius: remify(80);
+
+    &__icon {
+        margin-right: remify(8);
+        width: remify(12);
+        height: remify(12);
+        color: $main-blue;
+        transition: color $duration-fast $ease-default;
+
+        #{$root}:hover & {
+            color: $blue-hover-only;
+        }
+    }
+
+    &--white {
+        border-color: $white;
+        color: $white;
+    }
+    &--dark {
+        color: $black-60;
+        border-color: $black-60;
+    }
+    &--black {
+        color: $medium-black;
+        border-color: $medium-black-60;
+    }
+}
