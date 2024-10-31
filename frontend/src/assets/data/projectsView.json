@@ -24,5 +24,9 @@
             "titleArea": "Общая площадь",
             "titlePeriod": "Период строительства"
         }
+    },
+    "sectionStages": {
+        "textIndent": "стадия",
+        "title": "<span class=\"title-main__inner\">Этапы</span> строительства"
     }
 }

@@ -6,4 +6,5 @@ block title
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="projects-view")
         +section-projects-hero(dataJson.projectsView.sectionProjectsHero)
-
+        +section-main({ heading: dataJson.projectsView.blockHeading })
+        +section-stages()
