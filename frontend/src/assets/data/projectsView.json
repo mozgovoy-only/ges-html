@@ -29,7 +29,7 @@
         "textIndent": "стадия",
         "title": "<span class=\"title-main__inner\">Этапы</span> строительства",
         "select": {
-            "control": "период",
+            "controlText": "период",
             "menuList": ["Все", "2021", "2022", "2023"]
         }
     }

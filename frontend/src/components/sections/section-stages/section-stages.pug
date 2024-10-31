@@ -2,3 +2,5 @@ mixin section-stages(props)
     .section-stages&attributes(attributes)(data-component='section-stages')
         .section-stages__indent
             +text-indent({ text: props.textIndent })
+        .section-stages__select
+            +select-custom({ controlText: props.controlText, menuList: props.menuList })

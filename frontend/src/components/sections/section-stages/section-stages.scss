@@ -19,4 +19,44 @@
         margin-bottom: remify(120);
         padding: 0 remify(50);
     }
+
+    &__indent {
+        margin-bottom: remify(35);
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: flex;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(40);
+        }
+    }
+
+    &__title {
+        margin-bottom: remify(15);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(60);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+        }
+    }
+
+    &__text {
+        font-size: remify(16);
+        margin-bottom: remify(40);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(50);
+        }
+
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+    }
 }
