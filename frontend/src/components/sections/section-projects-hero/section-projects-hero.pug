@@ -4,6 +4,7 @@ mixin section-projects-hero(props)
             if props.src
                 .section-projects-hero__image
                     +picture({
+                        classList: 'section-projects-hero__picture',
                         img: {
                             src: props.src
                         },
