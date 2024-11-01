@@ -1,0 +1,14 @@
+mixin card-next(props)
+    a.card-next&attributes(attributes)(data-component='card-next', href=props.href)
+        if props.src
+            .card-next__image
+                +picture({
+                    classList: 'card-next__picture',
+                    img: {
+                        src: props.src
+                    }
+                })
+        .card-next__content
+            .card-next__suptitle=props.suptitle
+            .card-next__title=props.title
+                +svg('anchor-next').card-next__title-icon

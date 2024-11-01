@@ -11,7 +11,6 @@ import SectionHeroSlider from "@/components/sections/section-hero-slider/section
 import SectionPressCenter from "@/components/sections/section-press-center/section-press-center";
 import SectionContacts from "@/components/sections/section-contacts/section-contacts";
 import SectionProjectsHero from "@/components/sections/section-projects-hero/section-projects-hero";
-import SectionNext from "@/components/sections/section-next/section-next";
 import SectionStages from "@/components/sections/section-stages/section-stages";
 import BlockHeading from "@/components/blocks/block-heading/block-heading";
 import BlockProjects from "@/components/blocks/block-projects/block-projects";
@@ -33,6 +32,7 @@ import CardPressCenter from "@/components/blocks/card-press-center/card-press-ce
 import CardEvent from "@/components/blocks/card-event/card-event";
 import CardStage from "@/components/blocks/card-stage/card-stage";
 import CardAlbum from "@/components/blocks/card-album/card-album";
+import CardNext from "@/components/blocks/card-next/card-next";
 import GeoProjects from "@/components/blocks/geo-projects/geo-projects";
 import RowSolution from "@/components/blocks/row-solution/row-solution";
 import TitleMain from "@/components/ui/title-main/title-main";
@@ -56,7 +56,6 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "section-press-center": SectionPressCenter,
     "section-contacts": SectionContacts,
     "section-projects-hero": SectionProjectsHero,
-    "section-next": SectionNext,
     "section-stages": SectionStages,
     "block-heading": BlockHeading,
     "block-projects": BlockProjects,
@@ -78,6 +77,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "card-event": CardEvent,
     "card-stage": CardStage,
     "card-album": CardAlbum,
+    "card-next": CardNext,
     "row-solution": RowSolution,
     "geo-projects": GeoProjects,
     "title-main": TitleMain,
@@ -86,7 +86,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "text-indent": TextIndent,
     "text-label": TextLabel,
     "select-custom": SelectCustom,
-    chips: Chips,
+    'chips': Chips,
 };
 
 export default {
