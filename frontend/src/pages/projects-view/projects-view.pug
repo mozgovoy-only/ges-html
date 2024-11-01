@@ -7,9 +7,13 @@ block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="projects-view")
         +section-projects-hero(dataJson.projectsView.sectionProjectsHero)
         +section-main({ heading: dataJson.projectsView.blockHeading.projectsAbout })
+        +section-main({ heading: dataJson.projectsView.blockHeading.location })
+            +geo-projects()
         +section-stages(dataJson.projectsView.sectionStages)
         +section-main({ heading: dataJson.projectsView.blockHeading.media })
             +slider-gallery()
         +section-main({ heading: dataJson.projectsView.blockHeading.mediaAbout })
             +block-media(dataJson.projectsView.blockMedia)
+        +section-main({})
+            +card-next(dataJson.projectsView.cardNext)
 

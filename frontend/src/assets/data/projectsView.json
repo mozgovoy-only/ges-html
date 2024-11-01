@@ -24,6 +24,12 @@
             "titleArea": "Общая площадь",
             "titlePeriod": "Период строительства"
         },
+        "location": {
+            "textIndent": "расположение",
+            "title": "<span class=\"title-main__inner\">Расположение</span>",
+            "text": "Жилой комплекс расположен на северо-востоке г. Москва в Преображенском районе.",
+            "buttonText": "открыть карту"
+        },
         "media": {
             "textIndent": "медиа",
             "title": "<span class=\"title-main__inner\">Галерея</span>"
@@ -84,5 +90,11 @@
             "labelText": "статья",
             "labelClassList": "text-label--dark"
         }
+    },
+    "cardNext": {
+        "href": "/projects-view",
+        "title": "ЖК «Dream Towers»",
+        "suptitle": "следующий проект",
+        "src": "../../assets/images/card-next.jpg"
     }
 }

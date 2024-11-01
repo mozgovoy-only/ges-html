@@ -12,3 +12,6 @@ mixin block-heading(props)
             if props.linkText && props.href
                 .block-heading__button
                     +button-main({ text: props.linkText, href: props.href })
+            if props.buttonText
+                .block-heading__button
+                    +button-main({ text: props.buttonText })
