@@ -1,0 +1,64 @@
+.slider-gallery {
+    $root: &;
+    overflow: hidden;
+    display: flex;
+    border-radius: $border-radius-md;
+    position: relative;
+    @include media-breakpoint-up(xl) {
+        border-radius: $border-radius-xl;
+    }
+
+    &__slides {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    &__slide {
+        width: 100%;
+    }
+
+    &__slide-picture {
+        width: 100%;
+        position: relative;
+        min-height: remify(400);
+
+        @include media-breakpoint-up(md) {
+            min-height: auto;
+            padding-top: calc(400 / 728 * 100%);
+        }
+
+        > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        bottom: remify(20);
+
+        @include media-breakpoint-up(xl) {
+            bottom: remify(25);
+        }
+    }
+
+    &__pagination-page {
+        padding: 0;
+        width: remify(10);
+        height: remify(10);
+        border-radius: 50%;
+        background-color: $white;
+        opacity: 0.4;
+        margin: 0 remify(4);
+        &.is-active {
+            opacity: 1;
+        }
+    }
+}

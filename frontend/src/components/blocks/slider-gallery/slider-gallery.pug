@@ -1,0 +1,15 @@
+mixin slider-gallery(props)
+    .slider-gallery&attributes(attributes)(data-component='slider-gallery')
+        .slider-gallery__slides
+            .slider-gallery__slide
+                +picture({
+                    classList: 'slider-gallery__slide-picture',
+                    img: {
+                        src: '../../assets/images/slider-gallery.jpg'
+                    }
+                })
+        .slider-gallery__pagination
+            button.slider-gallery__pagination-page(type='button').is-active
+            button.slider-gallery__pagination-page(type='button')
+            button.slider-gallery__pagination-page(type='button')
+            button.slider-gallery__pagination-page(type='button')
