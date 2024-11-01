@@ -131,5 +131,22 @@
                 "cardClassList": "block-esg__card--secondary"
             }
         ]
+    },
+    "sliderBrand": {
+        "mixinSlide": "card-brand",
+        "slides": [
+            {
+                "src": "../../assets/images/card-brand/1.png"
+            },
+            {
+                "src": "../../assets/images/card-brand/2.png"
+            },
+            {
+                "src": "../../assets/images/card-brand/3.png"
+            },
+            {
+                "src": "../../assets/images/card-brand/3.png"
+            }
+        ]
     }
 }
