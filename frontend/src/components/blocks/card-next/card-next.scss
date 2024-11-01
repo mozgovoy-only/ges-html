@@ -7,6 +7,13 @@
     padding: remify(20);
 
     @include media-breakpoint-up(md) {
+        background-image: url("../../assets/img/card-next-bg.svg");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 40%;
+    }
+
+    @include media-breakpoint-up(md) {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -20,6 +27,8 @@
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
         @include media-breakpoint-up(md) {
             flex-basis: calc(40%);
             padding-right: remify(30);
@@ -60,8 +69,19 @@
             object-fit: cover;
         }
     }
+    &__suptitle {
+        text-transform: uppercase;
+        font-size: remify(14);
+        line-height: $line-height-second;
+        margin-bottom: remify(10);
+    }
 
     &__title {
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1;
+        @include rem-adaptive-font(28, 32, 36, 40);
+        margin-top: auto;
         display: flex;
         align-items: flex-end;
         transition: color $duration-fast $ease-default;
@@ -71,11 +91,12 @@
     }
 
     &__title-icon {
-        width: remify(24);
-        height: remify(24);
+        width: remify(20);
+        height: remify(20);
         color: $main-blue;
         transition: color $duration-fast $ease-default;
         margin-left: remify(12);
+        margin-bottom: remify(6);
         #{$root}:hover & {
             color: $blue-hover-only;
         }
