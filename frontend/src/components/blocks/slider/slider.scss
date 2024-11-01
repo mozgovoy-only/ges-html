@@ -1,10 +1,13 @@
 .slider {
     $root: &;
     display: flex;
+    flex-direction: column;
     &__list {
         display: flex;
         overflow: auto;
         margin: 0 calc(-1 * #{remify(4)});
+        margin-bottom: remify(40);
+        width: 100%;
     }
 
     &__slide {
@@ -12,5 +15,17 @@
         min-width: remify(300);
         padding-left: remify(4);
         padding-right: remify(4);
+    }
+
+    &__arrows {
+        display: none;
+        align-self: flex-end;
+        @include media-breakpoint-up(xl) {
+            display: flex;
+        }
+    }
+
+    &__arrows-next {
+        margin-left: remify(8);
     }
 }

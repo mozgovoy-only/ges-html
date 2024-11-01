@@ -5,3 +5,6 @@ mixin slider(props)
                 each slide in props.slides
                     .slider__slide
                         +#{props.mixinSlide}(slide)
+        .slider__arrows
+            +button-icon({ icon: 'arrow-prev' })(class='button-icon--white slider__arrows-prev is-disabled')
+            +button-icon({ icon: 'arrow-next' })(class='button-icon--white slider__arrows-next')
