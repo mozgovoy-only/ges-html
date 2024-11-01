@@ -26,7 +26,11 @@
         },
         "media": {
             "textIndent": "медиа",
-            "text": "Галерея"
+            "title": "<span class=\"title-main__inner\">Галерея</span>"
+        },
+        "mediaAbout": {
+            "textIndent": "медиа",
+            "title": "Новости о <span class=\"title-main__inner\">проекте</span>"
         }
     },
     "sectionStages": {
@@ -63,5 +67,22 @@
                 "src": "../../assets/images/card-album/4.jpg"
             }
         ]
+    },
+    "blockMedia": {
+        "cardLeft": {
+            "src": "../../assets/images/card-media/1.jpg",
+            "title": "Южный речной вокзал получил новую жизнь после реконструкции",
+            "href": "/press-center",
+            "date": "25.08.2024",
+            "labelText": "статья",
+            "labelClassList": "text-label--white"
+        },
+        "cardRight": {
+            "title": "Южный речной вокзал получил новую жизнь после реконструкции",
+            "href": "/press-center",
+            "date": "21.08.2024",
+            "labelText": "статья",
+            "labelClassList": "text-label--dark"
+        }
     }
 }
