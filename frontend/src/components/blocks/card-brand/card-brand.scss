@@ -1,3 +1,18 @@
 .card-brand {
     $root: &;
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(220 / 330 * 100%);
+    background-color: $white;
+    border-radius: $border-radius;
+    &__img {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 40%;
+        object-fit: contain;
+    }
 }

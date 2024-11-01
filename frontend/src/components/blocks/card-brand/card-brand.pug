@@ -1,2 +1,5 @@
 mixin card-brand(props)
     .card-brand&attributes(attributes)(data-component='card-brand')
+        +img({
+            src: props.src
+        })(class='card-brand__img')
