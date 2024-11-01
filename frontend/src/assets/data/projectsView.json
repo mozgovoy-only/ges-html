@@ -34,6 +34,14 @@
             "textIndent": "медиа",
             "title": "<span class=\"title-main__inner\">Галерея</span>"
         },
+        "aboutUs": {
+            "textIndent": "о нас говорят",
+            "backquote": {
+                "text": "ООО \"Рыба!\" благодарит коллектив GES Construction за плодотворное сотрудничество в рамках проекта. <span class=\"backquote-custom__text-inner\">Высокое качество работ</span>, применение самых передовых технологий обеспечивает вашу <span class=\"backquote-custom__text-inner\">несомненную конкурентоспособность</span>  на строительном рынке.",
+                "name": "Рыбов Петр Алексеевич",
+                "job": "Учредитель, управляющий партнер"
+            }
+        },
         "mediaAbout": {
             "textIndent": "медиа",
             "title": "Новости о <span class=\"title-main__inner\">проекте</span>"

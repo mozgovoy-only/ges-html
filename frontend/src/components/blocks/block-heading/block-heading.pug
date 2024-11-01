@@ -15,3 +15,6 @@ mixin block-heading(props)
             if props.buttonText
                 .block-heading__button
                     +button-main({ text: props.buttonText })
+            if props.backquote
+                .block-heading__backquote
+                    +backquote-custom(props.backquote)
