@@ -61,4 +61,24 @@
             opacity: 1;
         }
     }
+
+    &__arrows {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        right: remify(25);
+        bottom: remify(25);
+        @include media-breakpoint-up(xl) {
+            display: flex;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            right: remify(30);
+            bottom: remify(30);
+        }
+    }
+
+    &__arrows-next {
+        margin-left: remify(8);
+    }
 }
