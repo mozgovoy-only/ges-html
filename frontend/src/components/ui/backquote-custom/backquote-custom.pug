@@ -1,0 +1,5 @@
+mixin backquote-custom(props)
+    .backquote-custom&attributes(attributes)(data-component='backquote-custom')
+        .backquote-custom__text!=props.text
+        .backquote-custom__name=props.name
+        .backquote-custom__job=props.job

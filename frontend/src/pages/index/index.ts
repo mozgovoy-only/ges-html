@@ -42,6 +42,7 @@ import TextIndent from "@/components/ui/text-indent/text-indent";
 import TextLabel from "@/components/ui/text-label/text-label";
 import SelectCustom from "@/components/ui/select-custom/select-custom";
 import Chips from "@/components/ui/chips/chips";
+import BackquoteCustom from "@/components/ui/backquote-custom/backquote-custom";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -87,6 +88,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "text-label": TextLabel,
     "select-custom": SelectCustom,
     'chips': Chips,
+    "backquote-custom": BackquoteCustom,
 };
 
 export default {
