@@ -1,0 +1,7 @@
+mixin slider(props)
+    .slider&attributes(attributes)(data-component='slider')
+        if props.mixinSlide
+            .slider__list
+                each slide in props.slides
+                    .slider__slide
+                        +#{props.mixinSlide}(slide)

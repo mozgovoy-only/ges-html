@@ -35,6 +35,7 @@ import CardAlbum from "@/components/blocks/card-album/card-album";
 import CardNext from "@/components/blocks/card-next/card-next";
 import GeoProjects from "@/components/blocks/geo-projects/geo-projects";
 import RowSolution from "@/components/blocks/row-solution/row-solution";
+import Slider from "@/components/blocks/slider/slider";
 import TitleMain from "@/components/ui/title-main/title-main";
 import ButtonMain from "@/components/ui/button-main/button-main";
 import ButtonIcon from "@/components/ui/button-icon/button-icon";
@@ -79,8 +80,9 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "card-stage": CardStage,
     "card-album": CardAlbum,
     "card-next": CardNext,
-    "row-solution": RowSolution,
     "geo-projects": GeoProjects,
+    "row-solution": RowSolution,
+    "slider": Slider,
     "title-main": TitleMain,
     "button-main": ButtonMain,
     "button-icon": ButtonIcon,

@@ -1,0 +1,16 @@
+.slider {
+    $root: &;
+    display: flex;
+    &__list {
+        display: flex;
+        overflow: auto;
+        margin: 0 calc(-1 * #{remify(4)});
+    }
+
+    &__slide {
+        flex-basis: calc(100% / 4);
+        min-width: remify(300);
+        padding-left: remify(4);
+        padding-right: remify(4);
+    }
+}
