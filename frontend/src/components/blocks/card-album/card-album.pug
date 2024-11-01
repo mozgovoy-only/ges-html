@@ -10,7 +10,7 @@ mixin card-album(props)
                 })
         .card-album__content
             .card-album__label
-                +text-label({ text: props.textLabel })
+                +text-label({ text: props.textLabel }).text-label--white
             .card-album__title=props.title
-            .card-album__date=props.date
+            .card-album__year=props.year
 

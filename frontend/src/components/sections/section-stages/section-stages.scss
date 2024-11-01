@@ -93,6 +93,10 @@
     &__slider {
         display: flex;
         margin-bottom: remify(60);
+        overflow: auto;
+        width: 100%;
+        margin-left: calc(-1 * #{remify(4)});
+        margin-right: calc(-1 * #{remify(4)});
         @include media-breakpoint-up(md) {
             margin-bottom: remify(80);
         }
@@ -103,4 +107,11 @@
             margin-bottom: remify(120);
         }
     }
+
+    &__slide {
+        flex-basis: calc(100% / 4);
+        padding: 0 remify(4);
+        min-width: remify(300);
+    }
 }
+

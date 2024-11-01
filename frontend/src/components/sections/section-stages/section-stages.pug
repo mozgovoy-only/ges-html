@@ -13,4 +13,6 @@ mixin section-stages(props)
                     .section-stages__chips-item
                         +chips({ text: chips })
         .section-stages__slider
-            .section-stages__slider-slide
+            each slide in props.slides
+                .section-stages__slide
+                    +card-album(slide)

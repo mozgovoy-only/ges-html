@@ -32,6 +32,32 @@
         "select": {
             "controlText": "период",
             "menuList": ["Все", "2021", "2022", "2023"]
-        }
+        },
+        "slides": [
+            {
+                "textLabel": "5 фото",
+                "title": "Март",
+                "year": "2024",
+                "src": "../../assets/images/card-album/1.jpg"
+            },
+            {
+                "textLabel": "5 фото",
+                "title": "Март",
+                "year": "2024",
+                "src": "../../assets/images/card-album/2.jpg"
+            },
+            {
+                "textLabel": "5 фото",
+                "title": "Март",
+                "year": "2024",
+                "src": "../../assets/images/card-album/3.jpg"
+            },
+            {
+                "textLabel": "5 фото",
+                "title": "Март",
+                "year": "2024",
+                "src": "../../assets/images/card-album/4.jpg"
+            }
+        ]
     }
 }

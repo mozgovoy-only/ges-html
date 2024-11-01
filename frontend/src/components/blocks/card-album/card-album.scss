@@ -5,7 +5,7 @@
     border-radius: $border-radius;
     background-color: $white;
     width: 100%;
-    padding-top: calc(329 / 130 * 100%);
+    padding-top: calc(415 / 329 * 100%);
 
     &__image {
         position: absolute;
@@ -22,15 +22,16 @@
             left: 0;
             width: 100%;
             height: 32%;
+            opacity: 0.6;
         }
 
         &::before {
             top: 0;
-            background: linear-gradient(180deg, rgba(0, 20, 49, 0) 0%, #000520 75.93%);
+            background: linear-gradient(0, rgba(0, 20, 49, 0) 0%, #000520 75.93%);
         }
 
         &::after {
-            top: 0;
+            bottom: 0;
             background: linear-gradient(179.53deg, rgba(0, 20, 49, 0) 0.41%, #000520 117.9%);
         }
     }
@@ -59,5 +60,21 @@
         @include media-breakpoint-up(xl) {
             padding: remify(25);
         }
+    }
+
+    &__label {
+        margin-bottom: auto;
+    }
+
+    &__title {
+        @include rem-adaptive-font(20, 20, 22, 24);
+        margin-bottom: remify(5);
+        left: 1.1;
+        color: $white;
+    }
+
+    &__year {
+        color: $white;
+        font-size: remify(14);
     }
 }
