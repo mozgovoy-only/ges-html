@@ -2,20 +2,24 @@
     $root: &;
     background: $white;
     border-radius: $border-radius;
-    background: $white;
+    background-color: $white;
     overflow: hidden;
     position: relative;
     padding: remify(20);
     width: 100%;
     height: 100%;
-    min-height: remify(430);
+    min-height: remify(320);
+
+    @include media-breakpoint-up(md) {
+        min-height: remify(330);
+    }
 
     @include media-breakpoint-up(xl) {
         padding: remify(25);
     }
 
     @include media-breakpoint-up(xxl) {
-        min-height: remify(474);
+        min-height: remify(350);
     }
 
     &__content {
@@ -24,6 +28,33 @@
         position: relative;
         z-index: 1;
         height: 100%;
+        @include media-breakpoint-up(xl) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__title {
+        font-family: $font-tt-firs-neue;
+        line-height: 1;
+        @include rem-adaptive-font(24, 26, 28, 32);
+        margin-bottom: auto;
+    }
+
+    &__title-inner {
+        color: $main-blue;
+    }
+
+    &__stage,
+    &__hovered-stage {
+        color: $black-60;
+        font-family: $font-tt-firs-neue;
+        line-height: 1.1;
+        @include rem-adaptive-font(20, 20, 24, 24);
+        margin-bottom: remify(20);
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
     }
 
     &__hovered {
@@ -38,7 +69,8 @@
         height: 100%;
         opacity: 0;
         transition: opacity $duration-fast $ease-default;
-        background: url("../../assets/img/card-team-hovered-bg.svg"), $main-blue;
+        background: url("../../assets/img/card-stage-hovered-bg.svg"),
+            $main-blue;
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: 88%;
@@ -46,113 +78,20 @@
 
         @include media-breakpoint-up(xl) {
             padding: remify(25);
+            flex-direction: column-reverse;
         }
 
         #{$root}:hover & {
             opacity: 1;
         }
     }
-    &__hovered-name {
+
+    &__hovered-stage {
         color: $white;
-    }
-
-    &__hovered-suptitle {
-        font-size: remify(14);
-        color: $white;
-        margin-right: remify(6);
-        @include media-breakpoint-up(xl) {
-            margin-right: 0;
-            margin-bottom: remify(8);
-            color: $white-50;
-            text-transform: uppercase;
-        }
-    }
-
-    &__hovered-year {
-        font-size: remify(14);
-        color: $white;
-        margin-right: remify(6);
-
-        @include media-breakpoint-up(xl) {
-            font-family: $font-tt-firs-neue;
-            line-height: 1.1;
-            @include rem-adaptive-font(20, 20, 22, 24);
-        }
-    }
-
-    &__hovered-job {
-        font-size: remify(16);
-        color: $white-70;
-        margin-bottom: remify(15);
-
-        @include media-breakpoint-up(md) {
-            margin-bottom: remify(20);
-        }
-
-        @include media-breakpoint-up(xl) {
-            margin-bottom: remify(25);
-        }
-
-        @include media-breakpoint-up(xxl) {
-            margin-bottom: remify(30);
-        }
     }
 
     &__hovered-text {
         color: $white;
-        font-size: remify(16);
-    }
-
-    &__hovered-bottom {
-        display: flex;
-        margin-top: remify(20);
-        @include media-breakpoint-up(xl) {
-            flex-direction: column;
-            margin-top: auto;
-        }
-    }
-
-    &__image {
-        display: flex;
-        margin-bottom: remify(20);
-        width: 100%;
-
-        @include media-breakpoint-up(xl) {
-            margin-bottom: remify(25);
-        }
-    }
-
-    &__picture {
-        position: relative;
-        padding-top: calc(250 / 292 * 100%);
-        width: 100%;
-        overflow: hidden;
-        border-radius: $border-radius;
-
-        > img {
-            left: 0;
-            top: 0;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &__name,
-    &__hovered-name {
-        font-family: $font-tt-firs-neue;
-        line-height: 1.1;
-        margin-bottom: remify(12);
-        @include rem-adaptive-font(20, 20, 22, 24);
-
-        @include media-breakpoint-up(xl) {
-            margin-bottom: remify(15);
-        }
-    }
-
-    &__job {
-        opacity: 0.6;
         font-size: remify(16);
         margin-bottom: auto;
     }

@@ -1,2 +1,14 @@
 mixin card-stage(props)
     .card-stage&attributes(attributes)(data-component='card-stage')
+        .card-stage__content
+            .card-stage__stage=props.stage
+            .card-stage__title!=props.title
+            .card-stage__detail
+                span.card-stage__detail-text=props.showText
+                +svg('plus')(class='card-stage__detail-icon')
+        .card-stage__hovered
+            .card-stage__hovered-stage=props.stage
+            .card-stage__hovered-text!=props.text
+            .card-stage__hovered-detail
+                span.card-stage__hovered-detail-text=props.hideText
+                +svg('minus')(class='card-stage__hovered-detail-icon')
