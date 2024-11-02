@@ -1,0 +1,7 @@
+mixin feedback(props)
+    form.feedback&attributes(attributes)(data-component='feedback')
+        .feedback__block
+            .feedback__title Обратная связь
+        .feedback__block
+            .feedback__title Сформулируйте вопрос
+        +button-main({ text: 'Отправить' })(type='submit', disabled)
