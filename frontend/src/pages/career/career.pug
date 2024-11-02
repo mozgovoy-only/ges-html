@@ -6,10 +6,10 @@ block title
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="career")
         +section-hero(dataJson.career.sectionHero)
-        +section-main({ heading: dataJson.career.blockHeading.workWithUs })
+        +section-main(dataJson.career.sectionMain.workWithUs)
             +block-statistic(dataJson.career.blockStatistic)
-        +section-main({ heading: dataJson.career.blockHeading.valuation, inner: true })
+        +section-main(dataJson.career.sectionMain.valuation)
             +block-solution(dataJson.career.blockSolution)
         +section-about(dataJson.career.sectionAbout)
-        +section-main({ heading: dataJson.career.blockHeading.hr })
+        +section-main(dataJson.career.sectionMain.hr)
             +block-relation(dataJson.career.blockRelation)

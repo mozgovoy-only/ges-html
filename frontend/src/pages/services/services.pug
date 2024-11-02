@@ -6,6 +6,6 @@ block title
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="services")
         +section-hero(dataJson.services.sectionHero)
-        +section-main({ heading: dataJson.services.blockHeading.generalContracting })
+        +section-main(dataJson.services.sectionMain.generalContracting)
             +slider(dataJson.services.sliders.generalContracting)
-        +section-main({ heading: dataJson.services.blockHeading.generalProjects })
+        +section-main(dataJson.services.sectionMain.generalProjects)

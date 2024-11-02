@@ -1,23 +1,29 @@
 {
-    "blockHeading": {
+    "sectionMain": {
         "company": {
-            "textIndent": "о компании",
-            "title": "GES Construction – <span class=\"title-main__inner\">высоко квалифицированные профессионалы</span>, стремящиеся к достижению превосходства",
-            "linkText": "о компании",
-            "href": "/about"
+            "heading": {
+                "textIndent": "о компании",
+                "title": "GES Construction – <span class=\"title-main__inner\">высоко квалифицированные профессионалы</span>, стремящиеся к достижению превосходства",
+                "linkText": "о компании",
+                "href": "/about"
+            }
         },
         "projects": {
-            "textIndent": "проекты",
-            "title": "Знаковые <span class=\"title-main__inner\">объекты</span>",
-            "linkText": "все проекты",
-            "href": "/projects",
-            "text": "Экспертиза GES Construction охватывает коммерческое, жилое, промышленное и инфраструктурное строительство. Мы создаем современные объекты недвижимости, соблюдая высочайшие стандарты качества и безопасности."
+            "heading": {
+                "textIndent": "проекты",
+                "title": "Знаковые <span class=\"title-main__inner\">объекты</span>",
+                "linkText": "все проекты",
+                "href": "/projects",
+                "text": "Экспертиза GES Construction охватывает коммерческое, жилое, промышленное и инфраструктурное строительство. Мы создаем современные объекты недвижимости, соблюдая высочайшие стандарты качества и безопасности."
+            }
         },
-        "media":{
-            "textIndent": "Медиа",
-            "title": "Медиа",
-            "linkText": "все новости",
-            "href": "/press-center"
+        "media": {
+            "heading": {
+                "textIndent": "Медиа",
+                "title": "Медиа",
+                "linkText": "все новости",
+                "href": "/press-center"
+            }
         }
     },
     "blockStatistic": {
@@ -53,7 +59,6 @@
                 "date": "2024 - 2026",
                 "titleArea": "Общая площадь",
                 "titlePeriod": "Период строительства"
-
             },
             {
                 "title": "ЖК «Dream Towers»",
@@ -65,7 +70,6 @@
                 "cardClassList": "card-projects--revert card-projects--large",
                 "titleArea": "Общая площадь",
                 "titlePeriod": "Период строительства"
-
             },
             {
                 "title": "Южный речной вокзал",
@@ -78,7 +82,6 @@
                 "cardClassList": "card-projects--small",
                 "titleArea": "Общая площадь",
                 "titlePeriod": "Период строительства"
-
             }
         ]
     },

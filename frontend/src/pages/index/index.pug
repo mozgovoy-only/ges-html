@@ -6,10 +6,10 @@ block title
 block content
     main(data-barba="container" data-barba-namespace="common" data-page-namespace="index")
         +section-hero-slider()
-        +section-main({ heading: dataJson.index.blockHeading.company })
+        +section-main(dataJson.index.sectionMain.company)
             +block-statistic(dataJson.index.blockStatistic)
-        +section-main({ heading: dataJson.index.blockHeading.projects })
+        +section-main(dataJson.index.sectionMain.projects)
             +block-projects(dataJson.index.blockProjects)
         +section-about(dataJson.index.sectionAbout)
-        +section-main({ heading: dataJson.index.blockHeading.media })
+        +section-main(dataJson.index.sectionMain.media)
             +block-media(dataJson.index.blockMedia)

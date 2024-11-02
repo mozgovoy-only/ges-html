@@ -6,5 +6,5 @@ block title
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="politic")
         +section-hero(dataJson.pressCenter.sectionHero)
-        +section-main({ inner: true})
+        +section-main({ contentClassList: true})
             .wysiwyg!=dataJson.politic.wysiwyg

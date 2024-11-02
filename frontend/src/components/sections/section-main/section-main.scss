@@ -37,6 +37,7 @@
     &__content {
         width: 100%;
         margin-bottom: remify(60);
+        margin: 0 auto;
         @include media-breakpoint-up(md) {
             margin-bottom: remify(80);
         }
@@ -51,6 +52,19 @@
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(120);
             max-width: remify(1116);
+        }
+        &--inner {
+            @include media-breakpoint-up(md) {
+                max-width: remify(500);
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-width: remify(600);
+            }
+
+            @include media-breakpoint-up(xxl) {
+                max-width: remify(665);
+            }
         }
     }
 

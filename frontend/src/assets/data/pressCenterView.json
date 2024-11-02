@@ -4,14 +4,15 @@
         "date": "24 ноября 2023",
         "backText": "Вернуться к новостям",
         "BackHref": "/press-center"
-
     },
-    "blockHeading": {
-        "media":{
-            "textIndent": "Медиа",
-            "title": "Медиа",
-            "linkText": "все новости",
-            "href": "/press-center"
+    "sectionMain": {
+        "media": {
+            "heading": {
+                "textIndent": "Медиа",
+                "title": "Медиа",
+                "linkText": "все новости",
+                "href": "/press-center"
+            }
         }
     },
     "blockMedia": {

@@ -4,10 +4,22 @@
         "subtitle": "г. Москва, ВАО, Преображенское, 1-я ул. Бухвостова, вл. 12/11 ",
         "src": "../../assets/images/projects-view.jpg",
         "sources": [
-            { "breakpoint": 375, "srcset": "../../assets/images/projects-view@375.jpg" },
-            { "breakpoint": 768, "srcset": "../../assets/images/projects-view@768.jpg" },
-            { "breakpoint": 1280, "srcset": "../../assets/images/projects-view@1280.jpg" },
-            { "breakpoint": 1440, "srcset": "../../assets/images/projects-view@1440.jpg" }
+            {
+                "breakpoint": 375,
+                "srcset": "../../assets/images/projects-view@375.jpg"
+            },
+            {
+                "breakpoint": 768,
+                "srcset": "../../assets/images/projects-view@768.jpg"
+            },
+            {
+                "breakpoint": 1280,
+                "srcset": "../../assets/images/projects-view@1280.jpg"
+            },
+            {
+                "breakpoint": 1440,
+                "srcset": "../../assets/images/projects-view@1440.jpg"
+            }
         ],
         "cardEvent": {
             "textLabel": "новости",
@@ -15,36 +27,46 @@
             "title": "Южный речной вокзал получил новую жизнь после реконструкции"
         }
     },
-    "blockHeading": {
+    "sectionMain": {
         "projectsAbout": {
-            "textIndent": "о проекте",
-            "text": "Экспертиза GES Construction охватывает коммерческое, жилое, промышленное и инфраструктурное строительство. Мы создаем современные объекты недвижимости, соблюдая высочайшие стандарты качества и безопасности.",
-            "area": "5 637 кв.м.",
-            "date": "2021 – 2023",
-            "titleArea": "Общая площадь",
-            "titlePeriod": "Период строительства"
+            "heading": {
+                "textIndent": "о проекте",
+                "text": "Экспертиза GES Construction охватывает коммерческое, жилое, промышленное и инфраструктурное строительство. Мы создаем современные объекты недвижимости, соблюдая высочайшие стандарты качества и безопасности.",
+                "area": "5 637 кв.м.",
+                "date": "2021 – 2023",
+                "titleArea": "Общая площадь",
+                "titlePeriod": "Период строительства"
+            }
         },
         "location": {
-            "textIndent": "расположение",
-            "title": "<span class=\"title-main__inner\">Расположение</span>",
-            "text": "Жилой комплекс расположен на северо-востоке г. Москва в Преображенском районе.",
-            "buttonText": "открыть карту"
+            "heading": {
+                "textIndent": "расположение",
+                "title": "<span class=\"title-main__inner\">Расположение</span>",
+                "text": "Жилой комплекс расположен на северо-востоке г. Москва в Преображенском районе.",
+                "buttonText": "открыть карту"
+            }
         },
         "media": {
-            "textIndent": "медиа",
-            "title": "<span class=\"title-main__inner\">Галерея</span>"
+            "heading": {
+                "textIndent": "медиа",
+                "title": "<span class=\"title-main__inner\">Галерея</span>"
+            }
         },
         "aboutUs": {
-            "textIndent": "о нас говорят",
-            "backquote": {
-                "text": "ООО \"Рыба!\" благодарит коллектив GES Construction за плодотворное сотрудничество в рамках проекта. <span class=\"backquote-custom__text-inner\">Высокое качество работ</span>, применение самых передовых технологий обеспечивает вашу <span class=\"backquote-custom__text-inner\">несомненную конкурентоспособность</span>  на строительном рынке.",
-                "name": "Рыбов Петр Алексеевич",
-                "job": "Учредитель, управляющий партнер"
+            "heading": {
+                "textIndent": "о нас говорят",
+                "backquote": {
+                    "text": "ООО \"Рыба!\" благодарит коллектив GES Construction за плодотворное сотрудничество в рамках проекта. <span class=\"backquote-custom__text-inner\">Высокое качество работ</span>, применение самых передовых технологий обеспечивает вашу <span class=\"backquote-custom__text-inner\">несомненную конкурентоспособность</span>  на строительном рынке.",
+                    "name": "Рыбов Петр Алексеевич",
+                    "job": "Учредитель, управляющий партнер"
+                }
             }
         },
         "mediaAbout": {
-            "textIndent": "медиа",
-            "title": "Новости о <span class=\"title-main__inner\">проекте</span>"
+            "heading": {
+                "textIndent": "медиа",
+                "title": "Новости о <span class=\"title-main__inner\">проекте</span>"
+            }
         }
     },
     "sectionStages": {
