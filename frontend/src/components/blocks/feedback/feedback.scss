@@ -1,13 +1,16 @@
 .feedback {
+    --feedback-row-gap: #{remify(12)};
     $root: &;
     padding: remify(20);
     background-color: $white;
     border-radius: $border-radius-md;
     @include media-breakpoint-up(xl) {
+        --feedback-row-gap: #{remify(15)};
         padding: remify(25);
     }
 
     @include media-breakpoint-up(xxl) {
+        --feedback-row-gap: #{remify(20)};
         padding: remify(30);
     }
     &__title {
@@ -40,6 +43,26 @@
 
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(40);
+        }
+    }
+
+    &__row {
+        margin-top: calc(-1 * var(--feedback-row-gap));
+        margin-left: calc(-0.5 * var(--feedback-row-gap));
+        margin-right: calc(-0.5 * var(--feedback-row-gap));
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        flex-basis: 100%;
+        padding-left: calc(0.5 * var(--feedback-row-gap));
+        padding-right: calc(0.5 * var(--feedback-row-gap));
+        margin-top: calc(1 * var(--feedback-row-gap));
+
+        &--md-6 {
+            @include media-breakpoint-up(md) {
+                flex-basis: 50%;
+            }
         }
     }
 }
