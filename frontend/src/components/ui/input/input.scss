@@ -1,0 +1,23 @@
+.input {
+    $root: &;
+
+    &__label {
+        display: block;
+        margin-bottom: remify(4);
+        font-size: remify(14);
+    }
+
+    &__element {
+        padding: remify(16) remify(20);
+        border: 1px solid $black-15;
+        background-color: $white;
+        width: 100%;
+        font-size: remify(16);
+        color: $main-black;
+        font-family: inherit;
+        border-radius: remify(12);
+        &::placeholder {
+            color: $black-60;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+mixin input(props)
+    .input(data-component='input')
+            label.input__label(for=props.id)=props.label
+            input.input__element&attributes(attributes)(name=props.name id=props.id type=props.type placeholder=props.placeholder required=props.required)
+

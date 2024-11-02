@@ -46,6 +46,7 @@ import SelectCustom from "@/components/ui/select-custom/select-custom";
 import Chips from "@/components/ui/chips/chips";
 import BackquoteCustom from "@/components/ui/backquote-custom/backquote-custom";
 import Feedback from "@/components/blocks/feedback/feedback";
+import Input from "@/components/ui/input/input";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -94,7 +95,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "select-custom": SelectCustom,
     'chips': Chips,
     "backquote-custom": BackquoteCustom,
-    "feedback": Feedback
+    "feedback": Feedback,
+    "input": Input
 };
 
 export default {
