@@ -11,7 +11,7 @@ mixin card-team(props)
             .card-team__name=props.name
             .card-team__job=props.job
             .card-team__detail
-                span.card-team__detail-text=props.detailText
+                span.card-team__detail-text=props.showText
                 +svg('plus')(class='card-team__detail-icon')
         .card-team__hovered
             .card-team__hovered-name=props.name
@@ -21,5 +21,5 @@ mixin card-team(props)
                 span.card-team__hovered-suptitle=props.suptitle
                 span.card-team__hovered-year с 2017
             .card-team__hovered-detail
-                span.card-team__hovered-detail-text=props.detailText
+                span.card-team__hovered-detail-text=props.hideText
                 +svg('minus')(class='card-team__hovered-detail-icon')
