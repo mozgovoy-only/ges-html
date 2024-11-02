@@ -34,6 +34,8 @@ import CardEvent from "@/components/blocks/card-event/card-event";
 import CardStage from "@/components/blocks/card-stage/card-stage";
 import CardAlbum from "@/components/blocks/card-album/card-album";
 import CardNext from "@/components/blocks/card-next/card-next";
+import CardBrand from "@/components/blocks/card-brand/card-brand";
+import CardAbout from "@/components/blocks/card-about/card-about";
 import GeoProjects from "@/components/blocks/geo-projects/geo-projects";
 import RowSolution from "@/components/blocks/row-solution/row-solution";
 import Slider from "@/components/blocks/slider/slider";
@@ -85,6 +87,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "card-stage": CardStage,
     "card-album": CardAlbum,
     "card-next": CardNext,
+    "card-brand": CardBrand,
+    "card-about": CardAbout,
     "geo-projects": GeoProjects,
     "row-solution": RowSolution,
     "slider": Slider,
