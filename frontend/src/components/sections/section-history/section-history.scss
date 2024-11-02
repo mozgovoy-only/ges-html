@@ -113,4 +113,41 @@
             top: remify(120);
         }
     }
+
+    &__bottom {
+        max-width: remify(665);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bottom-title {
+        color: $white;
+        font-family: $font-tt-firs-neue;
+        letter-spacing: $letter-spacing-second;
+        line-height: 1.1;
+        @include rem-adaptive-font(20, 20, 22, 24);
+        margin-bottom: remify(25);
+    }
+
+    &__bottom-text {
+        color: $white-70;
+        @include rem-adaptive-font(16, 16, 18, 18);
+        margin-bottom: remify(30);
+    }
+    &__bottom-link {
+        display: flex;
+        align-items: center;
+        color: $white;
+        font-family: $font-tt-firs-neue;
+        line-height: 1.1;
+        @include rem-adaptive-font(16, 16, 18, 18);
+        margin-bottom: remify(15);
+    }
+    &__bottom-link-icon {
+        width: remify(20);
+        height: remify(20);
+        color: $white-40;
+        margin-left: remify(12);
+    }
 }
