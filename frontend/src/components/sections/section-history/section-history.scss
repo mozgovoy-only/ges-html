@@ -4,6 +4,7 @@
     padding: 0 var(--offset-padding);
     margin: 0 auto;
     &__content {
+        position: relative;
         border-radius: $border-radius;
         width: 100%;
         min-height: remify(400);
@@ -12,21 +13,104 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% auto;
+        overflow: hidden;
+        padding: remify(60) remify(14);
         margin-bottom: remify(60);
 
         @include media-breakpoint-up(md) {
             border-radius: $border-radius-md;
+            padding: remify(80) remify(30);
             margin-bottom: remify(80);
         }
 
         @include media-breakpoint-up(xl) {
             border-radius: $border-radius-xl;
+            padding: remify(100) remify(50);
             margin-bottom: remify(100);
         }
 
         @include media-breakpoint-up(xxl) {
             border-radius: $border-radius-xxl;
+            padding: remify(120) remify(50);
             margin-bottom: remify(120);
+        }
+    }
+    &__title {
+        margin-bottom: remify(40);
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(50);
+        }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(60);
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(70);
+        }
+    }
+
+    &__top {
+        max-width: remify(665);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__period {
+        width: 100%;
+        height: remify(70);
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: remify(45);
+    }
+    &__period-row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: remify(665);
+        margin: 0 auto;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 1px;
+            background: $white-50;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            &::after {
+                width: calc(100% + #{remify(100)});
+            }
+        }
+    }
+
+    &__arrows {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+
+    &__period-row-item {
+        width: calc(100% / 5);
+    }
+    &__indent {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        top: remify(100);
+        left: remify(50);
+        @include media-breakpoint-up(xl) {
+            display: flex;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            top: remify(120);
         }
     }
 }

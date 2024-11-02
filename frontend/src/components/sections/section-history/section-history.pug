@@ -1,3 +1,20 @@
 mixin section-history(props)
     .section-history&attributes(attributes)(data-component='section-history')
         .section-history__content
+            .section-history__top
+                .section-history__indent
+                    +text-indent({ text: 'история' })(class='text-indent--white')
+                .section-history__title
+                    +title-main('История')(class='title-main--white')
+            .section-history__period
+                .section-history__period-row
+                    .section-history__period-row-item
+                        +button-offcut()(class='is-active')
+                    .section-history__period-row-item
+                        +button-offcut()
+                    .section-history__period-row-item
+                        +button-offcut()
+                    .section-history__period-row-item
+                        +button-offcut()
+                    .section-history__period-row-item
+                        +button-offcut()

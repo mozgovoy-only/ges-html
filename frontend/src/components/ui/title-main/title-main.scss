@@ -5,6 +5,10 @@
     line-height: $line-height-second;
     @include rem-adaptive-font(28, 32, 36, 40);
 
+    &--white {
+        color: $white;
+    }
+
     &__inner {
         color: $main-blue;
 
