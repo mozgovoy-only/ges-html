@@ -1,0 +1,16 @@
+.block-about {
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * #{remify(4)});
+    margin-left: calc(-0.5 * #{remify(4)});
+    margin-right: calc(-0.5 * #{remify(4)});
+
+    &__item {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: remify(8);
+        padding-left: calc(0.5 * #{remify(4)});
+        padding-right: calc(0.5 * #{remify(4)});
+    }
+}
