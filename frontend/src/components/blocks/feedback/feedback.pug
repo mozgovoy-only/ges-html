@@ -2,6 +2,48 @@ mixin feedback(props)
     form.feedback&attributes(attributes)(data-component='feedback')
         .feedback__block
             .feedback__title Обратная связь
+            .feedback__row
+                .feedback__col.feedback__col--md-6
+                    +input({
+                        id: 'feedback-name',
+                        type: 'text',
+                        placeholder: 'Ваше имя *',
+                        name: 'feedback_name',
+                        required: true
+                    })
+                .feedback__col.feedback__col--md-6
+                    +input({
+                        id: 'feedback-company',
+                        type: 'tel',
+                        placeholder: 'Компания',
+                        name: 'feedback_company',
+                        required: true
+                    })
+                .feedback__col.feedback__col--md-6
+                    +input({
+                        id: 'feedback-email',
+                        type: 'text',
+                        placeholder: 'E-mail *',
+                        name: 'feedback_email',
+                        required: true
+                    })
+                .feedback__col.feedback__col--md-6
+                    +input({
+                        id: 'feedback-tel',
+                        type: 'tel',
+                        placeholder: 'Телефон',
+                        name: 'feedback_tel',
+                        required: true
+                    })
         .feedback__block
             .feedback__title Сформулируйте вопрос
+            .feedback__row
+                .feedback__col
+                    +input({
+                        id: 'feedback-theme',
+                        type: 'text',
+                        placeholder: 'Тема вопроса',
+                        name: 'feedback_theme',
+                        required: true
+                    })
         +button-main({ text: 'Отправить' })(type='submit', disabled)
