@@ -39,6 +39,7 @@ import Slider from "@/components/blocks/slider/slider";
 import TitleMain from "@/components/ui/title-main/title-main";
 import ButtonMain from "@/components/ui/button-main/button-main";
 import ButtonIcon from "@/components/ui/button-icon/button-icon";
+import ButtonOffcut from "@/components/ui/button-offcut/button-offcut";
 import TextIndent from "@/components/ui/text-indent/text-indent";
 import TextLabel from "@/components/ui/text-label/text-label";
 import SelectCustom from "@/components/ui/select-custom/select-custom";
@@ -86,6 +87,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "title-main": TitleMain,
     "button-main": ButtonMain,
     "button-icon": ButtonIcon,
+    "button-offcut": ButtonOffcut,
     "text-indent": TextIndent,
     "text-label": TextLabel,
     "select-custom": SelectCustom,
