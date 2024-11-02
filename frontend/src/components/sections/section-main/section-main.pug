@@ -4,9 +4,5 @@ mixin section-main(props)
             .section-main__heading
                 +block-heading(props.heading)
         if block
-            if props.inner
-                .section-main__inner
-                    block
-            else
-                .section-main__content(class=props.contentClassList)
+            .section-main__content(class=props.contentClassList)
                     block
