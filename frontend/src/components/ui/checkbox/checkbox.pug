@@ -1,0 +1,6 @@
+mixin checkbox(props)
+    .checkbox&attributes(attributes)(data-component='checkbox')
+        input.checkbox__element&attributes(attributes)(type="checkbox" id=props.id name=props.name required=props.required)
+        label.checkbox__label(for=props.id)
+            if block
+                block

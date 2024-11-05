@@ -51,6 +51,7 @@ import BackquoteCustom from "@/components/ui/backquote-custom/backquote-custom";
 import Feedback from "@/components/blocks/feedback/feedback";
 import Input from "@/components/ui/input/input";
 import Textarea from "@/components/ui/textarea/textarea";
+import Checkbox from "@/components/ui/checkbox/checkbox";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -104,7 +105,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "backquote-custom": BackquoteCustom,
     "feedback": Feedback,
     "input": Input,
-    "textarea": Textarea
+    "textarea": Textarea,
+    "checkbox": Checkbox
 };
 
 export default {

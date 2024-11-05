@@ -48,10 +48,17 @@ mixin feedback(props)
                     })
                 .feedback__col
                     +textarea({
-                        id: 'feedback-theme',
-                        placeholder: 'Тема вопроса',
-                        name: 'feedback_theme',
+                        id: 'feedback-message',
+                        placeholder: 'Сообщение *',
+                        name: 'feedback_message',
                         required: true,
                         rows: 7
                     })
+            .feedback__check
+                +checkbox({
+                    id: 'feedback-check',
+                    required: true,
+                    name: 'feedback_check',
+                })
+                    | Подтверждаю свое согласие на обработку Персональных данных
         +button-main({ text: 'Отправить' })(type='submit', disabled)
