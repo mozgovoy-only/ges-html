@@ -5,6 +5,9 @@
     background-color: $white;
     border-radius: $border-radius;
     padding: remify(20);
+    min-height: remify(290);
+    cursor: pointer;
+
     @include media-breakpoint-up(md) {
         border-radius: $border-radius-md;
     }
@@ -13,10 +16,15 @@
         border-radius: $border-radius-xl;
         padding: remify(30);
     }
+
     &__content {
         position: relative;
         z-index: 2;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
+
     &__title {
         font-family: $font-tt-firs-neue;
         letter-spacing: $letter-spacing-second;
@@ -33,6 +41,11 @@
         display: flex;
         @include rem-adaptive-font(16, 16, 18, 18);
         line-height: 1.1;
+        margin-top: remify(20);
+
+        @include media-breakpoint-up(xl) {
+            margin-top: remify(15);
+        }
     }
     &__text-icon {
         color: $main-blue;

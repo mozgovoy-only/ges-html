@@ -41,6 +41,43 @@
             }
         }
     },
+    "blockAbout": {
+        "cards": [
+            {
+                "title": "<span class=\"card-about__title-inner\">Коммерческие</span> объекты",
+                "src": "../../assets/images/card-about/1.jpg",
+                "text": ["«Деловой квартал-1»", "«Деловой квартал-2»"]
+            },
+            {
+                "title": "<span class=\"card-about__title-inner\">Инфраструктурные</span> проекты",
+                "src": "../../assets/images/card-about/2.jpg",
+                "text": ["Порт «Южный речной вокзал»"]
+            },
+            {
+                "title": "<span class=\"card-about__title-inner\">Жилые</span> проекты",
+                "src": "../../assets/images/card-about/3.jpg",
+                "text": [
+                    "ЖК «Jois»",
+                    "ЖК «Dream Riva»",
+                    "ЖК «Foriver Residence»",
+                    "ЖК «Преображенская площадь»"
+                ]
+            },
+            {
+                "title": "<span class=\"card-about__title-inner\">Муниципальные</span> проекты",
+                "src": "../../assets/images/card-about/4.jpg",
+                "text": ["Образовательное учреждение УК «ГБОУ Школа № 463»"]
+            },
+            {
+                "title": "<span class=\"card-about__title-inner\">Развлекательные</span> объекты",
+                "src": "../../assets/images/card-about/5.jpg",
+                "text": [
+                    "ОРК «Dream Beach Club»",
+                    "ОРК «Открытый парк аттракционов»"
+                ]
+            }
+        ]
+    },
     "blockSolution": {
         "cards": [
             {

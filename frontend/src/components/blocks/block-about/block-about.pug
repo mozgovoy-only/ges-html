@@ -1,4 +1,5 @@
 mixin block-about(props)
     .block-about&attributes(attributes)(data-component='block-about')
-        .block-about__item
-            +card-about
+        each card in props.cards
+            .block-about__item
+                +card-about(card)

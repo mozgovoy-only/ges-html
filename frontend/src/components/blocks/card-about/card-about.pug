@@ -1,6 +1,7 @@
 mixin card-about(props)
     .card-about&attributes(attributes)(data-component='card-about')
         .card-about__content
-            .card-about__title
-                span.card-about__title-inner Коммерческие
-                |  объекты
+            .card-about__title!=props.title
+            each text in props.text
+                .card-about__text=text
+                    +svg('anchor-next')(class='card-about__text-icon')
