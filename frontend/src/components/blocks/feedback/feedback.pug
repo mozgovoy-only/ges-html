@@ -46,4 +46,12 @@ mixin feedback(props)
                         name: 'feedback_theme',
                         required: true
                     })
+                .feedback__col
+                    +textarea({
+                        id: 'feedback-theme',
+                        placeholder: 'Тема вопроса',
+                        name: 'feedback_theme',
+                        required: true,
+                        rows: 7
+                    })
         +button-main({ text: 'Отправить' })(type='submit', disabled)

@@ -1,0 +1,4 @@
+mixin textarea(props)
+    .textarea&attributes(attributes)(data-component='textarea')
+        label.textarea__label(for=props.id)=props.label
+        textarea.textarea__element&attributes(attributes)(name=props.name id=props.id placeholder=props.placeholder required=props.required rows=props.rows)

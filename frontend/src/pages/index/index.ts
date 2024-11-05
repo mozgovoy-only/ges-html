@@ -50,6 +50,7 @@ import Chips from "@/components/ui/chips/chips";
 import BackquoteCustom from "@/components/ui/backquote-custom/backquote-custom";
 import Feedback from "@/components/blocks/feedback/feedback";
 import Input from "@/components/ui/input/input";
+import Textarea from "@/components/ui/textarea/textarea";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -102,7 +103,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     'chips': Chips,
     "backquote-custom": BackquoteCustom,
     "feedback": Feedback,
-    "input": Input
+    "input": Input,
+    "textarea": Textarea
 };
 
 export default {
