@@ -1,5 +1,12 @@
 mixin card-about(props)
     .card-about&attributes(attributes)(data-component='card-about')
+        if props.src
+            +picture({
+                classList: 'card-about__picture',
+                img: {
+                    src: props.src
+                }
+            })
         .card-about__content
             .card-about__title!=props.title
             each text in props.text
