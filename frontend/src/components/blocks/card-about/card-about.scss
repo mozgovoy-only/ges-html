@@ -9,13 +9,16 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    height: 100%;
     @include media-breakpoint-up(md) {
         border-radius: $border-radius-md;
+        min-height: remify(220);
     }
 
     @include media-breakpoint-up(xl) {
         border-radius: $border-radius-xl;
         padding: remify(30);
+        min-height: remify(240);
     }
 
     &__content {
