@@ -1,3 +1,14 @@
 .card-about {
     $root: &;
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: remify(20);
+    @include media-breakpoint-up(md) {
+        border-radius: $border-radius-md;
+    }
+
+    @include media-breakpoint-up(xl) {
+        border-radius: $border-radius-xl;
+        padding: remify(30);
+    }
 }
