@@ -4,6 +4,7 @@
     },
     "sectionMain": {
         "generalContracting": {
+            "contentClassList": "section-main__content--extended",
             "heading": {
                 "textIndent": "что мы делаем",
                 "title": "<span class=\"title-main__inner\">Генеральный</span> подряд",
@@ -11,6 +12,7 @@
             }
         },
         "generalProjects": {
+            "contentClassList": "section-main__content--extended",
             "heading": {
                 "textIndent": "что мы делаем",
                 "title": "<span class=\"title-main__inner\">Генеральный</span> подряд",

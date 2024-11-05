@@ -16,7 +16,9 @@
 
     &__heading {
         margin-bottom: remify(40);
-
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         @include media-breakpoint-up(md) {
             margin-bottom: remify(50);
         }
@@ -28,9 +30,6 @@
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(70);
             max-width: remify(1440);
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
         }
     }
 
@@ -53,6 +52,7 @@
             margin-bottom: remify(120);
             max-width: remify(1116);
         }
+
         &--inner {
             @include media-breakpoint-up(md) {
                 max-width: remify(500);
@@ -66,25 +66,9 @@
                 max-width: remify(665);
             }
         }
-    }
 
-    &__inner {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: remify(60);
-        @include media-breakpoint-up(md) {
-            max-width: remify(500);
-            margin-bottom: remify(80);
-        }
-
-        @include media-breakpoint-up(xl) {
-            max-width: remify(600);
-            margin-bottom: remify(100);
-        }
-
-        @include media-breakpoint-up(xxl) {
-            max-width: remify(665);
-            margin-bottom: remify(120);
+        &--extended {
+            max-width: remify(1440);
         }
     }
 }
