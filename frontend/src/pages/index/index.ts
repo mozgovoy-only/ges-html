@@ -52,6 +52,7 @@ import Feedback from "@/components/blocks/feedback/feedback";
 import Input from "@/components/ui/input/input";
 import Textarea from "@/components/ui/textarea/textarea";
 import Checkbox from "@/components/ui/checkbox/checkbox";
+import Dropdown from "@/components/ui/dropdown/dropdown";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -106,7 +107,8 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "feedback": Feedback,
     "input": Input,
     "textarea": Textarea,
-    "checkbox": Checkbox
+    "checkbox": Checkbox,
+    "dropdown": Dropdown,
 };
 
 export default {
