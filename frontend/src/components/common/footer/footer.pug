@@ -17,3 +17,5 @@ mixin footer(props)
                 a.footer__right-politic(href=props.politicHref)=props.politicText
             .footer__right-dev
                 +svg('dev-only')
+            .footer__right-up
+                +button-icon({ icon: 'arrow-up' })(class='button-icon--sm')
