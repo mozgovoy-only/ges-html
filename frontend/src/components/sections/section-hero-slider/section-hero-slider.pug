@@ -18,3 +18,12 @@ mixin section-hero-slider(props)
                         "date": "25.08.2024",
                         "title": "Южный речной вокзал получил новую жизнь после реконструкции"
                     })
+                .section-hero-slider__control
+                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--prev(type='button')
+                        +svg('shewron-up')
+                    .section-hero-slider__control-pagination
+                        button.section-hero-slider__control-pagination-page(type='button')
+                        button.section-hero-slider__control-pagination-page.is-active(type='button')
+                        button.section-hero-slider__control-pagination-page(type='button')
+                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--next(type='button')
+                        +svg('shewron-down')
