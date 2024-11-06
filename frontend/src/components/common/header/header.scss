@@ -117,4 +117,11 @@
             display: none;
         }
     }
+
+    &__lang {
+        display: none;
+        @include media-breakpoint-up(xl) {
+            display: flex;
+        }
+    }
 }
