@@ -81,11 +81,31 @@
             background: $white-50;
         }
 
-        @include media-breakpoint-up(xxl) {
+        @include media-breakpoint-up(xl) {
             &::after {
                 width: calc(100% + #{remify(100)});
             }
         }
+    }
+    &__period-controls {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% + #{remify(100)});
+        transform: translate(-50%, -50%);
+        display: none;
+        justify-content: space-between;
+        pointer-events: none;
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+        @include media-breakpoint-up(xl) {
+            width: calc(100% + #{remify(210)});
+        }
+    }
+
+    &__period-controls-button {
+        pointer-events: all;
     }
 
     &__arrows {

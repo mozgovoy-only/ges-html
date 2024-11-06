@@ -18,6 +18,11 @@ mixin section-history(props)
                         +button-offcut()
                     .section-history__period-row-item
                         +button-offcut()
+                    .section-history__period-controls
+                        .section-history__period-controls-button
+                            +button-icon({ icon: 'arrow-prev' })(class='button-icon--white button-icon--sm slider-gallery__arrows-prev is-disabled')
+                        .section-history__period-controls-button
+                            +button-icon({ icon: 'arrow-next' })(class='button-icon--white button-icon--sm slider-gallery__arrows-next')
             .section-history__bottom
                 .section-history__bottom-title Учреждена компания ООО “ГЭС ПКОНСТРАКШН”
                 .section-history__bottom-text Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”
