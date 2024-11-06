@@ -188,4 +188,8 @@
             margin-left: auto;
         }
     }
+
+    blockquote {
+        @extend .blockquote;
+    }
 }

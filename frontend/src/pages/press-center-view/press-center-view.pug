@@ -9,5 +9,6 @@ block content
         +section-main({ contentClassList: 'section-main__content--inner' })
             .wysiwyg!=dataJson.pressCenterView.sectionMain.content.wysiwyg1
             +slider-gallery()
+            .wysiwyg!=dataJson.pressCenterView.sectionMain.content.blockquote
         +section-main(dataJson.pressCenterView.sectionMain.media)
             +block-media(dataJson.pressCenterView.blockMedia)

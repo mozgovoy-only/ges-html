@@ -164,3 +164,16 @@
 .text-brand {
     color: $main-blue;
 }
+
+.blockquote {
+    margin: 0;
+    background-color: $white;
+    padding: remify(65) remify(35) remify(35);
+    border-radius: $border-radius;
+    @include rem-adaptive-font(16, 16, 18, 18);
+
+    background-image: url("../../assets/img/blockquote-bg.svg");
+    background-repeat: no-repeat;
+    background-position: remify(35) remify(35);
+    background-size: remify(20) remify(17);
+}
