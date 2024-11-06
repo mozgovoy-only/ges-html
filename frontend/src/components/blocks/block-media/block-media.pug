@@ -3,4 +3,4 @@ mixin block-media(props)
         .block-media__left
             +card-media(props.cardLeft)(class='card-media--white')
         .block-media__right
-            +card-media(props.cardRight)
+            +card-media(props.cardRight)(class=props.cardRight.classList)

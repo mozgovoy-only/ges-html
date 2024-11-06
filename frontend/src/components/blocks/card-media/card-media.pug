@@ -10,8 +10,18 @@ mixin card-media(props)
                 })
         .card-media__content
             .card-media__content-top
-                .card-media__content-top-label
-                    +text-label({ text: 'статья' })(class=props.labelClassList)
-                .card-media__content-top-date=props.date
+                if props.labelText
+                    .card-media__content-top-label
+                        +text-label({ text: props.labelText })(class=props.labelClassList)
+                if props.date
+                    .card-media__content-top-date=props.date
+                if props.topTitle
+                    .card-media__content-title=props.topTitle
             .card-media__content-bottom
-                a.card-media__content-bottom-title(href=props.href)=props.title
+                if props.href
+                    a.card-media__content-title(href=props.href)=props.title
+                else
+                    .card-media__content-title=props.title
+                if props.buttonText
+                    .card-media__content-button
+                        +button-main({ text: props.buttonText, href: props.buttonHref })(class='button-main--white')

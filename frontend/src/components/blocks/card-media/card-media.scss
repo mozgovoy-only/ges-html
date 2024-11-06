@@ -14,7 +14,13 @@
     @include media-breakpoint-up(md) {
         border-radius: $border-radius-xl;
     }
-
+    &--secondary {
+        background: $main-blue;
+        background-image: url("../../assets/img/card-media-bg-secondary.svg");
+        background-position: center left;
+        background-size: 100% 30%;
+        background-repeat: no-repeat;
+    }
     &__content {
         position: relative;
         z-index: 2;
@@ -90,7 +96,7 @@
         }
     }
 
-    &__content-bottom-title {
+    &__content-title {
         font-family: $font-tt-firs-neue;
         line-height: 1.1;
         @include rem-adaptive-font(20, 20, 22, 24);
@@ -115,5 +121,10 @@
                 color: $white-70;
             }
         }
+    }
+
+    &__content-button {
+        position: relative;
+        z-index: 4;
     }
 }

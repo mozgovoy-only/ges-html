@@ -114,11 +114,10 @@
             "labelClassList": "text-label--white"
         },
         "cardRight": {
-            "title": "Южный речной вокзал получил новую жизнь после реконструкции",
-            "href": "/press-center",
-            "date": "21.08.2024",
-            "labelText": "статья",
-            "labelClassList": "text-label--dark"
+            "classList": "card-media--secondary card-media--white",
+            "topTitle": "Новости компании",
+            "buttonText": "все новости",
+            "buttonHref": "/press-center"
         }
     },
     "cardNext": {
