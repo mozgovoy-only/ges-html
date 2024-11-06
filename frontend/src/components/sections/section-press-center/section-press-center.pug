@@ -1,6 +1,19 @@
 mixin section-press-center(props)
     .section-press-center&attributes(attributes)(data-component='section-press-center')
         .section-press-center__filter
+            .section-press-center__filter-row
+                .section-press-center__filter-col.section-press-center__filter-col--sm
+                    +select-custom({ controlText: 'год', menuList: [
+                        '2024', '2023', '2022', '2021', 'Жилые проекты'
+                    ] })
+                .section-press-center__filter-col
+                    +select-custom({ controlText: 'тип материала', menuList: [
+                        'Все', 'Статьи', 'Кейсы', 'Фото'
+                    ] })
+                .section-press-center__filter-col
+                    +select-custom({ controlText: 'проект', menuList: [
+                        '1', '2', '3', '4', '5'
+                    ] })
         .section-press-center__content
             each card in props.cards
                 .section-press-center__content-item(class=card.itemClassList)

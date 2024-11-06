@@ -6,7 +6,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 remify(20);
-
+    align-items: center;
     &__content {
         display: flex;
         flex-wrap: wrap;
@@ -59,6 +59,68 @@
 
         @include media-breakpoint-up(xxl) {
             margin-bottom: remify(120);
+        }
+    }
+
+    &__filter {
+        width: 100%;
+        margin-bottom: remify(25);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: remify(30);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: remify(35);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: remify(40);
+            max-width: remify(1116);
+        }
+    }
+
+    &__filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-0.5 * #{remify(20)});
+        margin-right: calc(-0.5 * #{remify(20)});
+        margin-top: calc(-1 * #{remify(15)});
+        @include media-breakpoint-up(md) {
+            margin-top: calc(-1 * #{remify(20)});
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: calc(-0.5 * #{remify(25)});
+            margin-right: calc(-0.5 * #{remify(25)});
+            margin-top: calc(-1 * #{remify(25)});
+        }
+    }
+    &__filter-col {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: remify(15);
+        padding-left: calc(0.5 * #{remify(20)});
+        padding-right: calc(0.5 * #{remify(20)});
+        @include media-breakpoint-up(md) {
+            width: 50%;
+            margin-top: remify(20);
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: calc(100% / 3);
+            margin-top: remify(25);
+            padding-left: calc(0.5 * #{remify(25)});
+            padding-right: calc(0.5 * #{remify(25)});
+        }
+
+        &--sm {
+            @include media-breakpoint-up(md) {
+                width: calc(100% / 4);
+            }
+            @include media-breakpoint-up(xl) {
+                width: calc(100% / 6);
+            }
         }
     }
 }
