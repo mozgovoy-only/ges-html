@@ -6,5 +6,8 @@ block title
 block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="press-center-view")
         +section-hero(dataJson.pressCenterView.sectionHero)
+        +section-main({ contentClassList: 'section-main__content--inner' })
+            .wysiwyg!=dataJson.pressCenterView.sectionMain.content.wysiwyg1
+            +slider-gallery()
         +section-main(dataJson.pressCenterView.sectionMain.media)
             +block-media(dataJson.pressCenterView.blockMedia)
