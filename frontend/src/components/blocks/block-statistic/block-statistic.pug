@@ -1,6 +1,5 @@
 mixin block-statistic(props)
-    +animated-intersection()
-        .block-statistic&attributes(attributes)(data-component='block-statistic')
-            each card in props.cards
-                .block-statistic__item
-                    +card-statistic(card)(class=card.cardClassList)
+    .block-statistic&attributes(attributes)(data-component='block-statistic')
+        each card in props.cards
+            .block-statistic__item
+                +card-statistic(card)(class=card.cardClassList)
