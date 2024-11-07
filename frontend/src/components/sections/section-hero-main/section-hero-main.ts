@@ -7,7 +7,7 @@ export default class SectionHeroMain extends Component<
     HTMLElement,
     SectionHeroMainOptions
 > {
-    slider: HTMLElement | null = null;
+    slider: HTMLDivElement | null = null;
     instance: Swiper | null = null;
     constructor(element: ComponentProps<HTMLElement>) {
         super(element);

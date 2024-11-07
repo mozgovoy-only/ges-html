@@ -88,7 +88,7 @@ abstract class Component<T extends HTMLElement, K extends Record<string, string 
     };
 
     public destroy() {
-        debugger
+
     }
 }
 
