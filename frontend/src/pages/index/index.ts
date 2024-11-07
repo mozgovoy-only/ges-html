@@ -1,5 +1,6 @@
 import { ITransitionData } from "@barba/core/dist/core/src/defs";
 import Component from "@/base/component";
+import Header from "@/components/common/header/header";
 import SectionHero from "@/components/sections/section-hero/section-hero";
 import SectionMain from "@/components/sections/section-main/section-main";
 import SectionAbout from "@/components/sections/section-about/section-about";
@@ -42,6 +43,7 @@ import Slider from "@/components/blocks/slider/slider";
 import TitleMain from "@/components/ui/title-main/title-main";
 import ButtonMain from "@/components/ui/button-main/button-main";
 import ButtonIcon from "@/components/ui/button-icon/button-icon";
+import ButtonMenu from "@/components/ui/button-menu/button-menu";
 import ButtonOffcut from "@/components/ui/button-offcut/button-offcut";
 import TextIndent from "@/components/ui/text-indent/text-indent";
 import TextLabel from "@/components/ui/text-label/text-label";
@@ -57,6 +59,7 @@ import AnimatedIntersection from "@/components/ui/animated-intersection/animated
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
+    "header": Header,
     "section-hero": SectionHero,
     "section-main": SectionMain,
     "section-about": SectionAbout,
@@ -99,6 +102,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "title-main": TitleMain,
     "button-main": ButtonMain,
     "button-icon": ButtonIcon,
+    "button-menu": ButtonMenu,
     "button-offcut": ButtonOffcut,
     "text-indent": TextIndent,
     "text-label": TextLabel,
@@ -118,10 +122,12 @@ export default {
     components: <Component<HTMLElement>[]>[],
     async beforeEnter({ next: { container, url } }: ITransitionData) {
         try {
+
             // Стандартная инициализация компонентов
             const existedComponents = Array.from(
-                container.querySelectorAll<HTMLElement>("[data-component]")
+                document.querySelectorAll<HTMLElement>("[data-component]")
             );
+
 
             this.components = existedComponents.map((component) => {
                 try {
