@@ -20,9 +20,9 @@
     line-height: $line-height-second;
     border-radius: remify(100);
     background-color: var(--button-icon-bg);
-    transition: color $duration-fast $ease-default,
-        border-color $duration-fast $ease-default,
-        background-color $duration-fast $ease-default;
+    transition: color $duration-default $ease-default,
+        border-color $duration-default $ease-default,
+        background-color $duration-default $ease-default;
     display: flex;
     justify-content: center;
     align-items: center;

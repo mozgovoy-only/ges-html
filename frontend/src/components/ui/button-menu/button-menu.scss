@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background $duration-short $ease-default;
+    transition: background $duration-fast $ease-default;
     background: $main-blue;
     border: 0;
     color: $white;
@@ -17,7 +17,7 @@
         height: 2px;
         width: 40%;
         background: $white;
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         margin-top: remify(6);
 
         &:first-child {

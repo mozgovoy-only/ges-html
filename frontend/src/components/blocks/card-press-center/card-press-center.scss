@@ -76,7 +76,7 @@
         font-family: $font-tt-firs-neue;
         line-height: 1.1;
         @include rem-adaptive-font(20, 20, 22, 24);
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         #{$root}:hover & {
             color: $main-blue;
         }

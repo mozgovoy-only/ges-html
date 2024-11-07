@@ -14,7 +14,7 @@
         width: remify(12);
         height: remify(12);
         color: $main-blue;
-        transition: color $duration-fast $ease-default;
+        transition: color $duration-default $ease-default;
 
         #{$root}:hover & {
             color: $blue-hover-only;

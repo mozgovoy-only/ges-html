@@ -84,7 +84,7 @@
         margin-top: auto;
         display: flex;
         align-items: flex-end;
-        transition: color $duration-fast $ease-default;
+        transition: color $duration-default $ease-default;
         #{$root}:hover & {
             color: $blue-hover-only;
         }
@@ -94,7 +94,7 @@
         width: remify(20);
         height: remify(20);
         color: $main-blue;
-        transition: color $duration-fast $ease-default;
+        transition: color $duration-default $ease-default;
         margin-left: remify(12);
         margin-bottom: remify(6);
         #{$root}:hover & {

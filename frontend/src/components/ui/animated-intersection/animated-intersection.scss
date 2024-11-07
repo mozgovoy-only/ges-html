@@ -4,11 +4,7 @@
     --animated-intersection-block-transform: translate(0%, 20%);
     --animated-intersection-block-opacity: 0;
     --animated-intersection-duration: #{$duration-default};
-    --animated-intersection-block-transition-delay: #{$duration-fast};
-
-    &--short {
-        --animated-intersection-duration: #{$duration-short};
-    }
+    --animated-intersection-block-transition-delay: #{$duration-default};
 
     &--fast {
         --animated-intersection-duration: #{$duration-fast};

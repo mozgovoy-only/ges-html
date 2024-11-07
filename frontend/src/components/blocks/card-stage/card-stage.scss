@@ -68,7 +68,7 @@
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition: opacity $duration-fast $ease-default;
+        transition: opacity $duration-default $ease-default;
         background: url("../../assets/img/card-stage-hovered-bg.svg"),
             $main-blue;
         background-repeat: no-repeat;

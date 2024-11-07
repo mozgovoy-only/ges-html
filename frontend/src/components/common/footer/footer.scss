@@ -160,7 +160,7 @@
 
     &__menu-link {
         font-weight: 500;
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         font-size: remify(16);
         &:hover {
             color: $black-60;
@@ -213,7 +213,7 @@
     }
 
     &__right-politic {
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         &:hover {
             color: $black-60;
         }

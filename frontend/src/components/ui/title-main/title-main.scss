@@ -13,7 +13,7 @@
         color: $main-blue;
 
         #{$root}:not(#{$root}--not-hover) & {
-            transition: color $duration-fast $ease-default;
+            transition: color $duration-default $ease-default;
         }
 
         #{$root}:not(#{$root}--not-hover):hover & {

@@ -87,7 +87,7 @@
         display: flex;
         color: $black-60;
         align-items: center;
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         font-family: $font-tt-firs-neue;
         line-height: $line-height-second;
         font-size: remify(14);

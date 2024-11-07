@@ -73,7 +73,7 @@
         line-height: 1;
         @include rem-adaptive-font(28, 32, 36, 40);
         color: $main-blue;
-        transition: color $duration-fast $ease-default;
+        transition: color $duration-default $ease-default;
         margin-bottom: remify(15);
         @include media-breakpoint-up(md) {
             margin-bottom: remify(20);
@@ -194,7 +194,7 @@
         width: remify(60);
         height: remify(60);
         opacity: 0;
-        transition: opacity $duration-fast $ease-default;
+        transition: opacity $duration-default $ease-default;
         @include media-breakpoint-up(md) {
             width: remify(100);
             height: remify(100);

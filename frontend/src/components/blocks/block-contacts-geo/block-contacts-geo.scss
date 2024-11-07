@@ -81,7 +81,7 @@
         margin-bottom: auto;
         color: $main-blue;
         @include rem-adaptive-font(24, 26, 28, 32);
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         &:hover {
             color: $blue-hover-only;
         }
@@ -115,7 +115,7 @@
 
     &__content-refs-contact {
         color: $main-black;
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         @include rem-adaptive-font(16, 16, 18, 18);
 
         &:hover {

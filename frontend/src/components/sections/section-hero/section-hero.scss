@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         color: $white;
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         font-size: remify(16);
         margin-top: remify(25);
         margin-bottom: auto;

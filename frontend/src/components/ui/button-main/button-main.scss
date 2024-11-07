@@ -23,9 +23,9 @@
     padding: var(--button-main-padding-y) var(--button-main-padding-x);
     border-radius: remify(100);
     background-color: var(--button-main-bg);
-    transition: color $duration-fast $ease-default,
-        border-color $duration-fast $ease-default,
-        background-color $duration-fast $ease-default;
+    transition: color $duration-default $ease-default,
+        border-color $duration-default $ease-default,
+        background-color $duration-default $ease-default;
     display: inline-block;
     text-align: center;
 

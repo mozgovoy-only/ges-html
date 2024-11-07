@@ -60,7 +60,7 @@
         letter-spacing: $letter-spacing-second;
         line-height: 1;
         @include rem-adaptive-font(24, 28, 28, 32);
-        transition: color $duration-short $ease-default;
+        transition: color $duration-fast $ease-default;
         &:hover {
             color: $white-50;
         }
