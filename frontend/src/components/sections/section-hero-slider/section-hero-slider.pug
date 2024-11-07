@@ -1,5 +1,5 @@
 mixin section-hero-slider(props)
-    .section-hero-slider&attributes(attributes)(data-component='section-hero-slider')
+    .section-hero-slider.swiper&attributes(attributes)(data-component='section-hero-slider')
         .section-hero-slider__inner
             .section-hero-slider__slides
                 .section-hero-slider__slide
@@ -19,11 +19,11 @@ mixin section-hero-slider(props)
                         "title": "Южный речной вокзал получил новую жизнь после реконструкции"
                     })
                 .section-hero-slider__control
-                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--prev(type='button')
+                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--prev.swiper-button-prev(type='button')
                         +svg('shewron-up')
-                    .section-hero-slider__control-pagination
+                    .section-hero-slider__control-pagination.swiper-pagination
                         button.section-hero-slider__control-pagination-page(type='button')
                         button.section-hero-slider__control-pagination-page.is-active(type='button')
                         button.section-hero-slider__control-pagination-page(type='button')
-                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--next(type='button')
+                    button.section-hero-slider__control-arrow.section-hero-slider__control-arrow--next.swiper-button-next(type='button')
                         +svg('shewron-down')
