@@ -2,7 +2,8 @@ mixin section-main(props)
     section.section-main&attributes(attributes)(data-component='section-main')
         if props.heading
             .section-main__heading
-                +block-heading(props.heading)
+                +animated-intersection()
+                    +block-heading(props.heading)
         if block
             .section-main__content(class=props.contentClassList)
                 block
