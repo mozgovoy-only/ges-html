@@ -2,22 +2,15 @@ mixin section-hero-main(props)
     .section-hero-main&attributes(attributes)(data-component='section-hero-main')
         .section-hero-main__slider.swiper
             .section-hero-main__slides.swiper-wrapper
-                .section-hero-main__slide.swiper-slide
-                    .section-hero-main__image
-                        +picture({
-                            classList: 'section-hero-main__picture',
-                            img: {
-                                src: '../../assets/images/slider-hero/1.jpg'
-                            }
-                        })
-                .section-hero-main__slide.swiper-slide
-                    .section-hero-main__image
-                        +picture({
-                            classList: 'section-hero-main__picture',
-                            img: {
-                                src: '../../assets/images/slider-hero/1.jpg'
-                            }
-                        })
+                each slide in props.slides
+                    .section-hero-main__slide.swiper-slide
+                        .section-hero-main__image
+                            +picture({
+                                classList: 'section-hero-main__picture',
+                                img: {
+                                    src: slide.src
+                                }
+                            })
             .section-hero-main__content
                 .section-hero-main__title Crafting excellence </br> with vision
                 .section-hero-main__content-event

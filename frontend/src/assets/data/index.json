@@ -1,4 +1,17 @@
 {
+    "sectionHeroMain": {
+        "slides": [
+            {
+                "src": "../../assets/images/slider-hero/1.jpg"
+            },
+            {
+                "src": "../../assets/images/slider-hero/2.jpg"
+            },
+            {
+                "src": "../../assets/images/slider-hero/3.jpg"
+            }
+        ]
+    },
     "sectionMain": {
         "company": {
             "heading": {
