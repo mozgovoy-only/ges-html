@@ -53,6 +53,7 @@ import Input from "@/components/ui/input/input";
 import Textarea from "@/components/ui/textarea/textarea";
 import Checkbox from "@/components/ui/checkbox/checkbox";
 import Dropdown from "@/components/ui/dropdown/dropdown";
+import AnimatedIntersection from "@/components/ui/animated-intersection/animated-intersection";
 
 // Набор всех компонентов, для которых будет применяться стандартная инициализация
 const allComponents: Record<string, any & Component<HTMLElement>> = {
@@ -109,6 +110,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "textarea": Textarea,
     "checkbox": Checkbox,
     "dropdown": Dropdown,
+    "animated-intersection": AnimatedIntersection,
 };
 
 export default {
