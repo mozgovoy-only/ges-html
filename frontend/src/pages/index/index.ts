@@ -7,7 +7,7 @@ import SectionStatus from "@/components/sections/section-status/section-status";
 import SectionDocuments from "@/components/sections/section-documents/section-documents";
 import SectionProjects from "@/components/sections/section-projects/section-projects";
 import SectionHistory from "@/components/sections/section-history/section-history";
-import SectionHeroSlider from "@/components/sections/section-hero-slider/section-hero-slider";
+import SectionHeroMain from "@/components/sections/section-hero-main/section-hero-main";
 import SectionPressCenter from "@/components/sections/section-press-center/section-press-center";
 import SectionContacts from "@/components/sections/section-contacts/section-contacts";
 import SectionProjectsHero from "@/components/sections/section-projects-hero/section-projects-hero";
@@ -63,7 +63,7 @@ const allComponents: Record<string, any & Component<HTMLElement>> = {
     "section-documents": SectionDocuments,
     "section-projects": SectionProjects,
     "section-history": SectionHistory,
-    "section-hero-slider": SectionHeroSlider,
+    "section-hero-main": SectionHeroMain,
     "section-press-center": SectionPressCenter,
     "section-contacts": SectionContacts,
     "section-projects-hero": SectionProjectsHero,

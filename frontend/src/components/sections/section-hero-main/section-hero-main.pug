@@ -1,0 +1,29 @@
+mixin section-hero-main(props)
+    .section-hero-main&attributes(attributes)(data-component='section-hero-main')
+        .section-hero-main__inner
+            .section-hero-main__slides
+                .section-hero-main__slide
+                    .section-hero-main__image
+                        +picture({
+                            classList: 'section-hero-main__picture',
+                            img: {
+                                src: '../../assets/images/slider-hero/1.jpg'
+                            }
+                        })
+            .section-hero-main__content
+                .section-hero-main__title Crafting excellence </br> with vision
+                .section-hero-main__content-event
+                    +card-event({
+                        "textLabel": "новости",
+                        "date": "25.08.2024",
+                        "title": "Южный речной вокзал получил новую жизнь после реконструкции"
+                    })
+                .section-hero-main__control
+                    button.section-hero-main__control-arrow.section-hero-main__control-arrow--prev(type='button')
+                        +svg('shewron-up')
+                    .section-hero-main__control-pagination
+                        button.section-hero-main__control-pagination-page(type='button')
+                        button.section-hero-main__control-pagination-page.is-active(type='button')
+                        button.section-hero-main__control-pagination-page(type='button')
+                    button.section-hero-main__control-arrow.section-hero-main__control-arrow--next(type='button')
+                        +svg('shewron-down')

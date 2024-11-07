@@ -1,10 +1,10 @@
 import Component, { ComponentProps } from '@/base/component';
 
-type SectionHeroSliderOptions = {
+type SectionHeroMainOptions = {
 
 }
 
-export default class SectionHeroSlider extends Component<HTMLElement, SectionHeroSliderOptions> {
+export default class SectionHeroMain extends Component<HTMLElement, SectionHeroMainOptions> {
     constructor(element: ComponentProps<HTMLElement>) {
         super(element);
     }

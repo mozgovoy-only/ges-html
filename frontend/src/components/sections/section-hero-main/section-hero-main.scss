@@ -1,5 +1,6 @@
-.section-hero-slider {
+.section-hero-main {
     $root: &;
+
 
     max-width: remify(1920);
     margin: 0 auto remify(60);
@@ -12,11 +13,6 @@
     }
     @include media-breakpoint-up(xxl) {
         margin: 0 auto remify(120);
-    }
-
-    &__slides {
-        position: relative;
-        z-index: 1;
     }
     &__inner {
         position: relative;
