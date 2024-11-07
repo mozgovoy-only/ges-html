@@ -1,6 +1,6 @@
 import Component, { ComponentProps } from "@/base/component";
 import Swiper from "swiper";
-import { Navigation, Pagination, EffectFade } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 type SectionHeroMainOptions = {};
 
 export default class SectionHeroMain extends Component<
@@ -17,12 +17,8 @@ export default class SectionHeroMain extends Component<
     init() {
         this.slider = this.getElement("slider") as HTMLDivElement;
         this.instance = new Swiper(this.slider, {
-            effect: "fade",
-            fadeEffect: {
-                crossFade: true
-            },
             slidesPerView: 1,
-            modules: [Navigation, Pagination, EffectFade],
+            modules: [Navigation, Pagination],
             pagination: {
                 el: ".section-hero-main__control-pagination",
                 type: 'bullets',
