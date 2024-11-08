@@ -10,24 +10,22 @@
     right: 0;
     z-index: $zindex-fixed;
     padding-top: var(--offset-padding);
-    padding-left: remify(20);
-    padding-right: remify(20);
-
-    @include media-breakpoint-up(xl) {
-        padding-left: remify(40);
-        padding-right: remify(40);
-    }
 
     &__content {
         display: flex;
         justify-content: space-between;
-        max-width: remify(1440);
+        max-width: remify(1920);
         width: 100%;
         height: 100%;
         align-items: flex-end;
+        padding: 0 remify(20);
 
         @include media-breakpoint-up(xl) {
-           align-items: center;
+            padding: 0 remify(40);
+            align-items: center;
+        }
+        @include media-breakpoint-up(xxl) {
+            padding: 0 remify(60);
         }
     }
 
