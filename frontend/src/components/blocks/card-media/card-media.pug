@@ -1,13 +1,8 @@
 mixin card-media(props)
     .card-media&attributes(attributes)(data-component='card-media')
-        if props.src
+        if props.picture
             .card-media__image
-                +picture({
-                    classList: 'card-media__picture',
-                    img: {
-                        src: props.src
-                    }
-                })
+                +picture(props.picture).card-media__picture
         .card-media__content
             .card-media__content-top
                 if props.labelText
@@ -22,6 +17,6 @@ mixin card-media(props)
                     a.card-media__content-title(href=props.href)=props.title
                 else
                     .card-media__content-title=props.title
-                if props.buttonText
+                if props.button
                     .card-media__content-button
-                        +button-main({ text: props.buttonText, href: props.buttonHref })(class='button-main--white')
+                        +button-main(props.button)(class='button-main--white')

@@ -1,19 +1,16 @@
 mixin section-hero(props)
     section.section-hero&attributes(attributes)(data-component='section-hero')
         .section-hero__inner
-            if props.src
+            if props.picture
                 .section-hero__image
-                    +picture({
-                        classList: 'section-hero__picture',
-                        img: {
-                            src: props.src
-                        }
-                    })
+                    +picture(props.picture).section-hero__picture
             .section-hero__content
-                if props.BackHref
-                    a.section-hero__back(href=props.BackHref)
-                        +svg('shewron-back').section-hero__back-icon
-                        span.section-hero__back-text=props.backText
+                if props.backLink
+                    a.section-hero__back(href=props.backLink.href)
+                        if (props.backLink.icon)
+                            +svg(props.backLink.icon).section-hero__back-icon
+                        if (props.backLink.text)
+                            span.section-hero__back-text=props.backLink.text
                 if props.title
                     .section-hero__title=props.title
                 if props.subtitle

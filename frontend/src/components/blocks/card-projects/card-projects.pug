@@ -1,24 +1,27 @@
 mixin card-projects(props)
     a.card-projects&attributes(attributes)(data-component='card-projects', href=props.href, class=props.cardClassList)
         .card-projects__top
-            .card-projects__top-title=props.title
-            .card-projects__top-text!=props.text
+            if props.title
+                .card-projects__top-title=props.title
+            if props.text
+                .card-projects__top-text!=props.text
         .card-projects__image
-            +picture({
-                classList: 'card-projects__image-picture',
-                img:{
-                    src: props.src
-                }
-            })
+            if props.picture
+                +picture(props.picture).card-projects__image-picture
             .card-projects__icon
-                +svg('card-projects-arrow')
+                if props.icon
+                    +svg(props.icon)
             if props.textLabel
                 .card-projects__label
                     +text-label({ text: props.textLabel })
         .card-projects__bottom
             .card-projects__bottom-col
-                .card-projects__bottom-title=props.titleArea
-                .card-projects__bottom-text!=props.area
+                if props.titleArea
+                    .card-projects__bottom-title=props.titleArea
+                if props.area
+                    .card-projects__bottom-text!=props.area
             .card-projects__bottom-col
-                .card-projects__bottom-title=props.titlePeriod
+                if props.titlePeriod
+                    .card-projects__bottom-title=props.titlePeriod
+                if props.date
                 .card-projects__bottom-text=props.date

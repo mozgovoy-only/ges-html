@@ -1,7 +1,26 @@
 {
     "sectionHero": {
         "title": "Работа в GES Construction",
-        "src": "../../assets/images/career.jpg"
+        "picture": {
+            "img": {
+                "src": "../../assets/images/career.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/career.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/career.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        },
+        "backLink": {
+            "icon": "shewron-back",
+            "text": "РЫБА",
+            "href": "#"
+        }
     },
     "sectionMain": {
         "workWithUs": {
@@ -37,7 +56,21 @@
                 "topText": "лет",
                 "bottomText": "средний опыт сотрудников в строительстве",
                 "cardClassList": "card-statistic--white",
-                "src": "../../assets/images/card-statistic/2.jpg"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-statistic/2.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-statistic/2.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-statistic/2.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
                 "number": "100%",
@@ -78,7 +111,25 @@
     "sectionAbout": {
         "title": "Вакансии",
         "text": "GES Construction – это эксперты, которые стояли у истоков ведущих проектов в России. Наша приверженность результату, стойкость и готовность брать на себя смелые обязательства способствовали нашему росту и укрепляли доверие клиентов. Вместе с нами вы будете работать над проектами, которые меняют облик и жизнь современных городов",
-        "src": "../../assets/images/section-about/3.jpg"
+        "button": {
+            "href": "#",
+            "text": "рыба"
+        },
+        "picture": {
+            "img": {
+                "src": "../../assets/images/section-about/3.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/section-about/3.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/section-about/3.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        }
     },
     "blockRelation": {
         "title": "Хотите у нас работать?",

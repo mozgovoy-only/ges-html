@@ -3,26 +3,25 @@ mixin section-history(props)
         .section-history__content
             .section-history__top
                 .section-history__indent
-                    +text-indent({ text: 'история' })(class='text-indent--white')
+                    if (props.textIdent)
+                        +text-indent(props.textIdent).text-indent--white
                 .section-history__title
-                    +title-main('История')(class='title-main--white')
+                    if (props.titleMain)
+                        +title-main(props.titleMain).title-main--white
             .section-history__period
-                .section-history__period-row
-                    .section-history__period-row-item
-                        +button-offcut()(class='is-active')
-                    .section-history__period-row-item
-                        +button-offcut()
-                    .section-history__period-row-item
-                        +button-offcut()
-                    .section-history__period-row-item
-                        +button-offcut()
-                    .section-history__period-row-item
-                        +button-offcut()
-                    .section-history__period-controls
-                        .section-history__period-controls-button
-                            +button-icon({ icon: 'arrow-prev' })(class='button-icon--white button-icon--sm slider-gallery__arrows-prev is-disabled')
-                        .section-history__period-controls-button
-                            +button-icon({ icon: 'arrow-next' })(class='button-icon--white button-icon--sm slider-gallery__arrows-next')
+                if (props.cards)
+                    .section-history__period-row
+                        each card in props.cards
+                            .section-history__period-row-item
+                                if card.button
+                                    +button-offcut(card.button)._is-active
+                        .section-history__period-controls
+                            .section-history__period-controls-button
+                                if props.prevButton
+                                    +button-icon(props.prevButton)(class='button-icon--white button-icon--sm slider-gallery__arrows-prev is-disabled')
+                            .section-history__period-controls-button
+                                if props.nextButton
+                                    +button-icon(props.nextButton)(class='button-icon--white button-icon--sm slider-gallery__arrows-next')
             .section-history__bottom
                 .section-history__bottom-title Учреждена компания ООО “ГЭС ПКОНСТРАКШН”
                 .section-history__bottom-text Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”

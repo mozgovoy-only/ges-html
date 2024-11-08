@@ -5,23 +5,20 @@ mixin section-hero-main(props)
                 each slide in props.slides
                     .section-hero-main__slide.swiper-slide
                         .section-hero-main__image
-                            +picture({
-                                classList: 'section-hero-main__picture',
-                                img: {
-                                    src: slide.src
-                                }
-                            })
-            .section-hero-main__content
-                .section-hero-main__title Crafting excellence </br> with vision
-                .section-hero-main__content-event
-                    +card-event({
-                        "textLabel": "новости",
-                        "date": "25.08.2024",
-                        "title": "Южный речной вокзал получил новую жизнь после реконструкции"
-                    })
+                            if slide.picture
+                                +picture(slide.picture).section-hero-main__picture
+            if props.content
+                .section-hero-main__content
+                    if props.content.title
+                        .section-hero-main__title!= props.content.title
+                    if props.content.event
+                    .section-hero-main__content-event
+                        +card-event(props.content.event)
             .section-hero-main__control
                 button.section-hero-main__control-arrow.section-hero-main__control-arrow--prev(type='button')
-                    +svg('shewron-up')
+                    if props.prevIcon
+                        +svg(props.prevIcon)
                 .section-hero-main__control-pagination
                 button.section-hero-main__control-arrow.section-hero-main__control-arrow--next(type='button')
-                    +svg('shewron-down')
+                    if props.nextIcon
+                        +svg(props.nextIcon)

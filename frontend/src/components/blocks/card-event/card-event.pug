@@ -2,7 +2,11 @@ mixin card-event(props)
     .card-event&attributes(attributes)(data-component='card-event')
         .card-event__content
             .card-event__content-top
-                +text-label({ text: props.textLabel })
-                +svg('anchor-next').card-event__content-top-icon
-            .card-event__content-date=props.date
-            .card-event__content-title=props.title
+                if props.textLabel
+                    +text-label({ text: props.textLabel })
+                if props.icon
+                    +svg(props.icon).card-event__content-top-icon
+            if props.date
+                .card-event__content-date=props.date
+            if props.title
+                .card-event__content-title=props.title

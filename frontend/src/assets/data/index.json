@@ -2,15 +2,68 @@
     "sectionHeroMain": {
         "slides": [
             {
-                "src": "../../assets/images/slider-hero/1.jpg"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/slider-hero/1.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/slider-hero/1.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/slider-hero/1.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
-                "src": "../../assets/images/slider-hero/2.jpg"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/slider-hero/2.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/slider-hero/2.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/slider-hero/2.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
-                "src": "../../assets/images/slider-hero/3.jpg"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/slider-hero/3.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/slider-hero/3.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/slider-hero/3.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             }
-        ]
+        ],
+        "content": {
+            "title": "Crafting excellence </br> with vision",
+            "event": {
+                "textLabel": "новости",
+                "date": "25.08.2024",
+                "title": "Южный речной вокзал получил новую жизнь после реконструкции",
+                "icon": "anchor-next"
+            }
+        },
+        "prevIcon": "shewron-up",
+        "nextIcon": "shewron-down"
     },
     "sectionMain": {
         "company": {
@@ -51,7 +104,21 @@
                 "topText": "тыс. кв.м.",
                 "bottomText": "площадь построенных жилых комплексов бизнес и премиум класса",
                 "cardClassList": "card-statistic--white",
-                "src": "../../assets/images/card-statistic/1.jpg"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-statistic/1.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-statistic/1.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-statistic/1.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
                 "number": ">5",
@@ -66,49 +133,126 @@
             {
                 "title": "ЖК «JOIS»",
                 "text": "Многофункциональный жилой комплекс «JOIS» — 1 этап строительства. Две башни  высотой 200м и 170м.",
-                "src": "../../assets/images/card-projects/1.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-projects/1.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-projects/1.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-projects/1.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "area": "131 900 кв.м.",
                 "href": "/projects-view",
                 "date": "2024 - 2026",
                 "titleArea": "Общая площадь",
-                "titlePeriod": "Период строительства"
+                "titlePeriod": "Период строительства",
+                "icon": "card-projects-arrow"
             },
             {
                 "title": "ЖК «Dream Towers»",
                 "text": "Многофункциональный жилой комплекс",
-                "src": "../../assets/images/card-projects/2.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-projects/2.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-projects/2.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-projects/2.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "area": "58 300 кв.м.",
                 "href": "/projects-view",
                 "date": "2021 – 2023",
                 "cardClassList": "card-projects--revert card-projects--large",
                 "titleArea": "Общая площадь",
-                "titlePeriod": "Период строительства"
+                "titlePeriod": "Период строительства",
+                "icon": "card-projects-arrow"
             },
             {
                 "title": "Южный речной вокзал",
                 "text": "Реконструкция транспортного комплекса “Южный речной вокзал” на реке Москва в Нагатинской пойме",
-                "src": "../../assets/images/card-projects/3.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-projects/3.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-projects/3.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-projects/3.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "area": "5 637 кв.м.",
                 "href": "/projects-view",
                 "date": "2021 – 2023",
                 "itemClassList": "block-projects__item--offset-right",
                 "cardClassList": "card-projects--small",
                 "titleArea": "Общая площадь",
-                "titlePeriod": "Период строительства"
+                "titlePeriod": "Период строительства",
+                "icon": "card-projects-arrow"
             }
         ]
     },
     "sectionAbout": {
-        "textIndent": "карьера",
+        "textIndent": {
+            "text": "карьера"
+        },
         "title": "Развивайтесь</br> вместе с нами",
         "text": "Мы поддерживаем сотрудников в стремлении к профессиональному развитию. Ценим вклад каждого и предлагаем возможности для роста и обучения. Присоединяясь к нашей команде, вы становитесь частью коллектива, для которого честность и профессионализм —  неотъемлемые составляющие успеха",
-        "linkText": "карьера",
-        "href": "/career",
-        "src": "../../assets/images/section-about/1.jpg"
+        "button": {
+            "href": "/career",
+            "text": "карьера"
+        },
+        "picture": {
+            "img": {
+                "src": "../../assets/images/section-about/1.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/section-about/1.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/section-about/1.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        }
     },
     "blockMedia": {
         "cardLeft": {
-            "src": "../../assets/images/card-media/1.jpg",
+            "picture": {
+                "img": {
+                    "src": "../../assets/images/card-media/1.jpg"
+                },
+                "sources": [
+                    {
+                        "srcset": "../../assets/images/card-media/1.jpg",
+                        "breakpoint": 1280
+                    },
+                    {
+                        "srcset": "../../assets/images/card-media/1.jpg",
+                        "breakpoint": 768
+                    }
+                ]
+            },
             "title": "Южный речной вокзал получил новую жизнь после реконструкции",
             "href": "/press-center",
             "date": "25.08.2024",

@@ -5,12 +5,8 @@ mixin block-esg(props)
                 .block-esg__card(class=card.cardClassList)
                     if card.src
                         .block-esg__card-image
-                            +picture({
-                                classList: 'block-esg__card-picture',
-                                img: {
-                                    src: card.src
-                                }
-                            })
+                            if card.picture
+                                +picture(card.picture).block-esg__card-picture
                     .block-esg__card-content
                         .block-esg__card-title=card.title
                         if card.list
