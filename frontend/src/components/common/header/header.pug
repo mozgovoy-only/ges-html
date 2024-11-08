@@ -11,4 +11,5 @@ mixin header(props)
             .header__button-menu
                 +button-menu()
             .header__lang
-                +dropdown()
+                button.header__lang-button(type='button') ru
+                    +svg('shewron-down').header__lang-button-icon
