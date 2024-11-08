@@ -1,7 +1,6 @@
 .section-hero-main {
     $root: &;
 
-
     max-width: remify(1920);
     margin: 0 auto remify(60);
     padding: var(--offset-padding) var(--offset-padding) 0;
@@ -60,7 +59,6 @@
     }
     &__slide {
         position: relative;
-
         width: 100%;
         display: flex;
         height: calc(100vh - var(--header-height));
@@ -73,7 +71,6 @@
         height: 100%;
         position: absolute;
         overflow: hidden;
-
         &::after,
         &::before {
             content: "";
@@ -109,10 +106,17 @@
         height: 100%;
         display: flex;
         z-index: 1;
+        transition: transform $duration-slow $ease-default;
+        transform: scale(1.35);
+
         > img {
             object-fit: cover;
             width: 100%;
             height: 100%;
+        }
+
+        #{$root}__slide.is-active & {
+            transform: scale(1);
         }
     }
 
@@ -146,11 +150,12 @@
         padding: remify(7) 0;
     }
     &__control-pagination-page {
+        display: flex;
         position: relative;
         width: remify(14);
         height: remify(14);
         opacity: 0.4;
-        &::after, &::before {
+        &::before {
             content: "";
             position: absolute;
             z-index: 1;
@@ -167,19 +172,28 @@
             background-color: $white;
 
         }
-        &::after {
-            width: 100%;
-            height: 100%;
-            border: 1px solid $white;
-            opacity: 0;
-            border-left: 1px solid transparent;
-        }
-
         &.is-active {
             opacity: 1;
-            &::after {
-                opacity: 1;
-            }
         }
     }
+   &__control-pagination-icon {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+   }
+   &__control-pagination-icon-circle {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 300;
+        #{$root}__control-pagination-page.is-active & {
+            animation: progress-animation infinite linear;
+        }
+   }
+   @keyframes progress-animation {
+        0% {
+            stroke-dashoffset: 300;
+        }
+        100% {
+            stroke-dashoffset: 255;
+        }
+   }
 }
