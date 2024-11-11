@@ -1,6 +1,9 @@
 mixin row-solution(props)
     .row-solution&attributes(attributes)(data-component='row-solution')
-        +svg(props.icon).row-solution__icon
+        if props.icon
+            +svg(props.icon).row-solution__icon
         .row-solution__content
-            .row-solution__title=props.title
+            if props.title
+                .row-solution__title=props.title
+            if props.text
             .row-solution__text=props.text
