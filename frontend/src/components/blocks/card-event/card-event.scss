@@ -3,12 +3,21 @@
     width: 100%;
     display: flex;
     position: relative;
-    &__image {
+    height: 100%;
+
+    &__picture {
         position: relative;
         z-index: 1;
         height: 100%;
-
+        width: 45%;
+        margin-right: -30%;
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+
     &__content {
         position: relative;
         z-index: 2;
@@ -18,6 +27,13 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        #{$root}--white & {
+            background: $white;
+        }
+
+        #{$root}__picture + & {
+            width: 55%;
+        }
     }
 
     &__content-top {
@@ -35,17 +51,44 @@
         font-size: remify(12);
         color: $white-50;
         margin-bottom: remify(8);
+        #{$root}--white & {
+            color: $black-60;
+        }
+    }
+
+    &__content-text {
+        color: $white-50;
+        margin-top: remify(8);
+        font-size: remify(12);
+        line-height: 1.1;
+        #{$root}--white & {
+            color: $black-60;
+        }
     }
 
     &__content-title {
         font-size: remify(16);
         color: $white;
         font-weight: 500;
+
+        #{$root}--white & {
+            color: $main-black;
+        }
     }
 
     &__content-top-icon {
         width: remify(16);
         height: remify(16);
         color: $white;
+        opacity: 0;
+        transform: opacity $duration-default $ease-default;
+
+        #{$root}--white & {
+            color: $main-black;
+        }
+
+        #{$root} & {
+            opacity: 1;
+        }
     }
 }

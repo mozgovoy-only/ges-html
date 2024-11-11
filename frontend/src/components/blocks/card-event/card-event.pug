@@ -1,12 +1,16 @@
 mixin card-event(props)
     .card-event&attributes(attributes)(data-component='card-event')
+        if props.picture
+            +picture(props.picture).card-event__picture
         .card-event__content
             .card-event__content-top
                 if props.textLabel
-                    +text-label({ text: props.textLabel })
+                    +text-label({ text: props.textLabel })(class=props.labelClassList)
                 if props.icon
                     +svg(props.icon).card-event__content-top-icon
             if props.date
                 .card-event__content-date=props.date
             if props.title
                 .card-event__content-title=props.title
+            if props.text
+                .card-event__content-text=props.text

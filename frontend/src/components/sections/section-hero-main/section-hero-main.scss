@@ -50,13 +50,22 @@
         @include rem-adaptive-font(40, 48, 54, 62);
         max-width: remify(450);
     }
-    &__content-event {
+    &__content-events {
         display: none;
-        width: remify(280);
         @include media-breakpoint-up(md) {
             display: flex;
         }
     }
+
+    &__content-events-item {
+        width: remify(280);
+        margin-right: remify(15);
+        pointer-events: all;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
     &__slide {
         position: relative;
         width: 100%;
@@ -144,12 +153,14 @@
             height: remify(16);
         }
     }
+
     &__control-pagination {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: remify(7) 0;
     }
+
     &__control-pagination-page {
         display: flex;
         position: relative;
@@ -171,30 +182,32 @@
             width: remify(4);
             height: remify(4);
             background-color: $white;
-
         }
         &.is-active {
             opacity: 1;
         }
     }
-   &__control-pagination-icon {
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-   }
-   &__control-pagination-icon-circle {
+
+    &__control-pagination-icon {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+    }
+
+    &__control-pagination-icon-circle {
         stroke-dasharray: 100;
         stroke-dashoffset: 300;
         #{$root}__control-pagination-page.is-active & {
             animation: progress-animation infinite linear;
         }
-   }
-   @keyframes progress-animation {
+    }
+
+    @keyframes progress-animation {
         0% {
             stroke-dashoffset: 300;
         }
         100% {
             stroke-dashoffset: 255;
         }
-   }
+    }
 }
