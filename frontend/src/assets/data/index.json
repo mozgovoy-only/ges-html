@@ -55,12 +55,35 @@
         ],
         "content": {
             "title": "Crafting excellence </br> with vision",
-            "event": {
-                "textLabel": "новости",
-                "date": "25.08.2024",
-                "title": "Южный речной вокзал получил новую жизнь после реконструкции",
-                "icon": "anchor-next"
-            }
+            "events": [
+                {
+                    "textLabel": "проект",
+                    "title": "Южный речной вокзал",
+                    "text": "Реконструкция транспортного комплекса “Южный речной вокзал” на реке Москва в Нагатинской пойме",
+                    "classList": "card-event--white",
+                    "labelClassList": "text-label--black",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-event.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-event.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-event.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    }
+                },
+                {
+                    "textLabel": "новости",
+                    "date": "25.08.2024",
+                    "title": "Южный речной вокзал получил новую жизнь после реконструкции"
+                }
+            ]
         },
         "prevIcon": "shewron-up",
         "nextIcon": "shewron-down"
