@@ -8,17 +8,45 @@
                 {
                     "title": "ЖК «JOIS»",
                     "text": "Многофункциональный жилой комплекс «JOIS» — 1 этап строительства. Две башни  высотой 200м и 170м.",
-                    "src": "../../assets/images/card-projects/1.jpg",
                     "area": "131 900 кв.м.",
                     "href": "/projects-view",
                     "date": "2024 - 2026",
                     "titleArea": "Общая площадь",
-                    "titlePeriod": "Период строительства"
+                    "titlePeriod": "Период строительства",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/1.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/1.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/1.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    }
                 },
                 {
                     "title": "ЖК «Dream Towers»",
                     "text": "Многофункциональный жилой комплекс",
-                    "src": "../../assets/images/card-projects/2.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/2.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/2.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/2.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "58 300 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 – 2023",
@@ -29,7 +57,21 @@
                 {
                     "title": "Южный речной вокзал",
                     "text": "Реконструкция транспортного комплекса “Южный речной вокзал” на реке Москва в Нагатинской пойме",
-                    "src": "../../assets/images/card-projects/3.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/3.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/3.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/3.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "5 637 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 – 2023",
@@ -40,7 +82,21 @@
                 {
                     "title": "ГБОУ Школа № 463",
                     "text": "Дошкольная образовательная организация на 50 учащихся и блок начальных классов на 150 учащихся Трёхэтажное здание школы выполнено в едином стиле с Жилым комплексом “Dream Towers”.",
-                    "src": "../../assets/images/card-projects/4.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/4.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/4.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/4.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "3835 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 – 2023",
@@ -51,7 +107,21 @@
                 {
                     "title": "ЖК «Преображенская площадь»",
                     "text": "Жилой комплекс с подземной автостоянкой, отдельно стоящими Детским образовательным учреждением и школой. ",
-                    "src": "../../assets/images/card-projects/5.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/5.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/5.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/5.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "88 000 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 – 2023",
@@ -62,7 +132,21 @@
                 {
                     "title": "Dream Beach Club",
                     "text": "Курортный комплекс площадью 5,2 Га с расположением на прилегающей территории к Парку развлечений “Остров мечты”.",
-                    "src": "../../assets/images/card-projects/6.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/6.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/6.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/6.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "21 650 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 – 2023",
@@ -73,7 +157,21 @@
                 {
                     "title": "Деловой квартал-1, -2",
                     "text": "Нежилые здания общественно-делового назначения.",
-                    "src": "../../assets/images/card-projects/7.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/7.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/7.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/7.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "6 700 кв.м. 13 300 кв.м.",
                     "href": "/projects-view",
                     "date": "2021 - 2024",
@@ -84,7 +182,21 @@
                 {
                     "title": "ЖК «DREAM RIVA»",
                     "text": "Этап 1: офисный центр </br> Этап 2: гостиничный комплекс </br> Этап 3. жилой комплекс с подземной автостоянкой и инфраструктурными объектами, в т.ч. учебный центр на 150 мест",
-                    "src": "../../assets/images/card-projects/8.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/8.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/8.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/8.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "6 700 кв.м. </br> 13 300 кв.м.",
                     "href": "/projects-view",
                     "date": "2024 – 2026",
@@ -95,7 +207,21 @@
                 {
                     "title": "Foriver Residence",
                     "text": "Жилой комплекс премиум-класса.",
-                    "src": "../../assets/images/card-projects/9.jpg",
+                    "picture": {
+                        "img": {
+                            "src": "../../assets/images/card-projects/9.jpg"
+                        },
+                        "sources": [
+                            {
+                                "srcset": "../../assets/images/card-projects/9.jpg",
+                                "breakpoint": 1280
+                            },
+                            {
+                                "srcset": "../../assets/images/card-projects/9.jpg",
+                                "breakpoint": 768
+                            }
+                        ]
+                    },
                     "area": "22 553 кв.м.",
                     "href": "/projects-view",
                     "date": "2024 – 2026",
