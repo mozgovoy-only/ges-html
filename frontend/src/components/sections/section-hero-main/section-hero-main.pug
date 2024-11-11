@@ -11,9 +11,11 @@ mixin section-hero-main(props)
                 .section-hero-main__content
                     if props.content.title
                         .section-hero-main__title!= props.content.title
-                    if props.content.event
-                    .section-hero-main__content-event
-                        +card-event(props.content.event)
+                    if props.content.events
+                        .section-hero-main__content-events
+                            each event in props.content.events
+                                .section-hero-main__content-events-item
+                                    +card-event(event)(class=event.classList)
             .section-hero-main__control
                 button.section-hero-main__control-arrow.section-hero-main__control-arrow--prev(type='button')
                     if props.prevIcon
