@@ -1,23 +1,20 @@
 mixin block-contacts-geo(props)
     .block-contacts-geo&attributes(attributes)(data-component='block-contacts-geo')
         .block-contacts-geo__title
-            +title-main('<span class=\"title-main__inner\">Свяжитесь с нами</span> или обратитесь </br> в главный офис')
+            if props.title
+                +title-main(props.title)
         .block-contacts-geo__content
-            .block-contacts-geo__content-refs
-                a.block-contacts-geo__content-refs-title(href='mailto:info@gescons.ru') info@gescons.ru
-                .block-contacts-geo__content-refs-block
-                    .block-contacts-geo__content-refs-suptitle Заказчикам
-                    a.block-contacts-geo__content-refs-contact(href='mailto:tender@gescons.ru') tender@gescons.ru
-                .block-contacts-geo__content-refs-block
-                    .block-contacts-geo__content-refs-suptitle Партнерам
-                    a.block-contacts-geo__content-refs-contact(href='mailto:procurement@gescons.ru') procurement@gescons.ru
-                .block-contacts-geo__content-refs-block
-                    .block-contacts-geo__content-refs-suptitle Соискателям
-                    a.block-contacts-geo__content-refs-contact(href='mailto:hr@gescons.ru') hr@gescons.ru
+            if props.content
+                .block-contacts-geo__content-refs
+                    if props.content.mainLink
+                        a.block-contacts-geo__content-refs-title(props.content.mainLink.href)= props.content.mainLink.text   
+                    if props.content.links
+                        each link in props.content.links
+                            .block-contacts-geo__content-refs-block
+                                if link.label
+                                    .block-contacts-geo__content-refs-suptitle=link.label
+                                if (link.text && link.href)
+                                    a.block-contacts-geo__content-refs-contact(link.href)!= link.text
             .block-contacts-geo__content-map
-                +picture({
-                    classList: 'block-contacts-geo__content-map-picture',
-                    img: {
-                        src: '../../assets/images/block-contacts-geo.jpg'
-                    }
-                })
+                if props.picture
+                    +picture(props.picture).block-contacts-geo__content-map-picture

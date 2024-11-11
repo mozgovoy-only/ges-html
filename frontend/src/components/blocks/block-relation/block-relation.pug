@@ -1,6 +1,9 @@
 mixin block-relation(props)
     .block-relation&attributes(attributes)(data-component='block-relation')
         .block-relation__inner
-            .block-relation__title=props.title
-            .block-relation__subtitle=props.subtitle
-            a.block-relation__link(href='mailto:' + props.email)=props.email
+            if props.title
+                .block-relation__title=props.title
+            if props.subtitle
+                .block-relation__subtitle=props.subtitle
+            if props.email
+                a.block-relation__link(href='mailto:' + props.email)=props.email

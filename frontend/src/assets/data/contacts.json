@@ -1,5 +1,49 @@
 {
     "sectionHero": {
         "title": "Контакты"
+    },
+    "geoContacts": {
+        "title": "<span class=\"title-main__inner\">Свяжитесь с нами</span> или обратитесь </br> в главный офис",
+        "content": {
+            "mainLink": {
+                "text": "info@gescons.ru",
+                "href": "mailto:info@gescons.ru"
+            },
+            "links": [
+                {
+                    "label": "Заказчикам",
+                    "text": "tender@gescons.ru",
+                    "href": "mailto:tender@gescons.ru"
+                },
+                {
+                    "label": "Партнерам",
+                    "text": "procurement@gescons.ru",
+                    "href": "mailto:procurement@gescons.ru"
+                },
+                {
+                    "label": "Соискателям",
+                    "text": "hr@gescons.ru",
+                    "href": "mailto:hr@gescons.ru"
+                }
+            ]
+        },
+        "picture": {
+            "img": {
+                "src": "../../assets/images/block-contacts-geo.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/block-contacts-geo.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/block-contacts-geo.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        }
+    },
+    "feedback": {
+        
     }
 }

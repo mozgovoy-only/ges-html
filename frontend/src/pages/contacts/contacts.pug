@@ -7,6 +7,6 @@ block content
     div(data-barba="container" data-barba-namespace="common" data-page-namespace="contacts")
         +section-hero(dataJson.contacts.sectionHero)
         +section-main({})
-            +block-contacts-geo
+            +block-contacts-geo(dataJson.contacts.geoContacts)
         +section-main({})
             +feedback
