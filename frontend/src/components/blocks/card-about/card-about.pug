@@ -1,15 +1,13 @@
 mixin card-about(props)
     .card-about&attributes(attributes)(data-component='card-about')
-        if props.src
+        if props.picture
             .card-about__image
-                +picture({
-                    classList: 'card-about__picture',
-                    img: {
-                        src: props.src
-                    }
-                })
+                +picture(props.picture).card-about__picture
         .card-about__content
             .card-about__title!=props.title
-            each text in props.text
-                .card-about__text=text
-                    +svg('anchor-next')(class='card-about__text-icon')
+            if props.textRows
+                each item in props.textRows
+                    if (item.text)
+                        .card-about__text=item.text 
+                            if (item.icon)
+                                +svg(item.icon).card-about__text-icon

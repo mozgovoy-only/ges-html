@@ -2,24 +2,31 @@ mixin card-team(props)
     .card-team&attributes(attributes)(data-component='card-team')
         .card-team__content
             .card-team__image
-                +picture({
-                    classList: 'card-team__picture',
-                    img: {
-                        src: '../../assets/images/team-person.jpg'
-                    }
-                })
-            .card-team__name=props.name
-            .card-team__job=props.job
+                if props.picture
+                    +picture(props.picture).card-team__picture
+            if props.name
+                .card-team__name=props.name
+            if props.job
+                .card-team__job=props.job
             .card-team__detail
-                span.card-team__detail-text=props.showText
-                +svg('plus')(class='card-team__detail-icon')
+                if props.showText
+                    span.card-team__detail-text=props.showText
+                if props.plusIcon
+                    +svg(props.plusIcon)(class='card-team__detail-icon')
         .card-team__hovered
-            .card-team__hovered-name=props.name
-            .card-team__hovered-job=props.job
-            .card-team__hovered-text!=props.text
+            if props.name
+                .card-team__hovered-name=props.name
+            if props.job
+                .card-team__hovered-job=props.job
+            if props.text
+                .card-team__hovered-text!=props.text
             .card-team__hovered-bottom
-                span.card-team__hovered-suptitle=props.suptitle
-                span.card-team__hovered-year с 2017
+                if props.suptitle
+                    span.card-team__hovered-suptitle=props.suptitle
+                if props.year
+                    span.card-team__hovered-year= props.year
             .card-team__hovered-detail
-                span.card-team__hovered-detail-text=props.hideText
-                +svg('minus')(class='card-team__hovered-detail-icon')
+                if props.hideText
+                    span.card-team__hovered-detail-text=props.hideText
+                if props.minusIcon
+                    +svg(props.minusIcon)(class='card-team__hovered-detail-icon')

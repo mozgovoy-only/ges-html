@@ -2,8 +2,26 @@
     "sectionHero": {
         "subtitle": "Южный речной вокзал получил новую жизнь после реконструкции",
         "date": "24 ноября 2023",
-        "backText": "Вернуться к новостям",
-        "BackHref": "/press-center"
+        "picture": {
+            "img": {
+                "src": "../../assets/images/career.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/career.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/career.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        },
+        "backLink": {
+            "icon": "shewron-back",
+            "text": "Вернуться к новостям",
+            "href": "/press-center"
+        }
     },
     "sectionMain": {
         "content": {
@@ -21,7 +39,21 @@
     },
     "blockMedia": {
         "cardLeft": {
-            "src": "../../assets/images/card-media/1.jpg",
+            "picture": {
+                "img": {
+                    "src": "../../assets/images/card-media/1.jpg"
+                },
+                "sources": [
+                    {
+                        "srcset": "../../assets/images/card-media/1.jpg",
+                        "breakpoint": 1280
+                    },
+                    {
+                        "srcset": "../../assets/images/card-media/1.jpg",
+                        "breakpoint": 768
+                    }
+                ]
+            },
             "title": "Южный речной вокзал получил новую жизнь после реконструкции",
             "href": "/press-center",
             "date": "25.08.2024",

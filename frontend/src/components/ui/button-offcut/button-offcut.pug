@@ -1,4 +1,5 @@
 mixin button-offcut(props)
     button.button-offcut&attributes(attributes)(data-component='button-offcut', type='button')
-        .button-offcut__text 2024
+        if props.text
+            .button-offcut__text!= props.text
         .button-offcut__goal

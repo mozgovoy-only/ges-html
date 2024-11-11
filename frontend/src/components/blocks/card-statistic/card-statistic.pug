@@ -1,13 +1,8 @@
 mixin card-statistic(props)
     .card-statistic&attributes(attributes)(data-component='card-statistic')
-        if props.src
+        if props.picture
             .card-statistic__image
-                +picture({
-                    classList: 'card-statistic__image-picture',
-                    img: {
-                        src: props.src
-                    }
-                })
+                +picture(props.picture).card-statistic__image-picture
         .card-statistic__content
             .card-statistic__top
                 if props.number

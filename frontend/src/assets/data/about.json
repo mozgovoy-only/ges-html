@@ -1,7 +1,26 @@
 {
     "sectionHero": {
         "title": "о компании",
-        "src": "../../assets/images/about.jpg"
+        "picture": {
+            "img": {
+                "src": "../../assets/images/about.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/about.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/about.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        },
+        "backLink": {
+            "icon": "shewron-back",
+            "text": "РЫБА",
+            "href": "#"
+        }
     },
     "sectionMain": {
         "aboutUs": {
@@ -46,35 +65,142 @@
         "cards": [
             {
                 "title": "<span class=\"card-about__title-inner\">Коммерческие</span> объекты",
-                "src": "../../assets/images/card-about/1.jpg",
-                "text": ["«Деловой квартал-1»", "«Деловой квартал-2»"]
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-about/1.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-about/1.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-about/1.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
+                "textRows": [
+                    {
+                        "text": "«Деловой квартал-1»",
+                        "icon": "anchor-next"
+                    },
+                    {
+                        "text": "«Деловой квартал-2»",
+                        "icon": "anchor-next"
+                    }
+                ]
             },
             {
                 "title": "<span class=\"card-about__title-inner\">Инфраструктурные</span> проекты",
-                "src": "../../assets/images/card-about/2.jpg",
-                "text": ["Порт «Южный речной вокзал»"]
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-about/2.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-about/2.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-about/2.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
+                "textRows": [
+                    {
+                        "text": "Порт «Южный речной вокзал»",
+                        "icon": "anchor-next"
+                    }
+                ]
             },
             {
                 "title": "<span class=\"card-about__title-inner\">Жилые</span> проекты",
-                "src": "../../assets/images/card-about/3.jpg",
-                "text": [
-                    "ЖК «Jois»",
-                    "ЖК «Dream Riva»",
-                    "ЖК «Foriver Residence»",
-                    "ЖК «Преображенская площадь»"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-about/3.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-about/3.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-about/3.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
+                "textRows": [
+                    {
+                        "text": "ЖК «Jois»",
+                        "icon": "anchor-next"
+                    },
+                    {
+                        "text": "ЖК «Dream Riva»",
+                        "icon": "anchor-next"
+                    },
+                    {
+                        "text": "ЖК «Foriver Residence»",
+                        "icon": "anchor-next"
+                    },
+                    {
+                        "text": "Преображенская площадь»",
+                        "icon": "anchor-next"
+                    }
                 ]
             },
             {
                 "title": "<span class=\"card-about__title-inner\">Муниципальные</span> проекты",
-                "src": "../../assets/images/card-about/4.jpg",
-                "text": ["Образовательное учреждение УК «ГБОУ Школа № 463»"]
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-about/4.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-about/4.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-about/4.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
+                "textRows": [
+                    {
+                        "text": "Образовательное учреждение УК «ГБОУ Школа № 463»",
+                        "icon": "anchor-next"
+                    }
+                ]
             },
             {
                 "title": "<span class=\"card-about__title-inner\">Развлекательные</span> объекты",
-                "src": "../../assets/images/card-about/5.jpg",
-                "text": [
-                    "ОРК «Dream Beach Club»",
-                    "ОРК «Открытый парк аттракционов»"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-about/5.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-about/5.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-about/5.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
+                "textRows": [
+                    {
+                        "text": "ОРК «Dream Beach Club»",
+                        "icon": "anchor-next"
+                    },
+                    {
+                        "text": "ОРК «Открытый парк аттракционов»",
+                        "icon": "anchor-next"
+                    }
                 ]
             }
         ]
@@ -103,53 +229,279 @@
             }
         ]
     },
+    "blockHistory": {
+        "textIdent": {
+            "text": "история"
+        },
+        "titleMain": "История",
+        "cards": [
+            {
+                "button": {
+                    "text": "2024"
+                },
+                "content": {
+                    "title": "Учреждена компания ООО “ГЭС ПКОНСТРАКШН”",
+                    "text": "Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”",
+                    "links": [
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        },
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        }
+                    ]
+                }
+            },
+            {
+                "button": {
+                    "text": "2024"
+                },
+                "content": {
+                    "title": "Учреждена компания ООО “ГЭС ПКОНСТРАКШН”",
+                    "text": "Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”",
+                    "links": [
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        },
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        }
+                    ]
+                }
+            },
+            {
+                "button": {
+                    "text": "2024"
+                },
+                "content": {
+                    "title": "Учреждена компания ООО “ГЭС ПКОНСТРАКШН”",
+                    "text": "Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”",
+                    "links": [
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        },
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        }
+                    ]
+                }
+            },
+            {
+                "button": {
+                    "text": "2024"
+                },
+                "content": {
+                    "title": "Учреждена компания ООО “ГЭС ПКОНСТРАКШН”",
+                    "text": "Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”",
+                    "links": [
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        },
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        }
+                    ]
+                }
+            },
+            {
+                "button": {
+                    "text": "2024"
+                },
+                "content": {
+                    "title": "Учреждена компания ООО “ГЭС ПКОНСТРАКШН”",
+                    "text": "Подписаны договоры с компанией “МР Групп” на строительство проекта “Жилой комплекс “JOIS”, с компанией «ИНГРАД» на строительство проекта “Жилой комплекс “FORIVER RESIDENCE”",
+                    "links": [
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        },
+                        {
+                            "icon": "anchor-next",
+                            "text": "ЖК «Jois»",
+                            "href": "/"
+                        }
+                    ]
+                }
+            }
+        ],
+        "prevButton": {
+            "icon": "arrow-prev"
+        },
+        "nextButton": {
+            "icon": "arrow-next"
+        }
+    },
     "sectionAbout": {
         "title": "Социальная </br> ответственность (ESG) ",
         "text": "В компании GES Construction, мы придаем огромное значение принципам экологической, социальной и управленческой ответственности (ESG). Мы убеждены, что устойчивое развитие и успешное ведение бизнеса неразрывно связаны, и стремимся внести свой вклад в благополучие общества и окружающей среды.",
-        "src": "../../assets/images/section-about/2.jpg"
+        "button": {
+            "href": "#",
+            "text": "рыба"
+        },
+        "picture": {
+            "img": {
+                "src": "../../assets/images/section-about/2.jpg"
+            },
+            "sources": [
+                {
+                    "srcset": "../../assets/images/section-about/2.jpg",
+                    "breakpoint": 1280
+                },
+                {
+                    "srcset": "../../assets/images/section-about/2.jpg",
+                    "breakpoint": 768
+                }
+            ]
+        }
     },
     "blockTeam": {
         "cards": [
             {
-                "src": "../../assets/images/team-person.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/team-person.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "name": "Сонмез Хакан",
                 "job": "Главный исполнительный директор (CEO)",
                 "text": "Операционный директор (COO - Общестроительные работы) </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”.",
                 "showText": "Подробнее",
                 "hideText": "Скрыть",
+                "year": "2017",
+                "plusIcon": "plus",
+                "minusIcon": "minus",
                 "suptitle": "в компании"
             },
             {
-                "src": "../../assets/images/team-person.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/team-person.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "name": "Ялчын Чагатай",
                 "job": "Главный исполнительный директор (CEO)",
                 "text": "Операционный директор (COO - Общестроительные работы) </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”.",
                 "showText": "Подробнее",
                 "hideText": "Скрыть",
+                "year": "2017",
+                "plusIcon": "plus",
+                "minusIcon": "minus",
                 "suptitle": "в компании"
             },
             {
-                "src": "../../assets/images/team-person.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/team-person.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "name": "Бютюнер Озджан",
                 "job": "Операционный директор (COO - Инженерные системы)",
                 "text": "Операционный директор (COO - Общестроительные работы) </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”.",
                 "showText": "Подробнее",
                 "hideText": "Скрыть",
+                "year": "2017",
+                "plusIcon": "plus",
+                "minusIcon": "minus",
                 "suptitle": "в компании"
             },
             {
-                "src": "../../assets/images/team-person.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/team-person.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "name": "Сулейманов Бахруз",
                 "job": "Финансовый директор (CFO)",
                 "text": "Финансовый директор (CFO) </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”.",
                 "showText": "Подробнее",
+                "hideText": "Скрыть",
+                "year": "2017",
+                "plusIcon": "plus",
+                "minusIcon": "minus",
                 "suptitle": "в компании"
             },
             {
-                "src": "../../assets/images/team-person.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/team-person.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/team-person.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "name": "Воинов Максим Владимирович",
                 "job": "Генеральный директор",
-                "text": "Генеральный директор </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”."
+                "text": "Генеральный директор </br></br> Осуществляет оперативное управление реализацией строительных проектов в области общестроительных работ. </br></br> Знаковые проекты: Бизнес-центр “Лахта Центр”, ТЦ “Европолис”, ЖК “Dream Towers”.",
+                "showText": "Подробнее",
+                "hideText": "Скрыть",
+                "year": "2017",
+                "plusIcon": "plus",
+                "minusIcon": "minus",
+                "suptitle": "в компании"
             }
         ]
     },
@@ -162,7 +514,21 @@
                     "применяем экологически чистых и энергоэффективных технологий и материалов.",
                     "участвуем в программах по восстановлению и озеленению территорий."
                 ],
-                "src": "../../assets/images/card-esg-1.jpg",
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-esg-1.jpg"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-esg-1.jpg",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-esg-1.jpg",
+                            "breakpoint": 768
+                        }
+                    ]
+                },
                 "cardClassList": "block-esg__card--white"
             },
             {
@@ -188,16 +554,72 @@
         "mixinSlide": "card-brand",
         "slides": [
             {
-                "src": "../../assets/images/card-brand/1.png"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-brand/1.png"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-brand/1.png",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-brand/1.png",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
-                "src": "../../assets/images/card-brand/2.png"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-brand/2.png"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-brand/2.png",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-brand/2.png",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
-                "src": "../../assets/images/card-brand/3.png"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-brand/3.png"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-brand/3.png",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-brand/3.png",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             },
             {
-                "src": "../../assets/images/card-brand/3.png"
+                "picture": {
+                    "img": {
+                        "src": "../../assets/images/card-brand/3.png"
+                    },
+                    "sources": [
+                        {
+                            "srcset": "../../assets/images/card-brand/3.png",
+                            "breakpoint": 1280
+                        },
+                        {
+                            "srcset": "../../assets/images/card-brand/3.png",
+                            "breakpoint": 768
+                        }
+                    ]
+                }
             }
         ]
     }

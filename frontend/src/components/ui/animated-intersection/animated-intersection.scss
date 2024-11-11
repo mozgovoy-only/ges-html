@@ -1,10 +1,10 @@
 .animated-intersection {
     $root: &;
 
-    --animated-intersection-block-transform: translate(0%, 20%);
+    // --animated-intersection-block-transform: translate(0%, 0%);
     --animated-intersection-block-opacity: 0;
-    --animated-intersection-duration: #{$duration-normal};
-    --animated-intersection-block-transition-delay: #{$duration-default};
+    --animated-intersection-duration: #{$duration-default};
+    --animated-intersection-block-transition-delay: #{$duration-fast};
 
     &--fast {
         --animated-intersection-duration: #{$duration-fast};
@@ -19,15 +19,15 @@
     }
 
     &.animate {
-        --animated-intersection-block-transform: translate(0%, 0%);
+        // --animated-intersection-block-transform: translate(0%, 0%);
         --animated-intersection-block-opacity: 1;
     }
 
     &__block {
         transform: var(--animated-intersection-block-transform);
         opacity: var(--animated-intersection-block-opacity);
-        transition: transform $ease-default var(--animated-intersection-duration),
-            opacity $ease-default var(--animated-intersection-duration);
+        transition: transform $ease-in-out var(--animated-intersection-duration),
+            opacity $ease-in-out var(--animated-intersection-duration);
         transition-delay: var(--animated-intersection-block-transition-delay);
     }
 }
